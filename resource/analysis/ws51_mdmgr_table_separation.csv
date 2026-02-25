@@ -1,0 +1,14 @@
+addr,mnemonic,op_str,hit_disp_table,hit_dev_table,region
+0x12f1,lcall,[0xe32],yes,no,other
+0x1397,lcall,[0xe32],yes,no,other
+0x19d5,mov,"word ptr [0xe38], 0x11f",yes,no,other
+0x19db,mov,"word ptr [0xe36], 0x95c",yes,no,other
+0x1a1a,mov,"word ptr [bx + 0xe7e], 1",no,yes,init_func
+0x1a25,mov,"word ptr [bx + 0xe86], ds",no,yes,init_func
+0x1a29,mov,"word ptr [bx + 0xe84], 0x936",no,yes,init_func
+0x1abc,lcall,[0xe32],yes,no,other
+0x1add,lcall,[0xe32],yes,no,other
+0x1b39,lcall,[0xe32],yes,no,other
+0x1ce2,mov,"ax, word ptr [bx + 0xe32]",yes,no,dispatch_func
+0x1ce6,or,"ax, word ptr [bx + 0xe34]",yes,no,dispatch_func
+0x1cff,lcall,[bx + 0xe32],yes,no,dispatch_func

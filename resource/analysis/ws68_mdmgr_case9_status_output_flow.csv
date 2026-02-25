@@ -1,0 +1,16 @@
+kind,addr,insn,zone
+status_write,0x0d5f,"mov byte ptr es:[bx + 3], 0",handler_0d31
+status_write,0x0e9f,"mov byte ptr es:[bx + 3], 2",handler_0d31
+status_write,0x0eab,"mov byte ptr es:[bx + 3], 5",handler_0d31
+status_write,0x0ef1,"mov byte ptr es:[bx + 3], 1",handler_0d31
+case9_out_write,0x1062,"mov byte ptr es:[bx + 5], al",case9_1047
+case9_out_write,0x1070,"mov byte ptr es:[bx + 4], al",case9_1047
+case9_out_write,0x107e,"mov byte ptr es:[bx + 3], al",case9_1047
+case9_out_write,0x108c,"mov byte ptr es:[bx + 2], al",case9_1047
+case9_out_write,0x109a,"mov byte ptr es:[bx + 8], al",case9_1047
+case9_out_write,0x10b8,"mov byte ptr es:[bx + 4], al",case9_1047
+case9_out_write,0x10cd,"mov byte ptr es:[bx + 7], al",case9_1047
+control_fact,0x0d5f,,pre-dispatch status zero init
+control_fact,0x0e58,,second dispatch via jmp table
+control_fact,0x1044,,case9 target prologue
+control_fact,0x10d2,,case9 retf (returns out of handler frame)

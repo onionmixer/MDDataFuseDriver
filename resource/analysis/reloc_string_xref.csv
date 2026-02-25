@@ -1,0 +1,344 @@
+file,rel_index,ptr_file_off,target_file_off,far_off,far_seg,text
+w31/extract/mdcache.exe,9,0x0c978,0x0cc93,0x03f3,0x0b8a," device reported error while accessing Volume Space Bitmap
+"
+w31/extract/mdcache.exe,10,0x0c974,0x0cc5a,0x03ba,0x0b8a," device reported error while accessing Managment Table
+"
+w31/extract/mdcache.exe,11,0x0c970,0x0cc1f,0x037f,0x0b8a," device reported error while accessing Volume Descriptor
+"
+w31/extract/mdcache.exe,12,0x0c96c,0x0cbe9,0x0349,0x0b8a," device reported error while writing root directory
+"
+w31/extract/mdcache.exe,13,0x0c968,0x0cbbd,0x031d,0x0b8a," device reported error while reading UTOC
+"
+w31/extract/mdcache.exe,14,0x0c964,0x0cb8d,0x02ed,0x0b8a," device reported error while reading capacity
+"
+w31/extract/mdcache.exe,15,0x0c960,0x0cb5e,0x02be,0x0b8a," device reported error while reading defects
+"
+w31/extract/mdcache.exe,16,0x0c95c,0x0cb2e,0x028e,0x0b8a," device reported error while formatting media
+"
+w31/extract/mdcache.exe,17,0x0c958,0x0cafb,0x025b,0x0b8a," device reported error during critical operation
+"
+w31/extract/mdcache.exe,18,0x0c954,0x0cae2,0x0242,0x0b8a," device reported error
+"
+w31/extract/mdcache.exe,19,0x0c950,0x0cac3,0x0223,0x0b8a," there is no media in device
+"
+w31/extract/mdcache.exe,20,0x0c94c,0x0ca9b,0x01fb,0x0b8a," device reported that it is not ready
+"
+w31/extract/mdcache.exe,21,0x0c948,0x0ca73,0x01d3,0x0b8a," unable to allocate sufficient memory
+"
+w31/extract/mdcache.exe,22,0x0c944,0x0ca40,0x01a0,0x0b8a,"Unable to access \MDCTL
+Application will abort.
+"
+w31/extract/mdcache.exe,23,0x0c940,0x0ca1f,0x017f,0x0b8a,"MD component is not recognized
+"
+w31/extract/mdcache.exe,24,0x0c93c,0x0c9fa,0x015a,0x0b8a,"MD device manager is not installed
+"
+w31/extract/mdcache.exe,25,0x0c938,0x0c9c0,0x0120,0x0b8a,"Unable to find MD DATA device.
+Application will abort.
+"
+w31/extract/mdcache.exe,26,0x0c934,0x0c99f,0x00ff,0x0b8a,"drive is not an MD DATA device
+"
+w31/extract/mdcache.exe,27,0x0c930,0x0c97c,0x00dc,0x0b8a,"operation completed successfully
+"
+w31/extract/mdcache.exe,28,0x0cd00,0x0cee2,0x0642,0x0b8a,"  Enable/Disable/Flush write cache of MD DATA device
+
+SYNTAX:
+  mdcache [-?] [drive:] ON | OFF"
+w31/extract/mdcache.exe,29,0x0ccfc,0x0ceaf,0x060f,0x0b8a,"device reported error while flushing write cache
+"
+w31/extract/mdcache.exe,30,0x0ccf8,0x0ce90,0x05f0,0x0b8a,"write cache has been flushed
+"
+w31/extract/mdcache.exe,31,0x0ccf4,0x0ce5c,0x05bc,0x0b8a,"device reported error while disabling write cache
+"
+w31/extract/mdcache.exe,32,0x0ccf0,0x0ce42,0x05a2,0x0b8a,"write cache is disabled
+"
+w31/extract/mdcache.exe,33,0x0ccec,0x0ce0f,0x056f,0x0b8a,"device reported error while enabling write cache
+"
+w31/extract/mdcache.exe,34,0x0cce8,0x0cdf6,0x0556,0x0b8a,"write cache is enabled
+"
+w31/extract/mdcache.exe,35,0x0cce4,0x0cdee,0x054e,0x0b8a,ERROR: 
+w31/extract/mdcache.exe,36,0x0cce0,0x0cdbf,0x051f,0x0b8a,"ERROR: this drive is not an MD DATA device.
+
+"
+w31/extract/mdcache.exe,37,0x0ccdc,0x0cd83,0x04e3,0x0b8a,"ERROR: a parameter on the command line is not understood
+
+"
+w31/extract/mdcache.exe,38,0x0ccd8,0x0cd44,0x04a4,0x0b8a,"ERROR: too many parmeters are specified on the command line
+
+"
+w31/extract/mdcache.exe,40,0x0ccd0,0x0cd04,0x0464,0x0b8a,"MDcache version 1.0, Copyright (c) 1994 Sony Corporation.
+
+"
+w31/extract/mdcache.exe,178,0x0d5dc,0x0d7ec,0x0f4c,0x0b8a,Possible deadlock
+w31/extract/mdcache.exe,179,0x0d5d8,0x0d7d8,0x0f38,0x0b8a,File already exists
+w31/extract/mdcache.exe,180,0x0d5d4,0x0d7c7,0x0f27,0x0b8a,Result too large
+w31/extract/mdcache.exe,181,0x0d5d0,0x0d7b9,0x0f19,0x0b8a,Math argument
+w31/extract/mdcache.exe,192,0x0d5a4,0x0d79d,0x0efd,0x0b8a,Cross-device link
+w31/extract/mdcache.exe,193,0x0d5a0,0x0d78b,0x0eeb,0x0b8a,Exec format error
+w31/extract/mdcache.exe,194,0x0d59c,0x0d77a,0x0eda,0x0b8a,Arg list too big
+w31/extract/mdcache.exe,195,0x0d598,0x0d769,0x0ec9,0x0b8a,Invalid argument
+w31/extract/mdcache.exe,196,0x0d594,0x0d75b,0x0ebb,0x0b8a,No more files
+w31/extract/mdcache.exe,197,0x0d590,0x0d74b,0x0eab,0x0b8a,Not same device
+w31/extract/mdcache.exe,198,0x0d58c,0x0d725,0x0e85,0x0b8a,Attempted to remove current directory
+w31/extract/mdcache.exe,199,0x0d588,0x0d716,0x0e76,0x0b8a,No such device
+w31/extract/mdcache.exe,201,0x0d580,0x0d708,0x0e68,0x0b8a,Invalid data
+w31/extract/mdcache.exe,202,0x0d57c,0x0d6f4,0x0e54,0x0b8a,Invalid access code
+w31/extract/mdcache.exe,203,0x0d578,0x0d6e5,0x0e45,0x0b8a,Invalid format
+w31/extract/mdcache.exe,204,0x0d574,0x0d6d1,0x0e31,0x0b8a,Invalid environment
+w31/extract/mdcache.exe,205,0x0d570,0x0d6b4,0x0e14,0x0b8a,Invalid memory block address
+w31/extract/mdcache.exe,206,0x0d56c,0x0d6a2,0x0e02,0x0b8a,Not enough memory
+w31/extract/mdcache.exe,207,0x0d568,0x0d68d,0x0ded,0x0b8a,Memory arena trashed
+w31/extract/mdcache.exe,208,0x0d564,0x0d67d,0x0ddd,0x0b8a,Bad file number
+w31/extract/mdcache.exe,209,0x0d560,0x0d66b,0x0dcb,0x0b8a,Permission denied
+w31/extract/mdcache.exe,210,0x0d55c,0x0d657,0x0db7,0x0b8a,Too many open files
+w31/extract/mdcache.exe,211,0x0d558,0x0d648,0x0da8,0x0b8a,Path not found
+w31/extract/mdcache.exe,212,0x0d554,0x0d62e,0x0d8e,0x0b8a,No such file or directory
+w31/extract/mdcache.exe,213,0x0d550,0x0d616,0x0d76,0x0b8a,Invalid function number
+w31/extract/mdcache.exe,214,0x0d54c,0x0d60e,0x0d6e,0x0b8a,Error 0
+w31/extract/mdformat.exe,88,0x18da8,0x18dd8,0x0108,0x170d,Dec
+w31/extract/mdformat.exe,89,0x18da4,0x18dd4,0x0104,0x170d,Nov
+w31/extract/mdformat.exe,90,0x18da0,0x18dd0,0x0100,0x170d,Oct
+w31/extract/mdformat.exe,91,0x18d9c,0x18dcc,0x00fc,0x170d,Sep
+w31/extract/mdformat.exe,92,0x18d98,0x18dc8,0x00f8,0x170d,Aug
+w31/extract/mdformat.exe,93,0x18d94,0x18dc4,0x00f4,0x170d,Jul
+w31/extract/mdformat.exe,94,0x18d90,0x18dc0,0x00f0,0x170d,Jun
+w31/extract/mdformat.exe,95,0x18d8c,0x18dbc,0x00ec,0x170d,May
+w31/extract/mdformat.exe,96,0x18d88,0x18db8,0x00e8,0x170d,Apr
+w31/extract/mdformat.exe,97,0x18d84,0x18db4,0x00e4,0x170d,Mar
+w31/extract/mdformat.exe,98,0x18d80,0x18db0,0x00e0,0x170d,Feb
+w31/extract/mdformat.exe,99,0x18d7c,0x18dac,0x00dc,0x170d,Jan
+w31/extract/mdformat.exe,470,0x19244,0x1995c,0x0c8c,0x170d,"Format completed successfully.
+141,099,008 bytes available.
+
+Would you like to format another"
+w31/extract/mdformat.exe,471,0x19240,0x198f1,0x0c21,0x170d,"Safe format requires 35 minutes.
+
+The process can NOT be canceled during the first 34 minutes."
+w31/extract/mdformat.exe,472,0x1923c,0x198c2,0x0bf2,0x170d,"Quick format requires 90 seconds
+
+Continue? "
+w31/extract/mdformat.exe,473,0x19238,0x198b2,0x0be2,0x170d,Format Complete
+w31/extract/mdformat.exe,474,0x19234,0x1988b,0x0bbb,0x170d,"Format is canceled, disc is not usable"
+w31/extract/mdformat.exe,475,0x19230,0x19870,0x0ba0,0x170d,Do you want to cancel now?
+w31/extract/mdformat.exe,476,0x1922c,0x19861,0x0b91,0x170d,Confirm Cancel
+w31/extract/mdformat.exe,477,0x19228,0x1982f,0x0b5f,0x170d,Cannot cancel during certifying disc (35 minutes)
+w31/extract/mdformat.exe,478,0x19224,0x1981f,0x0b4f,0x170d,Formatting Disc
+w31/extract/mdformat.exe,479,0x19220,0x1980b,0x0b3b,0x170d,Confirm Format Disc
+w31/extract/mdformat.exe,480,0x1921c,0x197e7,0x0b17,0x170d,No MD drive was found in the system
+w31/extract/mdformat.exe,481,0x19218,0x197df,0x0b0f,0x170d,Warning
+w31/extract/mdformat.exe,482,0x19214,0x195cd,0x08fd,0x170d,"  Format an MD DATA disc
+SYNTAX:
+  mdformat drive: [-q | -s] [-o -v:label -?]
+PARAMETERS:
+  "
+w31/extract/mdformat.exe,483,0x19210,0x1959f,0x08cf,0x170d,"Volume Descriptor inhibits format of media.
+"
+w31/extract/mdformat.exe,484,0x1920c,0x1956f,0x089f,0x170d,"media must be formatted with safe option (-s)
+"
+w31/extract/mdformat.exe,485,0x19208,0x19548,0x0878,0x170d,"Unable to format media. Check media.
+"
+w31/extract/mdformat.exe,486,0x19204,0x19509,0x0839,0x170d,"format completed successfully.
+
+141,099,008 bytes available
+"
+w31/extract/mdformat.exe,487,0x19200,0x194db,0x080b,0x170d,"Volume Label (32 characters, ENTER for none)?"
+w31/extract/mdformat.exe,488,0x191fc,0x194c6,0x07f6,0x170d,"installing MDFS...
+"
+w31/extract/mdformat.exe,489,0x191f8,0x1949e,0x07ce,0x170d,"certification completed successfully.
+"
+w31/extract/mdformat.exe,490,0x191f4,0x1948c,0x07bc,0x170d, percent complete
+w31/extract/mdformat.exe,491,0x191f0,0x19478,0x07a8,0x170d,0  percent complete
+w31/extract/mdformat.exe,492,0x191ec,0x19456,0x0786,0x170d,"certifying disc (35 minutes)...
+"
+w31/extract/mdformat.exe,493,0x191e8,0x1943c,0x076c,0x170d,Press ENTER when ready...
+w31/extract/mdformat.exe,494,0x191e4,0x1940c,0x073c,0x170d,"Safe format requires approximately 35 minutes
+"
+w31/extract/mdformat.exe,495,0x191e0,0x193e0,0x0710,0x170d,"Quick format requires less than 2 minutes
+"
+w31/extract/mdformat.exe,496,0x191dc,0x193c4,0x06f4,0x170d,Insert a new disc in drive 
+w31/extract/mdformat.exe,497,0x191d8,0x1938b,0x06bb,0x170d,"ERROR: unable to communicate with an MD DATA component
+"
+w31/extract/mdformat.exe,498,0x191d4,0x1934f,0x067f,0x170d,"ERROR: device reported error while installing file system
+"
+w31/extract/mdformat.exe,499,0x191d0,0x19313,0x0643,0x170d,"ERROR: a parameter on the command line is not understood
+
+"
+w31/extract/mdformat.exe,500,0x191cc,0x192e8,0x0618,0x170d,"ERROR: a drive letter was not specified
+
+"
+w31/extract/mdformat.exe,501,0x191c8,0x192b6,0x05e6,0x170d,"ERROR: -q and -s may not be specified together
+
+"
+w31/extract/mdformat.exe,502,0x191c4,0x192ae,0x05de,0x170d,ERROR: 
+w31/extract/mdformat.exe,503,0x191c0,0x1929f,0x05cf,0x170d,"MDformat END
+"
+w31/extract/mdformat.exe,504,0x191bc,0x19248,0x0578,0x170d,"MDformat version 1.95
+Copyright (c) 1994-95 Sony Corporation. All rights reserved.
+
+"
+w31/extract/mdformat.exe,505,0x19a20,0x19dcd,0x10fd,0x170d,illegal MDFS volume attribute
+w31/extract/mdformat.exe,506,0x19a1c,0x19daf,0x10df,0x170d,illegal Allocation Block Size
+w31/extract/mdformat.exe,507,0x19a18,0x19d9a,0x10ca,0x170d,illegal Cluster Size
+w31/extract/mdformat.exe,508,0x19a14,0x19d7d,0x10ad,0x170d,"illegal Logical Block Size
+"
+w31/extract/mdformat.exe,509,0x19a10,0x19d6b,0x109b,0x170d,"illegal MDFS ID
+"
+w31/extract/mdformat.exe,510,0x19a0c,0x19d2f,0x105f,0x170d,"device reported error while accessing Volume Space Bitmap
+"
+w31/extract/mdformat.exe,511,0x19a08,0x19cf7,0x1027,0x170d,"device reported error while accessing Managment Table
+"
+w31/extract/mdformat.exe,512,0x19a04,0x19cbd,0x0fed,0x170d,"device reported error while accessing Volume Descriptor
+"
+w31/extract/mdformat.exe,513,0x19a00,0x19c88,0x0fb8,0x170d,"device reported error while writing root directory
+"
+w31/extract/mdformat.exe,514,0x199fc,0x19c5d,0x0f8d,0x170d,"device reported error while reading UTOC
+"
+w31/extract/mdformat.exe,515,0x199f8,0x19c2e,0x0f5e,0x170d,"device reported error while reading capacity
+"
+w31/extract/mdformat.exe,516,0x199f4,0x19c00,0x0f30,0x170d,"device reported error while reading defects
+"
+w31/extract/mdformat.exe,517,0x199f0,0x19bd1,0x0f01,0x170d,"device reported error while formatting media
+"
+w31/extract/mdformat.exe,518,0x199ec,0x19b9f,0x0ecf,0x170d,"device reported error during critical operation
+"
+w31/extract/mdformat.exe,519,0x199e8,0x19b87,0x0eb7,0x170d,"device reported error
+"
+w31/extract/mdformat.exe,520,0x199e4,0x19b69,0x0e99,0x170d,"there is no media in device
+"
+w31/extract/mdformat.exe,521,0x199e0,0x19b42,0x0e72,0x170d,"device reported that it is not ready
+"
+w31/extract/mdformat.exe,522,0x199dc,0x19b1b,0x0e4b,0x170d,"unable to allocate sufficient memory
+"
+w31/extract/mdformat.exe,523,0x199d8,0x19ae8,0x0e18,0x170d,"Unable to access \MDCTL
+Application will abort.
+"
+w31/extract/mdformat.exe,524,0x199d4,0x19ac7,0x0df7,0x170d,"MD component is not recognized
+"
+w31/extract/mdformat.exe,525,0x199d0,0x19aa2,0x0dd2,0x170d,"MD device manager is not installed
+"
+w31/extract/mdformat.exe,526,0x199cc,0x19a68,0x0d98,0x170d,"Unable to find MD DATA device.
+Application will abort.
+"
+w31/extract/mdformat.exe,527,0x199c8,0x19a47,0x0d77,0x170d,"drive is not an MD DATA device
+"
+w31/extract/mdformat.exe,528,0x199c4,0x19a24,0x0d54,0x170d,"operation completed successfully
+"
+w31/extract/mdformat.exe,816,0x19f08,0x19f55,0x1285,0x170d,Stack fault
+w31/extract/mdformat.exe,817,0x19f02,0x19f3b,0x126b,0x170d,Partial loss of precision
+w31/extract/mdformat.exe,818,0x19efc,0x19f31,0x1261,0x170d,Underflow
+w31/extract/mdformat.exe,819,0x19ef6,0x19f28,0x1258,0x170d,Overflow
+w31/extract/mdformat.exe,820,0x19ef0,0x19f1c,0x124c,0x170d,Divide by 0
+w31/extract/mdformat.exe,821,0x19eea,0x19f13,0x1243,0x170d,Denormal
+w31/extract/mdformat.exe,822,0x19ee4,0x19f0c,0x123c,0x170d,Domain
+w31/extract/mdformat.exe,876,0x1a63e,0x1a740,0x1a70,0x170d,December
+w31/extract/mdformat.exe,877,0x1a63a,0x1a737,0x1a67,0x170d,November
+w31/extract/mdformat.exe,878,0x1a636,0x1a72f,0x1a5f,0x170d,October
+w31/extract/mdformat.exe,879,0x1a632,0x1a725,0x1a55,0x170d,September
+w31/extract/mdformat.exe,880,0x1a62e,0x1a71e,0x1a4e,0x170d,August
+w31/extract/mdformat.exe,881,0x1a62a,0x1a719,0x1a49,0x170d,July
+w31/extract/mdformat.exe,882,0x1a626,0x1a714,0x1a44,0x170d,June
+w31/extract/mdformat.exe,883,0x1a622,0x1a710,0x1a40,0x170d,May
+w31/extract/mdformat.exe,884,0x1a61e,0x1a70a,0x1a3a,0x170d,April
+w31/extract/mdformat.exe,885,0x1a61a,0x1a704,0x1a34,0x170d,March
+w31/extract/mdformat.exe,886,0x1a616,0x1a6fb,0x1a2b,0x170d,February
+w31/extract/mdformat.exe,887,0x1a612,0x1a6f3,0x1a23,0x170d,January
+w31/extract/mdformat.exe,888,0x1a60e,0x1a6ef,0x1a1f,0x170d,Dec
+w31/extract/mdformat.exe,889,0x1a60a,0x1a6eb,0x1a1b,0x170d,Nov
+w31/extract/mdformat.exe,890,0x1a606,0x1a6e7,0x1a17,0x170d,Oct
+w31/extract/mdformat.exe,891,0x1a602,0x1a6e3,0x1a13,0x170d,Sep
+w31/extract/mdformat.exe,892,0x1a5fe,0x1a6df,0x1a0f,0x170d,Aug
+w31/extract/mdformat.exe,893,0x1a5fa,0x1a6db,0x1a0b,0x170d,Jul
+w31/extract/mdformat.exe,894,0x1a5f6,0x1a6d7,0x1a07,0x170d,Jun
+w31/extract/mdformat.exe,895,0x1a5f2,0x1a6d3,0x1a03,0x170d,May
+w31/extract/mdformat.exe,896,0x1a5ee,0x1a6cf,0x19ff,0x170d,Apr
+w31/extract/mdformat.exe,897,0x1a5ea,0x1a6cb,0x19fb,0x170d,Mar
+w31/extract/mdformat.exe,898,0x1a5e6,0x1a6c7,0x19f7,0x170d,Feb
+w31/extract/mdformat.exe,899,0x1a5e2,0x1a6c3,0x19f3,0x170d,Jan
+w31/extract/mdformat.exe,900,0x1a5de,0x1a6ba,0x19ea,0x170d,Saturday
+w31/extract/mdformat.exe,901,0x1a5da,0x1a6b3,0x19e3,0x170d,Friday
+w31/extract/mdformat.exe,902,0x1a5d6,0x1a6aa,0x19da,0x170d,Thursday
+w31/extract/mdformat.exe,903,0x1a5d2,0x1a6a0,0x19d0,0x170d,Wednesday
+w31/extract/mdformat.exe,904,0x1a5ce,0x1a698,0x19c8,0x170d,Tuesday
+w31/extract/mdformat.exe,905,0x1a5ca,0x1a691,0x19c1,0x170d,Monday
+w31/extract/mdformat.exe,906,0x1a5c6,0x1a68a,0x19ba,0x170d,Sunday
+w31/extract/mdformat.exe,907,0x1a5c2,0x1a686,0x19b6,0x170d,Sat
+w31/extract/mdformat.exe,908,0x1a5be,0x1a682,0x19b2,0x170d,Fri
+w31/extract/mdformat.exe,909,0x1a5ba,0x1a67e,0x19ae,0x170d,Thu
+w31/extract/mdformat.exe,910,0x1a5b6,0x1a67a,0x19aa,0x170d,Wed
+w31/extract/mdformat.exe,911,0x1a5b2,0x1a676,0x19a6,0x170d,Tue
+w31/extract/mdformat.exe,912,0x1a5ae,0x1a672,0x19a2,0x170d,Mon
+w31/extract/mdformat.exe,913,0x1a5aa,0x1a66e,0x199e,0x170d,Sun
+w31/extract/mdformat.exe,926,0x1a7fe,0x1aa0e,0x1d3e,0x170d,Possible deadlock
+w31/extract/mdformat.exe,927,0x1a7fa,0x1a9fa,0x1d2a,0x170d,File already exists
+w31/extract/mdformat.exe,928,0x1a7f6,0x1a9e9,0x1d19,0x170d,Result too large
+w31/extract/mdformat.exe,929,0x1a7f2,0x1a9db,0x1d0b,0x170d,Math argument
+w31/extract/mdformat.exe,940,0x1a7c6,0x1a9bf,0x1cef,0x170d,Cross-device link
+w31/extract/mdformat.exe,941,0x1a7c2,0x1a9ad,0x1cdd,0x170d,Exec format error
+w31/extract/mdformat.exe,942,0x1a7be,0x1a99c,0x1ccc,0x170d,Arg list too big
+w31/extract/mdformat.exe,943,0x1a7ba,0x1a98b,0x1cbb,0x170d,Invalid argument
+w31/extract/mdformat.exe,944,0x1a7b6,0x1a97d,0x1cad,0x170d,No more files
+w31/extract/mdformat.exe,945,0x1a7b2,0x1a96d,0x1c9d,0x170d,Not same device
+w31/extract/mdformat.exe,946,0x1a7ae,0x1a947,0x1c77,0x170d,Attempted to remove current directory
+w31/extract/mdformat.exe,947,0x1a7aa,0x1a938,0x1c68,0x170d,No such device
+w31/extract/mdformat.exe,949,0x1a7a2,0x1a92a,0x1c5a,0x170d,Invalid data
+w31/extract/mdformat.exe,950,0x1a79e,0x1a916,0x1c46,0x170d,Invalid access code
+w31/extract/mdformat.exe,951,0x1a79a,0x1a907,0x1c37,0x170d,Invalid format
+w31/extract/mdformat.exe,952,0x1a796,0x1a8f3,0x1c23,0x170d,Invalid environment
+w31/extract/mdformat.exe,953,0x1a792,0x1a8d6,0x1c06,0x170d,Invalid memory block address
+w31/extract/mdformat.exe,954,0x1a78e,0x1a8c4,0x1bf4,0x170d,Not enough memory
+w31/extract/mdformat.exe,955,0x1a78a,0x1a8af,0x1bdf,0x170d,Memory arena trashed
+w31/extract/mdformat.exe,956,0x1a786,0x1a89f,0x1bcf,0x170d,Bad file number
+w31/extract/mdformat.exe,957,0x1a782,0x1a88d,0x1bbd,0x170d,Permission denied
+w31/extract/mdformat.exe,958,0x1a77e,0x1a879,0x1ba9,0x170d,Too many open files
+w31/extract/mdformat.exe,959,0x1a77a,0x1a86a,0x1b9a,0x170d,Path not found
+w31/extract/mdformat.exe,960,0x1a776,0x1a850,0x1b80,0x170d,No such file or directory
+w31/extract/mdformat.exe,961,0x1a772,0x1a838,0x1b68,0x170d,Invalid function number
+w31/extract/mdformat.exe,962,0x1a76e,0x1a830,0x1b60,0x170d,Error 0
+w31/extract/mdfsck.exe,219,0x0e5b4,0x0e578,0x00a8,0x0dcd,"MDfsck version 1.4, Copyright (c) 1994 Sony Corporation.
+
+"
+w31/extract/mdfsck.exe,220,0x0e552,0x0e512,0x0042,0x0dcd,"$Header: mdfsck.c,v 8.0 94/09/29 01:21:54 igarashi Exp $ SONY;"
+w31/extract/mdfsck.exe,221,0x0e6a0,0x0e5b8,0x00e8,0x0dcd,"  MD DATA File System Check
+SYNTAX:
+  mdfsck drive: [-v?]
+PARAMETERS:
+  drive:  specifies dr"
+w31/extract/mdfsck.exe,222,0x0eb3e,0x0eb1b,0x064b,0x0dcd,AEXT32
+w31/extract/mdfsck.exe,223,0x0eb3a,0x0eb12,0x0642,0x0dcd,AINHCOPY
+w31/extract/mdfsck.exe,224,0x0eb36,0x0eb07,0x0637,0x0dcd,AINHRENAME
+w31/extract/mdfsck.exe,225,0x0eb32,0x0eafc,0x062c,0x0dcd,AINHFORMAT
+w31/extract/mdfsck.exe,226,0x0eb2e,0x0eaf4,0x0624,0x0dcd,ABACKUP
+w31/extract/mdfsck.exe,227,0x0eb2a,0x0eaeb,0x061b,0x0dcd,APROTECT
+w31/extract/mdfsck.exe,228,0x0eb26,0x0eae0,0x0610,0x0dcd,AINVISIBLE
+w31/extract/mdfsck.exe,229,0x0eb22,0x0ead8,0x0608,0x0dcd,AMIRROR
+w31/extract/mdfsck.exe,230,0x0ebf2,0x0ebbc,0x06ec,0x0dcd,AAEXTREC
+w31/extract/mdfsck.exe,231,0x0ebee,0x0ebb4,0x06e4,0x0dcd,AFXTREC
+w31/extract/mdfsck.exe,232,0x0ebea,0x0ebab,0x06db,0x0dcd,AEXTTYPE
+w31/extract/mdfsck.exe,233,0x0ebe6,0x0eba2,0x06d2,0x0dcd,AINHCOPY
+w31/extract/mdfsck.exe,234,0x0ebe2,0x0eb97,0x06c7,0x0dcd,AINHRENAME
+w31/extract/mdfsck.exe,235,0x0ebde,0x0eb8c,0x06bc,0x0dcd,AINHDELETE
+w31/extract/mdfsck.exe,236,0x0ebda,0x0eb84,0x06b4,0x0dcd,ABACKUP
+w31/extract/mdfsck.exe,237,0x0ebd6,0x0eb7b,0x06ab,0x0dcd,APROTECT
+w31/extract/mdfsck.exe,238,0x0ebd2,0x0eb72,0x06a2,0x0dcd,ADELETED
+w31/extract/mdfsck.exe,239,0x0ebce,0x0eb6a,0x069a,0x0dcd,ASYSTEM
+w31/extract/mdfsck.exe,240,0x0ebca,0x0eb5f,0x068f,0x0dcd,AINVISIBLE
+w31/extract/mdfsck.exe,241,0x0ebc6,0x0eb5a,0x068a,0x0dcd,ADIR
+w31/extract/mdfsck.exe,251,0x0f818,0x0f7dc,0x130c,0x0dcd,"$Header: buf.c,v 8.0 94/09/29 01:19:19 igarashi Exp $ SONY;"
+w31/extract/mdfsck.exe,262,0x0f85e,0x0f81e,0x134e,0x0dcd,"$Header: mdctlio.c,v 8.0 94/09/29 01:21:41 igarashi Exp $ SONY;"
+w31/extract/mdfsck.exe,297,0x0f8c2,0x0f8b9,0x13e9,0x0dcd,A:\MDCTL
+w31/extract/mdfsck.exe,298,0x0f8a4,0x0f862,0x1392,0x0dcd,"$Header: mdctllib.c,v 8.0 94/09/29 01:21:44 igarashi Exp $ SONY;"
+w31/extract/mdfsck.exe,348,0x0fe26,0x0fd84,0x18b4,0x0dcd,Unknown error
+w31/extract/mdfsck.exe,349,0x0fe22,0x0fd66,0x1896,0x0dcd,Resource deadlock would occur
+w31/extract/mdfsck.exe,351,0x0fe1a,0x0fd54,0x1884,0x0dcd,Result too large
+w31/extract/mdfsck.exe,352,0x0fe16,0x0fd46,0x1876,0x0dcd,Math argument
+w31/extract/mdfsck.exe,357,0x0fe02,0x0fd2a,0x185a,0x0dcd,No space left on device
+w31/extract/mdfsck.exe,361,0x0fdf2,0x0fd13,0x1843,0x0dcd,Too many open files
+w31/extract/mdfsck.exe,363,0x0fdea,0x0fd01,0x1831,0x0dcd,Invalid argument
+w31/extract/mdfsck.exe,367,0x0fdda,0x0fcec,0x181c,0x0dcd,Cross-device link
+w31/extract/mdfsck.exe,368,0x0fdd6,0x0fce0,0x1810,0x0dcd,File exists
+w31/extract/mdfsck.exe,372,0x0fdc6,0x0fccb,0x17fb,0x0dcd,Permission denied
+w31/extract/mdfsck.exe,373,0x0fdc2,0x0fcb9,0x17e9,0x0dcd,Not enough memory
+w31/extract/mdfsck.exe,376,0x0fdb6,0x0fca7,0x17d7,0x0dcd,Bad file number
+w31/extract/mdfsck.exe,377,0x0fdb2,0x0fc95,0x17c5,0x0dcd,Exec format error
+w31/extract/mdfsck.exe,378,0x0fdae,0x0fc83,0x17b3,0x0dcd,Arg list too long
+w31/extract/mdfsck.exe,383,0x0fd9a,0x0fc65,0x1795,0x0dcd,No such file or directory
+w31/extract/mdfsck.exe,385,0x0fd92,0x0fc5c,0x178c,0x0dcd,Error 0

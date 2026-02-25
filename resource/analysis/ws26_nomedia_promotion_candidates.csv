@@ -1,0 +1,11 @@
+candidate_id,field_group,signature,status,notes
+nomedia_common_01,ioctl_lane,AX=0x4400 BX=0x0000 CX=0x0017 DX=0x0000 DS:DX=00d8:0000,inferred_repeatable,common across 6 scenarios x2 runs; non-MD-media
+nomedia_common_02,ioctl_lane,AX=0x4400 BX=0x0000 CX=0x0017 DX=0x0000 DS:DX=1f9e:0000,inferred_repeatable,common across 6 scenarios x2 runs; non-MD-media
+nomedia_common_03,ioctl_lane,AX=0x4400 BX=0x0001 CX=0x0200 DX=0x0000 DS:DX=00d8:0000,inferred_repeatable,common across 6 scenarios x2 runs; non-MD-media
+nomedia_common_04,ioctl_lane,AX=0x4400 BX=0x0001 CX=0x0200 DX=0x0000 DS:DX=1f9e:0000,inferred_repeatable,common across 6 scenarios x2 runs; non-MD-media
+nomedia_common_05,ioctl_lane,AX=0x4400 BX=0x0005 CX=0x0000 DX=0x4001 DS:DX=00d8:4001,inferred_repeatable,common across 6 scenarios x2 runs; non-MD-media
+nomedia_common_06,ioctl_lane,AX=0x4400 BX=0x0005 CX=0x0000 DX=0x4001 DS:DX=1f9e:4001,inferred_repeatable,common across 6 scenarios x2 runs; non-MD-media
+nomedia_common_07,ioctl_lane,AX=0x4400 BX=0x0005 CX=0x0000 DX=0x8001 DS:DX=00d8:8001,inferred_repeatable,common across 6 scenarios x2 runs; non-MD-media
+nomedia_common_08,ioctl_lane,AX=0x4400 BX=0x0005 CX=0x0000 DX=0x8001 DS:DX=1f9e:8001,inferred_repeatable,common across 6 scenarios x2 runs; non-MD-media
+nomedia_common_09,ioctl_lane,AX=0x4400 BX=0x0200 CX=0x0000 DX=0x0000 DS:DX=00d8:0000,inferred_repeatable,common across 6 scenarios x2 runs; non-MD-media
+nomedia_common_10,ioctl_lane,AX=0x4400 BX=0x4400 CX=0x0087 DX=0x0087 DS:DX=0010:0087,inferred_repeatable,common across 6 scenarios x2 runs; non-MD-media

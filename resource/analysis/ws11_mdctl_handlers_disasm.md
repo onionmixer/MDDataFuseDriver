@@ -1,0 +1,280 @@
+# WS11 MDCTL Handler Disassembly
+
+Date: 2026-02-17
+
+## w31/extract/mdcache.exe
+- header_size: `0x1000`
+### handler @ `0x01818`
+```asm
+0x01818: push ax
+0x01819: nop
+0x0181a: push cs
+0x0181b: call 0x5205
+0x0181e: add sp, 0x1a
+0x01821: pop di
+0x01822: pop si
+0x01823: mov sp, bp
+0x01825: pop bp
+0x01826: retf
+0x01827: push bp
+0x01828: mov bp, sp
+0x0182a: sub sp, 4
+0x0182d: push si
+0x0182e: push di
+0x0182f: mov dx, word ptr [0xa44]
+0x01833: mov ax, word ptr [0xa42]
+0x01836: mov word ptr [bp - 2], dx
+0x01839: mov word ptr [bp - 4], ax
+0x0183c: mov dx, word ptr [bp + 8]
+0x0183f: mov ax, word ptr [bp + 6]
+0x01842: mov word ptr [0xa44], dx
+0x01846: mov word ptr [0xa42], ax
+0x01849: mov dx, word ptr [bp - 2]
+```
+### handler @ `0x0182c`
+```asm
+0x0182c: add al, 0x56
+0x0182e: push di
+0x0182f: mov dx, word ptr [0xa44]
+0x01833: mov ax, word ptr [0xa42]
+0x01836: mov word ptr [bp - 2], dx
+0x01839: mov word ptr [bp - 4], ax
+0x0183c: mov dx, word ptr [bp + 8]
+0x0183f: mov ax, word ptr [bp + 6]
+0x01842: mov word ptr [0xa44], dx
+0x01846: mov word ptr [0xa42], ax
+0x01849: mov dx, word ptr [bp - 2]
+0x0184c: mov ax, word ptr [bp - 4]
+0x0184f: pop di
+0x01850: pop si
+0x01851: mov sp, bp
+0x01853: pop bp
+0x01854: retf
+0x01855: push bp
+0x01856: mov bp, sp
+0x01858: sub sp, 4
+0x0185b: push si
+0x0185c: push di
+0x0185d: mov word ptr [bp - 2], 0
+0x01862: mov word ptr [bp - 4], 0
+```
+### handler @ `0x01840`
+```asm
+0x01840: inc si
+0x01841: push es
+0x01842: mov word ptr [0xa44], dx
+0x01846: mov word ptr [0xa42], ax
+0x01849: mov dx, word ptr [bp - 2]
+0x0184c: mov ax, word ptr [bp - 4]
+0x0184f: pop di
+0x01850: pop si
+0x01851: mov sp, bp
+0x01853: pop bp
+0x01854: retf
+0x01855: push bp
+0x01856: mov bp, sp
+0x01858: sub sp, 4
+0x0185b: push si
+0x0185c: push di
+0x0185d: mov word ptr [bp - 2], 0
+0x01862: mov word ptr [bp - 4], 0
+0x01867: cmp word ptr [bp + 6], 0
+0x0186b: je 0x1872
+0x0186d: mov ax, word ptr [bp + 6]
+0x01870: jmp 0x1875
+0x01872: mov ax, 1
+0x01875: mov word ptr [bp + 6], ax
+```
+### handler @ `0x01854`
+```asm
+0x01854: retf
+0x01855: push bp
+0x01856: mov bp, sp
+0x01858: sub sp, 4
+0x0185b: push si
+0x0185c: push di
+0x0185d: mov word ptr [bp - 2], 0
+0x01862: mov word ptr [bp - 4], 0
+0x01867: cmp word ptr [bp + 6], 0
+0x0186b: je 0x1872
+0x0186d: mov ax, word ptr [bp + 6]
+0x01870: jmp 0x1875
+0x01872: mov ax, 1
+0x01875: mov word ptr [bp + 6], ax
+0x01878: jmp 0x187e
+0x0187a: lcall [0xa42]
+0x0187e: push word ptr [bp + 6]
+0x01881: nop
+0x01882: push cs
+0x01883: call 0x226e
+0x01886: pop cx
+0x01887: mov word ptr [bp - 2], dx
+0x0188a: mov word ptr [bp - 4], ax
+0x0188d: or ax, dx
+```
+### handler @ `0x01868`
+```asm
+0x01868: jle 0x1870
+0x0186a: add byte ptr [si + 5], dh
+0x0186d: mov ax, word ptr [bp + 6]
+0x01870: jmp 0x1875
+0x01872: mov ax, 1
+0x01875: mov word ptr [bp + 6], ax
+0x01878: jmp 0x187e
+0x0187a: lcall [0xa42]
+0x0187e: push word ptr [bp + 6]
+0x01881: nop
+0x01882: push cs
+0x01883: call 0x226e
+0x01886: pop cx
+0x01887: mov word ptr [bp - 2], dx
+0x0188a: mov word ptr [bp - 4], ax
+0x0188d: or ax, dx
+0x0188f: jne 0x189a
+0x01891: mov ax, word ptr [0xa42]
+0x01894: or ax, word ptr [0xa44]
+0x01898: jne 0x187a
+0x0189a: mov dx, word ptr [bp - 2]
+0x0189d: mov ax, word ptr [bp - 4]
+0x018a0: pop di
+0x018a1: pop si
+```
+
+## w31/extract/mdformat.exe
+- header_size: `0x1c00`
+### handler @ `0x02f5a`
+```asm
+0x02f5a: lds si, ptr [bp + 4]
+0x02f5d: les di, ptr [bp + 8]
+0x02f60: cld
+0x02f61: shr cx, 1
+0x02f63: rep movsw word ptr es:[di], word ptr [si]
+0x02f65: adc cx, cx
+0x02f67: rep movsb byte ptr es:[di], byte ptr [si]
+0x02f69: pop ds
+0x02f6a: pop di
+0x02f6b: pop si
+0x02f6c: pop bp
+0x02f6d: ret 8
+0x02f70: push si
+0x02f71: push di
+0x02f72: push ds
+0x02f73: mov ax, 0x170d
+0x02f76: mov ds, ax
+0x02f78: push ds
+0x02f79: mov ax, 0x1598
+0x02f7c: push ax
+0x02f7d: nop
+0x02f7e: push cs
+0x02f7f: call 0x2775
+0x02f82: mov ax, 1
+```
+### handler @ `0x02f6e`
+```asm
+0x02f6e: or byte ptr [bx + si], al
+0x02f70: push si
+0x02f71: push di
+0x02f72: push ds
+0x02f73: mov ax, 0x170d
+0x02f76: mov ds, ax
+0x02f78: push ds
+0x02f79: mov ax, 0x1598
+0x02f7c: push ax
+0x02f7d: nop
+0x02f7e: push cs
+0x02f7f: call 0x2775
+0x02f82: mov ax, 1
+0x02f85: push ax
+0x02f86: nop
+0x02f87: push cs
+0x02f88: call 0x27fe
+0x02f8b: add sp, 6
+0x02f8e: pop ds
+0x02f8f: pop di
+0x02f90: pop si
+0x02f91: ret
+0x02f92: push si
+0x02f93: push di
+```
+### handler @ `0x02f82`
+```asm
+0x02f82: mov ax, 1
+0x02f85: push ax
+0x02f86: nop
+0x02f87: push cs
+0x02f88: call 0x27fe
+0x02f8b: add sp, 6
+0x02f8e: pop ds
+0x02f8f: pop di
+0x02f90: pop si
+0x02f91: ret
+0x02f92: push si
+0x02f93: push di
+0x02f94: push ds
+0x02f95: mov ax, 0x170d
+0x02f98: mov ds, ax
+0x02f9a: push ds
+0x02f9b: mov ax, 0x15b5
+0x02f9e: push ax
+0x02f9f: nop
+0x02fa0: push cs
+0x02fa1: call 0x2775
+0x02fa4: mov ax, 1
+0x02fa7: push ax
+0x02fa8: nop
+```
+### handler @ `0x02f96`
+```asm
+0x02f96: or ax, 0x8e17
+0x02f99: fcomp dword ptr [0xb5b8]
+0x02f9d: adc ax, 0x9050
+0x02fa0: push cs
+0x02fa1: call 0x2775
+0x02fa4: mov ax, 1
+0x02fa7: push ax
+0x02fa8: nop
+0x02fa9: push cs
+0x02faa: call 0x27fe
+0x02fad: add sp, 6
+0x02fb0: pop ds
+0x02fb1: pop di
+0x02fb2: pop si
+0x02fb3: retf
+0x02fb4: push bp
+0x02fb5: mov bp, sp
+0x02fb7: push si
+0x02fb8: push di
+0x02fb9: mov bx, word ptr [bp + 6]
+0x02fbc: add bx, bx
+0x02fbe: test byte ptr [bx + 0x14ec], 2
+0x02fc3: je 0x2fcb
+0x02fc5: mov ax, 5
+```
+### handler @ `0x02faa`
+```asm
+0x02faa: call 0x27fe
+0x02fad: add sp, 6
+0x02fb0: pop ds
+0x02fb1: pop di
+0x02fb2: pop si
+0x02fb3: retf
+0x02fb4: push bp
+0x02fb5: mov bp, sp
+0x02fb7: push si
+0x02fb8: push di
+0x02fb9: mov bx, word ptr [bp + 6]
+0x02fbc: add bx, bx
+0x02fbe: test byte ptr [bx + 0x14ec], 2
+0x02fc3: je 0x2fcb
+0x02fc5: mov ax, 5
+0x02fc8: push ax
+0x02fc9: jmp 0x2fdf
+0x02fcb: push ds
+0x02fcc: mov ah, 0x3f
+0x02fce: mov bx, word ptr [bp + 6]
+0x02fd1: mov cx, word ptr [bp + 0xc]
+0x02fd4: lds dx, ptr [bp + 8]
+0x02fd7: int 0x21
+0x02fd9: pop ds
+```
+

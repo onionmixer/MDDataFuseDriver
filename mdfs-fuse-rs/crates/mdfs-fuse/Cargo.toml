@@ -1,0 +1,12 @@
+[package]
+name = "mdfs-fuse"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[lib]
+path = "src/lib.rs"
+
+[dependencies]
+mdfs-layout = { path = "../mdfs-layout" }
+mdfs-index = { path = "../mdfs-index" }

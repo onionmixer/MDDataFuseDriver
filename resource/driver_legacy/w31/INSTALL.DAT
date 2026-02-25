@@ -1,0 +1,935 @@
+/*
+Copyright (c) 1994-95, Sony Corporation. All rights reserved.
+  INSTALL.DAT
+  Project: MD DATA for DOS
+  $Revision: 1.81 $
+*/
+
+@DefineProject
+ @Name = "MD DATA for DOS"
+ @Version = "1.81"
+ @Subdir = "\\MDDATA"
+ @OutDrive = @BootDrive
+ @InDiskBell = @TRUE
+@EndProject
+
+@DefineVars
+ @Integer @Basic = 1
+ @Integer @MDFS = 64
+ @Integer @utilDOS = 295
+ @Integer @utilWindows = 837   
+ @Integer @dock1 = 39
+ @Integer @dock2 = 0
+ @Integer @StandardPC = 0
+ @Integer @setup = 429
+ @Integer @TSIZE = @Eval(@Basic+@MDFS+@utilDOS+@utilWindows)
+ @Integer @Red = @RGB(255,0,0)   //DEFINE COLOR RED
+ @Integer @Green = @RGB(0,255,0) //DEFINE COLOR GREEN
+ @Integer @Blue = @RGB(0,0,255)  //DEFINE COLOR BLUE
+ @Integer @Black = @RGB(0,0,0)   //DEFINE COLOR BLACK
+ @Integer @V = @VideoCard
+ @Qstring @dcamAddr = "CA00"
+ @Qstring @dcamIRQ  = "11"
+ @Qstring @Item1 = "MD DATA"
+ @Qstring @Item2 = "@OutDrive:\\@Subdir\\wMDplay.exe"
+ @Qstring @Item3 = "@OutDrive:\\@Subdir\\wMDfmt.exe" 
+ @Qstring @Tile1 = "MDplay"
+ @Qstring @Tile2 = "MDformat"   
+ @Qstring @Tile3 = "MDfscheck"   
+@If(@Platform == 3)  /* Windows */
+ @Qstring @DiskAccess = "@GetINI("386enh","32BitDiskAccess","system.ini")"
+ @Qstring @MDriver = "@GetINI("boot.description","mouse.drv","system.ini")"
+ @Qstring @NetDriver = "@GetINI("boot","network.drv","system.ini")"
+ @Qstring @DispDriver = "@GetINI("boot","display.drv","system.ini")"
+ @Qstring @WinShell = "@GetINI("boot","shell","system.ini")"
+@Else /* NOT Windows */
+ @Qstring @DiskAccess = "N/A"
+ @Qstring @MDriver = "N/A"
+ @Qstring @NetDriver = "N/A"
+ @Qstring @DispDriver = "N/A"
+ @Qstring @WinShell = "N/A"
+@EndIf
+@EndVars
+
+@BackgroundMode(3,@Blue,@Black)
+/*
+** SIGN-ON
+*/
+@If(@Platform == 3) /* Windows */
+@Display
+ welcome                        yookoso
+
+ Your are installing
+ @Name, release @Version
+ 
+ Copyright (c) 1994-95 Sony Corporation
+ All right reserved.
+
+ 
+ 
+ 
+
+ This program installs software
+ necessary to operate MD Data
+ on Dos/Windows.
+ 
+
+@Pause
+@Enddisplay
+@Else
+/* NOT Windows */
+@movecstr( 1,48,78,"ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»")
+@movecstr( 2,48,78,"º                         º")
+@movecstr( 3,48,78,"º                         º")
+@movecstr( 4,48,78,"º                         º")
+@movecstr( 5,48,78,"º                         º")
+@movecstr( 6,48,78,"º                         º")
+@movecstr( 7,48,78,"º                         º")
+@movecstr( 8,48,78,"º                         º")
+@movecstr( 9,48,78,"º                         º")
+@movecstr(10,48,78,"º                         º")
+@movecstr(11,48,78,"º                         º")
+@movecstr(12,48,78,"º                         º")
+@movecstr(13,48,78,"º                         º")
+@movecstr(14,48,78,"º                         º")
+@movecstr(15,48,78,"ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼")
+@movecstr( 2,49,79,"   Copyright (c) 1994-95 ")
+@movecstr( 3,49,79,"   Sony Corporation    ")
+@movecstr( 4,49,79,"   All rights reserved   ")
+@movecstr( 10,49,79,"   This program installs ")
+@movecstr( 11,49,79,"   software necessary ")
+@movecstr( 12,49,79,"   to operate MD Data ")
+@movecstr( 13,49,79,"   on Dos/Windows ")
+@movecstr( 2,78, 0,"  ")
+@movecstr( 3,78, 0,"  ")
+@movecstr( 4,78, 0,"  ")
+@movecstr( 5,78, 0,"  ")
+@movecstr( 6,78, 0,"  ")
+@movecstr( 7,78, 0,"  ")
+@movecstr( 8,78, 0,"  ")
+@movecstr( 9,78, 0,"  ")
+@movecstr(10,78, 0,"  ")
+@movecstr(11,78, 0,"  ")
+@movecstr(12,78, 0,"  ")
+@movecstr(13,78, 0,"  ")
+@movecstr(14,78, 0,"  ")
+@movecstr(15,78, 0,"  ")
+@movecstr(16,50, 0,  "                           ")
+@movecstr( 5, 5, 63,"ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿")
+@movecstr( 6, 5, 63,"³")@movecstr(6,43,63,"³")
+@movecstr( 7, 5, 63,"³")@movecstr(7,43,63,"³")
+@movecstr( 8, 5, 63,"³")@movecstr(8,43,63,"³")
+@movecstr( 9, 5, 63,"³")@movecstr(9,43,63,"³")
+@movecstr(10, 5, 63,"ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ")
+@movecstr(11,78, 0,"  ")
+@movecstr( 6, 6, 63,"  welcome                   yookoso  ")
+@movecstr( 7, 5, 63,"ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´")
+@movecstr( 8, 6, 63,"  You are installing                 ")
+@movecstr( 9, 6, 63,"  @Name, release @Version      ")
+@movecstr(11, 6, 63, "                                    ")   
+@movecstr( 6,44,0,"  ")
+@movecstr( 7,44,0,"  ")
+@movecstr( 8,44,0,"  ")
+@movecstr( 9,44,0,"  ")
+@movecstr(10,44,0,"  ")
+@movecstr(11,44,0,"  ")
+@movecstr(11, 6,0,"                                        ")
+@display
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				    @Pause
+@EndDisplay
+@EndIf
+
+Mode:
+@ClearOption(1011) @ClearOption(1012) @ClearOption(1013)                    
+
+@If(@Platform == 3) /* Windows */
+ @BackgroundMode(3,@Blue,@Black) //set background to blue/black
+ @DlgCtrlSize(0,5,10,10,25)
+ @GetOption  @Prompt = "Select Mode to Install MD DATA software"
+
+  Choose a method to install MD Data.
+
+  @Option 1011 = "Default Install"
+  @Option 1012 = "Custom Install"
+  @Option 1013 = "Troubleshoot"
+ @EndOption
+
+@Else /* NOT Windows */
+ @GetOption 
+ @LocalWindow(9,35)
+  
+  Choose a method to install MD Data.
+
+ @Option 1011 = "Default Install"
+ @Option 1012 = "Custom Install"
+ @Option 1013 = "Troubleshoot"
+ @EndOption
+@EndIf                                                                       
+
+@If(1013 [= @Option)
+@If(@Platform == 3) /* Windows */
+
+   @Display
+   Your computer has the following characteristics. This information will also
+   be saved in install.log in the directory where you install @Name.
+   This information will be useful should you require technical support.
+
+   Your processor is an .................................................. 80@CPU
+   DOS version ................................................................ @OSMajor.@OSMinor
+   Total RAM  ................................................................... @Eval(@RAMtotal/1024)K
+   Total EXT memory ....................................................... @Eval(@EXTtotal/1024)K
+   Bootdrive ..................................................................... @BootDrive:
+   Startup Drive and Directory ......................................... @StartUpDrive:@StartUpDir
+   Drive @OutDrive: is .................................................................... @If(@Removable(@outdrive))@!REMOVABLE @Else@!NON-REMOVABLE @EndIf
+   Drive @OutDrive: free space remaining ..................................... @Eval(@DiskFree(@outdrive)/1024000) MB
+   The Location of @OutDrive: is .................................................... @if(@DriveRemote(@outdrive))@!REMOTE @Else@!LOCAL @Endif
+   Windows is located in .................................................. @WindowsDrive:@WindowsDir
+   Windows version .......................................................... @WindowsMajor.@WindowsMinor
+   Windows current mode of operation ............................. @If(@WindowsMode == 1)@!STANDARD @ElseIf(@WindowsMode == 2)@!ENHANCED @Else@!REAL @EndIf
+   Display driver ............................................................... @DispDriver
+   Video adapter ................................................................@If(@V == 77 || @V == 72) MONO @ElseIf(@V == 69) EGA @ElseIf(@V == 86) VGA or better @ElseIf(@V == 67) CGA @Else UNKNOWN @EndIf
+   Network Driver is .......................................................... @If(@StrLen("@NetDriver") < 1)@!NOT INSTALLED @Else@!@NetDriver @EndIf
+   @Pause
+   @EndDisplay
+
+@Else /* NOT Windows */
+
+
+   @Display
+   Your computer has the following characteristics. This information will also
+   be saved in install.log in the directory where you install @Name.
+   This information will be useful should you require technical support.
+
+   Your processor is an ........................... 80@CPU
+   DOS version .................................... @OSMajor.@OSMinor
+   Available RAM memory ........................... @Eval(@RAMavail/1024)K
+   Available EXT memory ........................... @Eval(@EXTavail/1024)K
+   Available EMM memory ........................... @Eval(@EMMavail/1024)K
+   EMM version .................................... @EMMmajor.@EMMminor
+   Bootdrive ...................................... @BootDrive:
+   Startup Drive and Directory .................... @StartUpDrive:@StartUpDir
+   Drive @OutDrive: is .................................... @If(@Removable(@outdrive))@!REMOVABLE @Else@!NON-REMOVABLE @EndIf
+   Drive @OutDrive: free space remaining .................. @Eval(@DiskFree(@outdrive)/1024000) MB
+   The Location of @OutDrive: is .......................... @if(@DriveRemote(@outdrive))@!REMOTE @Else@!LOCAL @Endif
+   Video adapter ..................................@If(@V == 77 || @V == 72) MONO @ElseIf(@V == 69) EGA @ElseIf(@V == 86) VGA or better @ElseIf(@V == 67) CGA @Else UNKNOWN @EndIf
+
+				    @Pause
+   @EndDisplay
+  @Endif
+@Endif
+
+@If (1013 [= @Option) @Goto Mode @Endif
+/*
+** specify destination drive
+*/
+NEWDRIVE:  // Goto label for reselecting drive
+@BackgroundMode(3,@Blue,@Black)
+@If(@Platform == 3) /* Windows */
+  @If(1012 [= @Option)
+  @GetOutDrive @OutDrive @Prompt = "Enter target drive"                    
+   @DlgCtrlSize(0,9,15,15,26)
+
+   Please select the drive where you wish @Name
+   to be installed. The boot drive of your computer is
+   the recommended and default selection.
+
+			   Press Enter when complete.
+  @EndOutDrive
+  @SetOption(1012)
+  @EndIf
+ 
+@Else /* NOT Windows */
+   @If(1012 [= @Option)
+   @GetOutDrive @OutDrive
+   @Prompt = "Enter target drive"
+   
+   @LocalWindow(19,40)
+
+  Please select the drive where you wish @Name
+  to be installed. The boot drive of your computer is
+  the recommended and default selection.
+
+			   Press Enter when complete.
+  @EndOutDrive
+  @EndIf
+@Endif
+
+/*
+** specify destination directory
+*/
+NEWDIR:
+//@BackgroundMode(3,@Blue,@Black)
+
+@If(@Platform == 3) /* Windows */
+  @If(1012 [= @Option)
+   @GetSubdir @Subdir @Prompt = "Enter target subdirectory"
+   @DlgCtrlSize(0,10,0,11,35)
+  Please select the directory in which you wish
+  @Name to be installed.
+
+  If you already have an earlier version of @Name installed,
+  use the same directory as before.
+   @EndSubdir
+  @Endif
+@Else /* NOT Windows */
+@If (1012 [= @Option)
+@GetSubdir @Subdir @Prompt = "Enter target subdirectory"
+@LocalWindow(12,45)
+  Please select the directory in which you wish
+  @Name to be installed.
+
+  If you already have an earlier version of @Name installed,
+  use the same directory as before.
+@EndSubdir
+@Endif
+@EndIf
+/*
+** BeginLOG
+*/
+@MkDir("@OutDrive:\\@Subdir")
+
+@If(@Platform == 3) /* Windows */
+@WRITE("@OutDrive:\\@Subdir\\install.log", "wt", "Sony Installation Log\n\n[host]\n")
+@WRITE("@OutDrive:\\@Subdir\\install.log", "at", "name: @Name\nversion: @Version\ntime: @DateToStr(@SystemDate())\nplatform: @Platform\n")
+@WRITE("@OutDrive:\\@Subdir\\install.log", "at", "DOS: @OSMajor.@OSMinor\nprocessor: 80@CPU\ntotalRAM: @Eval(@RAMtotal/1024)K\navailRAM: @Eval(@RAMavail/1024)K\n")
+@WRITE("@OutDrive:\\@Subdir\\install.log", "at", "totalEXT: @Eval(@EXTtotal/1024)K\navailEXT: @Eval(@EXTavail/1024)K\navailEMM: @Eval(@EMMavail/1024)K\nEMM: @EMMmajor.@EMMminor\n")
+@WRITE("@OutDrive:\\@Subdir\\install.log", "at", "EMMframe: @WindowsEMSframe\nBoot: @BootDrive:\nbootType: @DriveRemote(@outdrive)\nstartup: @StartUpDrive:@StartUpDir\n")
+@WRITE("@OutDrive:\\@Subdir\\install.log", "at", "dest: @OutDrive:\\@Subdir\ndestSpace: @Eval(@DiskFree(@outdrive)/1024000) MB\n")
+@WRITE("@OutDrive:\\@Subdir\\install.log", "at", "wPath: @WindowsDrive:@WindowsDir\nwVer: @WindowsMajor.@WindowsMinor\n")
+@WRITE("@OutDrive:\\@Subdir\\install.log", "at", "wMode: @WindowsMode\nwNet: @NetDriver\n")
+@else /* NOT Windows */
+@WRITE("@OutDrive:\\@Subdir\\install.log", "wt", "Sony Installation Log\n\n[host]\n")
+@WRITE("@OutDrive:\\@Subdir\\install.log", "at", "name: @Name\nversion: @Version\ntime: @DateToStr(@SystemDate())\nplatform: @Platform\n")
+@WRITE("@OutDrive:\\@Subdir\\install.log", "at", "DOS: @OSMajor.@OSMinor\nprocessor: 80@CPU\ntotalRAM: @Eval(@RAMtotal/1024)K\navailRAM: @Eval(@RAMavail/1024)K\n")
+@WRITE("@OutDrive:\\@Subdir\\install.log", "at", "totalEXT: @Eval(@EXTtotal/1024)K\navailEXT: @Eval(@EXTavail/1024)K\navailEMM: @Eval(@EMMavail/1024)K\nEMM: @EMMmajor.@EMMminor\n")
+@WRITE("@OutDrive:\\@Subdir\\install.log", "at", "EMMframe: @WindowsEMSframe\nBoot: @BootDrive:\nbootType: @DriveRemote(@outdrive)\nstartup: @StartUpDrive:@StartUpDir\n")
+@WRITE("@OutDrive:\\@Subdir\\install.log", "at", "dest: @OutDrive:\\@Subdir\ndestSpace: @Eval(@DiskFree(@outdrive)/1024000) MB\n")
+@EndIf
+
+/*
+** specify MD DATA software to install
+*/
+@SetOption(1001) @SetOption(1002) @SetOption(1006) @ClearOption(1003) @ClearOption(1004) @SetOption(1005)
+
+LOOP:
+@If (1012 [= @Option)
+  @BackgroundMode(3,@Blue,@Black) //set background to blue/black
+  @If(@Platform == 3) /* Windows */
+   @DlgCtrlSize(0,5,10,9,38)
+   @GetOption @Checkbox @Prompt = "Select MD DATA software to install"
+     By default, all of the MD DATA software will be installed.
+     Choose which software you wish to install.
+
+     @Option 1001 = "MD DATA system software"
+     @Option 1002 = "MD DATA DOS Utilities"
+     @Option 1006 = "MD DATA Windows Utilities"
+   @EndOption
+
+  @Else /* NOT Windows */
+    @GetOption @Checkbox @LocalWindow(9,35)
+     By default, all of the MD DATA software will be installed.
+     Choose which software you wish to install.
+
+
+	  Press space to toggle. Press Enter when complete.
+     @Option 1001 = "MD DATA system software"
+     @Option 1002 = "MD DATA DOS utilities"
+     @Option 1006 = "MD DATA Windows Utilities"
+   @EndOption
+  @EndIf
+
+@Endif
+/*
+** specify host software to install
+*/
+@If(@Platform == 3) /* Windows */
+@DlgCtrlSize(0,5,10,9,38)
+@GetOption @Prompt = "Select computer type"
+ Choose which special software you need installed.
+ By default, no special software will be installed.
+
+@Option 1005 = "Standard PC"
+@Option 1003 = "install DOCK 1 software"
+@Option 1004 = "install DOCK 2 software"
+@EndOption
+
+@Else /* NOT Windows */
+ @GetOption @LocalWindow(9,35)
+  Choose which special software you need installed.
+  By default, no special software will be installed.
+
+	  Press space to toggle. Press Enter when complete.
+ @Option 1005 = "Standard PC"
+ @Option 1003 = "install DOCK 1 software"
+ @Option 1004 = "install DOCK 2 software"
+ @EndOption
+@EndIf
+/*
+** does destination have enough capacity?
+*/ 
+@If (1012 [= @Option)
+  @if (1001 [! @option) @mdfs = 0  @EndIf
+  @if (1002 [! @option) @utilDOS = 0 @EndIf
+  @If (1006 [! @Option) @utilWindows = 0 @EndIf
+@Endif
+
+@If (1003 [! @option) @dock1 = 0 @EndIf
+
+// add selected options' size requirements
+@TSIZE = @Eval((@Basic+@mdfs+@utilDOS+@utilWindows+@dock1))
+
+@If(@TSIZE*1024 > @DiskFree(@OutDrive))
+ @BackgroundMode(3,@Red,@Red)
+ @Display
+		The drive you have selected does not have
+		enough available capacity to install all of
+		the options you have selected.
+
+		Please select another drive.
+				    @Pause
+ @EndDisplay
+ @GOTO NEWDRIVE
+@EndIf
+
+@If(1012 [= @Option)
+  @BackgroundMode(3,@Blue,@Black)
+  @ClearOption(1500) @ClearOption(1600) @SetOption(1700)
+
+  @If(@Platform == 3) /* Windows */
+    @DlgCtrlSize(0,13,12,17,32)
+    @GetOption @Prompt = "Selected files summary"
+      @if(1001 [= @option) MD DATA system software      @MDFS K @Else MD DATA system software      WILL NOT BE INSTALLED @EndIf
+      @if(1002 [= @option) MD DATA DOS utilities             @utilDOS K @Else MD DATA DOS utilities             WILL NOT BE INSTALLED @EndIf
+      @if(1006 [= @option) MD DATA Windows utilities     @utilWindows K @Else MD DATA Windows utilities     WILL NOT BE INSTALLED @EndIf
+      @if(1003 [= @option) DOCK 1 software                      @dock1 K @Else DOCK 1 software                      WILL NOT BE INSTALLED @EndIf
+
+      The selected files will require a total of:  @TSIZE K bytes.
+      The destination drive currently selected has:  @Eval(@DiskFree(@OutDrive)/1K) K free.
+
+      You may:
+      @Option 1700 = "Continue"
+      @Option 1500 = "Quit"
+      @Option 1600 = "Reselect Options"
+    @EndOption
+
+  @Else /* NOT Windows */
+    @GetOption @Prompt = "selected files summary"  @LocalWindow(17,25)
+      You have selected to install the following options.
+      @if(1001 [= @option) MD DATA system software          @MDFS K @Else MD DATA system software          WILL NOT BE INSTALLED @EndIf
+      @if(1002 [= @option) MD DATA DOS utilities            @utilDOS K @Else MD DATA DOS utilities            WILL NOT BE INSTALLED @EndIf
+      @if(1006 [= @option) MD DATA Windows utilities        @utilWindows K @Else MD DATA Windows utilities        WILL NOT BE INSTALLED @EndIf
+      @if(1003 [= @option) DOCK 1 software                  @dock1 K @Else DOCK 1 software                  WILL NOT BE INSTALLED @EndIf
+
+      The selected files will require a total of:   @TSIZE K bytes.
+      The destination drive currently selected has: @Eval(@DiskFree(@OutDrive)/1K) K free.
+
+      You may:
+      @Option 1700 = "Continue"
+      @Option 1500 = "Quit"
+      @Option 1600 = "Reselect Options"
+    @EndOption
+  @EndIf
+
+  @If(1500 [= @Option)
+    @Exit
+  @EndIf
+
+  @If(1600 [= @Option)
+    @GOTO Loop
+  @EndIf
+
+@EndIf
+/*
+** FILES to install
+*/
+@DefineDisk
+
+@Label = "DISK 1/1"
+
+// These files are always installed.
+@File read.me     //@OUT @Outdrive:\@SUBDIR\*.*
+
+// MDFS
+@If(1001 [= @Option)
+ @BeginLib mdsys.red
+   @FILE mdfsex.exe 
+   @FILE mdmgr.exe  
+ @EndLib
+@EndIf
+
+// utilDOS
+@If(1002 [= @Option)
+ @BeginLib dmdutil.red
+   @FILE MDformat.exe 
+   @FILE MDfsck.exe  
+   @FILE MDcache.exe  
+   @FILE MDplay.exe   
+ @EndLib
+@EndIF 
+
+// Windows Utilities
+@If(1006 [= @Option)
+ @BeginLib wmdutil.red
+   @FILE wMDplay.exe  @OUT *.*
+   @FILE wMdfmt.exe   @OUT *.*
+   @FILE mDtool.dll   @OUT *.*
+   @FILE BWCC.dll     @OUT *.*
+ @EndLib
+@EndIf
+
+// dock1
+@If(1003 [= @Option)
+ @BeginLib dock1.red
+   @FILE dcam950.exe  
+   @FILE aspi2cam.sys 
+ @EndLib
+@EndIf
+@EndDisk
+/*
+** LOG
+*/
+@If (@Platform == 3) /* Windows */
+ @WRITE("@OutDrive:\\@Subdir\\INSTALL.LOG", "at", "\n[install]\n")
+ @WRITE("@OutDrive:\\@Subdir\\INSTALL.LOG", "at", "installSize: @TSIZE K\n")
+ @WRITE("@OutDrive:\\@Subdir\\INSTALL.LOG", "at", "install: read.me\n")
+
+ @If(1001 [= @Option)
+  @WRITE("@OutDrive:\\@Subdir\\INSTALL.LOG", "at", "install: mdmgr.exe\n")
+  @WRITE("@OutDrive:\\@Subdir\\INSTALL.LOG", "at", "install: mdfsex.exe\n")
+ @EndIf
+
+ @If(1002 [= @Option)
+  @WRITE("@OutDrive:\\@Subdir\\INSTALL.LOG", "at", "install: MDformat.exe\n")
+  @WRITE("@OutDrive:\\@Subdir\\INSTALL.LOG", "at", "install: MDfsck.exe\n")
+  @WRITE("@OutDrive:\\@Subdir\\INSTALL.LOG", "at", "install: MDplay.exe\n")
+  @WRITE("@OutDrive:\\@Subdir\\INSTALL.LOG", "at", "install: MDcache.exe\n")
+  @WRITE("@OutDrive:\\@Subdir\\INSTALL.LOG", "at", "install: MDdata.grp\n")
+ @EndIf
+
+ @If(1003 [= @Option)
+  @WRITE("@OutDrive:\\@Subdir\\INSTALL.LOG", "at", "install: dcam950.exe\n")
+  @WRITE("@OutDrive:\\@Subdir\\INSTALL.LOG", "at", "install: aspi2cam.sys\n")
+ @EndIf
+
+ @If(1006 [= @Option)
+  @WRITE("@OutDrive:\\@Subdir\\INSTALL.LOG", "at", "install: wmdfmt.exe\n")
+  @WRITE("@OutDrive:\\@Subdir\\INSTALL.LOG", "at", "install: wmdplay.exe\n")
+  @WRITE("@OutDrive:\\@Subdir\\INSTALL.LOG", "at", "install: mdtool.dll\n")
+  @WRITE("@OutDrive:\\@Subdir\\INSTALL.LOG", "at", "install: bwcc.dll\n")
+ @EndIf 
+
+@Else /* Not Windows */
+
+ @WRITE("@OutDrive:\\@Subdir\\DINSTALL.LOG", "wt", "\n[install]\n")
+ @WRITE("@OutDrive:\\@Subdir\\DINSTALL.LOG", "at", "installSize: @TSIZE K\n")
+ @WRITE("@OutDrive:\\@Subdir\\DINSTALL.LOG", "at", "install: read.me\n")
+
+ @If(1001 [= @Option)
+  @WRITE("@OutDrive:\\@Subdir\\DINSTALL.LOG", "at", "install: mdmgr.exe\n")
+  @WRITE("@OutDrive:\\@Subdir\\DINSTALL.LOG", "at", "install: mdfsex.exe\n")
+ @EndIf
+
+ @If(1002 [= @Option)
+  @WRITE("@OutDrive:\\@Subdir\\DINSTALL.LOG", "at", "install: MDformat.exe\n")
+  @WRITE("@OutDrive:\\@Subdir\\DINSTALL.LOG", "at", "install: MDfsck.exe\n")
+  @WRITE("@OutDrive:\\@Subdir\\DINSTALL.LOG", "at", "install: MDplay.exe\n")
+  @WRITE("@OutDrive:\\@Subdir\\DINSTALL.LOG", "at", "install: MDcache.exe\n")
+  @WRITE("@OutDrive:\\@Subdir\\DINSTALL.LOG", "at", "Creat:   MDdata.grp\n")
+ @EndIf
+
+ @If(1003 [= @Option)
+  @WRITE("@OutDrive:\\@Subdir\\DINSTALL.LOG", "at", "install: dcam950.exe\n")
+  @WRITE("@OutDrive:\\@Subdir\\DINSTALL.LOG", "at", "install: aspi2cam.sys\n")
+ @EndIf
+
+ @If(1006 [= @Option)
+  @WRITE("@OutDrive:\\@Subdir\\DINSTALL.LOG", "at", "install: wmdfmt.exe\n")
+  @WRITE("@OutDrive:\\@Subdir\\DINSTALL.LOG", "at", "install: wmdplay.exe\n")
+  @WRITE("@OutDrive:\\@Subdir\\DINSTALL.LOG", "at", "install: mdtool.dll\n")
+  @WRITE("@OutDrive:\\@Subdir\\DINSTALL.LOG", "at", "install: bwcc.dll\n")
+ @EndIf 
+@EndIf
+/*
+** DCAM950 selection
+*/
+@If((1012 [= @Option) && (@dock1 > 0)) 
+ // Address
+ @ClearOption(3010) @ClearOption(3020) @ClearOption(3030) @ClearOption(3040)
+ @If(@Platform == 3) /* Windows */
+ @DlgCtrlSize(0,12,20,17,29)
+
+ @GetOption @Prompt = "Choose SCSI host adapter address"
+ The DOCK 1 device driver, DCAM950.EXE, will be installed with default
+ values 'device=@OutDrive:@Subdir\dcam950.exe /CA00 11' unless you change them here.
+ Refer to your computer's documentation for the correct values.
+ 
+ If you choose not to change the default values, watch your monitor when
+ you boot your computer and check if DCAM950.EXE is installing correctly.
+ If it is not installing correctly, see DCAM950.EXE in @OutDrive:@Subdir\read.me
+ for the alternatives to "/CA00 11" and edit @BootDrive:\config.sys.
+
+ Select host adapter address:
+  @Option 3020 = "CA00"
+  @Option 3010 = "C800"
+  @Option 3030 = "CE00"
+  @Option 3040 = "DE00"
+ @EndOption
+
+ @Else /* NOT Windows */
+ @GetOption @Prompt = "Choose SCSI host adapter address"
+ @LocalWindow(16,30)
+ The DOCK 1 device driver, DCAM950.EXE, will be installed with default
+ values 'device=@OutDrive:@Subdir\dcam950.exe /CA00 11' unless you change them
+ here. Refer to your computer's documentation for the correct values.
+
+ If you choose not to change the default values, watch your monitor when
+ you boot your computer and check if DCAM950.EXE is installing correctly.
+ If it is not installing correctly, see DCAM950.EXE in @OutDrive:@Subdir\read.me
+ for the alternatives to "/CA00 11" and edit @BootDrive:\config.sys.
+
+ Select host adapter address:
+  @Option 3020 = "CAOO"
+  @Option 3010 = "C800"
+  @Option 3030 = "CEOO"
+  @Option 3040 = "DE00"
+ @EndOption
+ @EndIf // if(windows)
+
+ @If(3010 [= @Option)
+  @dcamAddr = "C800"
+ @ElseIf(3030 [= @Option)
+  @dcamAddr = "CE00"
+ @ElseIf(3040 [= @Option)
+   @dcamAddr = "DE00"
+ @Endif
+
+ // IRQ
+ @ClearOption(3110) @ClearOption(3120) @ClearOption(3130) @ClearOption(3140)
+ @ClearOption(3150) @ClearOption(3160) @ClearOption(3170)
+
+ @If(@Platform == 3) /* Windows */
+ @DlgCtrlSize(0,12,20,20,30)
+
+ @GetOption @Prompt = "Choose SCSI host adapter IRQ"
+ The DOCK 1 device driver, DCAM950.EXE, will be installed with default
+ IRQ 'device=@OutDrive:@Subdir\dcam950.exe /@dcamAddr 11' unless you change it here.
+ Refer to your computer's documentation for the correct value.
+ 
+ If you choose not to change the default value, watch your monitor when
+ you boot your computer and check if DCAM950.EXE is installing correctly.
+ If it is not installing correctly, see DCAM950.EXE in @OutDrive:@Subdir\read.me
+ for the alternatives to "/@dcamAddr 11" and edit @BootDrive:\config.sys.
+
+ Select host adapter IRQ:
+  @Option 3110 = "IRQ 11"
+  @Option 3120 = "IRQ  3"
+  @Option 3130 = "IRQ  5"
+  @Option 3140 = "IRQ 10"
+  @Option 3150 = "IRQ 12"
+  @Option 3160 = "IRQ 14"
+  @Option 3170 = "IRQ 15"
+ @EndOption
+
+ @Else /* NOT Windows */
+
+ @GetOption @Prompt = "Choose SCSI host adapter IRQ"  @LocalWindow(16,25)
+ The DOCK 1 device driver, DCAM950.EXE, will be installed with default
+ IRQ 'device=@OutDrive:@Subdir\dcam950.exe /@dcamAddr 11' unless you change it here.
+ Refer to your computer's documentation for the correct value.
+ 
+ If you choose not to change the default value, watch your monitor when
+ you boot your computer and check if DCAM950.EXE is installing correctly.
+ If it is not installing correctly, see DCAM950.EXE in @OutDrive:@Subdir\read.me
+ for the alternatives to "/@dcamAddr 11" and edit @BootDrive:\config.sys.
+
+ Select host adapter IRQ:
+  @Option 3110 = "11"
+  @Option 3120 = "3"
+  @Option 3130 = "5"
+  @Option 3140 = "10"
+  @Option 3150 = "12"
+  @Option 3160 = "14"
+  @Option 3170 = "15"
+ @EndOption
+ @EndIf // if(windows)
+
+ @If(3120 [= @Option)
+  @dcamIRQ = "3"
+ @ElseIf(3130 [= @Option)
+  @dcamIRQ = "5"
+ @ElseIf(3140 [= @Option)
+   @dcamIRQ = "10"
+ @ElseIf(3150 [= @Option)
+   @dcamIRQ = "12"
+ @ElseIf(3160 [= @Option)
+   @dcamIRQ = "14"
+ @ElseIf(3170 [= @Option)
+   @dcamIRQ = "15"
+ @Endif
+
+ // Exclusion Warning
+ @Display
+ Some memory managers may require exclusion of the memory used by
+ DCAM950.EXE. For example, "device=emm386.exe x=CA00 CBFF" may need
+ to be added to @BootDrive:\config.sys if you are using the memory
+ manager that comes with DOS.
+ 
+ If you are using Microsoft Windows, you may need to change the
+ system.ini file. For example, you may need to add "EMMExclude=CA00-CBFF"
+ to the [386Enh] section.
+
+				    @pause
+ @EndDisplay
+@EndIf
+/*
+** config.sys
+*/
+CONFIG_MOD:
+@If((1003 [= @Option) && (1012 [= @Option))
+  @ClearOption(2010) @ClearOption(2020) @ClearOption(2040)
+
+  @If(@Platform == 3) /* Windows */
+    @DlgCtrlSize(0,6,8,11,40)
+    @GetOption @Prompt = "Modify config.sys"
+      Your config.sys may need to be modified to
+      make @Name available.
+
+      You may:
+      @Option 2010 = "change config.sys"
+      @Option 2020 = "save changes to @BootDrive:\\config.new"
+      @Option 2040 = "make no changes, continue"
+    @EndOption
+
+  @Else /* NOT Windows */
+    @GetOption @Prompt = "modify config.sys"  @LocalWindow(9,25)
+      Your config.sys may need to be modified to make
+      @Name available.
+
+      You may:
+      @Option 2010 = "change @BootDrive:\\config.sys"
+      @Option 2020 = "save changes to @BootDrive:\\config.new"
+      @Option 2040 = "make no changes, continue"
+    @EndOption
+  @EndIf
+@EndIf
+
+@SetConfig
+ @If(1011 [= @Option)
+   @Overwrite
+   @If(@dock1 > 0)
+     @Device = "@OutDrive:\\@Subdir\\dcam950.exe /@dcamAddr @dcamIRQ"
+     @Device = "@OutDrive:\\@Subdir\\aspi2cam.sys"
+   @EndIf
+ @EndIf
+ 
+ @If(2010 [= @Option)
+   @Overwrite
+   @If(@dock1 > 0)
+     @Device = "@OutDrive:\\@Subdir\\dcam950.exe /@dcamAddr @dcamIRQ"
+     @Device = "@OutDrive:\\@Subdir\\aspi2cam.sys"
+   @EndIf
+ @EndIf
+ 
+ @If(2020 [= @Option)
+   @DiskProto
+   @If(@dock1 > 0)
+     @Device = "@OutDrive:\\@Subdir\\dcam950.exe /@dcamAddr @dcamIRQ"
+     @Device = "@OutDrive:\\@Subdir\\aspi2cam.sys"
+   @EndIf
+ @EndIf
+@EndConfig
+/*
+** LOG
+*/
+@If (@Platform == 3) /* Windows */
+ @WRITE("@OutDrive:\\@Subdir\\INSTALL.LOG", "at", "\n[modify]\n")
+ @If((1011 [= @Option) || (2010 [= @Option))
+   @WRITE("@OutDrive:\\@Subdir\\INSTALL.LOG", "at", "modify: @BootDrive:\\config.sys\n")
+ @ElseIf(2020 [= @Option)
+   @WRITE("@OutDrive:\\@Subdir\\INSTALL.LOG", "at", "modify: @BootDrive:\\config.new\n")
+ @Else
+   @WRITE("@OutDrive:\\@Subdir\\INSTALL.LOG", "at", "modify: no-config\n")
+ @EndIf
+
+@Else /* Not Windows */
+ @WRITE("@OutDrive:\\@Subdir\\DINSTALL.LOG", "at", "\n[modify]\n")
+ @If((1011 [= @Option) || (2010 [= @Option))
+   @WRITE("@OutDrive:\\@Subdir\\DINSTALL.LOG", "at", "modify: @BootDrive:\\config.sys\n")
+ @ElseIf(2020 [= @Option)
+   @WRITE("@OutDrive:\\@Subdir\\DINSTALL.LOG", "at", "modify: @BootDrive:\\config.new\n")
+ @Else
+   @WRITE("@OutDrive:\\@Subdir\\DINSTALL.LOG", "at", "modify: no-config\n")
+ @EndIf
+@EndIf
+/*
+** autoexec.bat
+*/
+AUTOEXEC_MOD:
+@If (1012 [= @Option)
+  @ClearOption(2060) @ClearOption(2070) @ClearOption(2080) @ClearOption(2090)
+
+  @If(@Platform == 3)
+    /* Windows */
+    @DlgCtrlSize(0,6,8,11,43)
+    @GetOption @Prompt = "modify autoexec.bat"
+      Your autoexec.bat may need to be modified to
+      make @Name available.
+
+      You may:
+      @Option 2060 = "change autoexec.bat"
+      @Option 2070 = "save changes to @BootDrive:\\autoexec.new"
+      @Option 2090 = "make no changes, continue"
+    @EndOption
+   
+  @Else
+    /* NOT Windows */
+    @GetOption @Prompt = "modify autoexec.bat"  @LocalWindow(9,25)
+      Your autoexec.bat may need to be modified to make
+      @Name available.
+
+      You may:
+      @Option 2060 = "change @BootDrive:\\autoexec.bat"
+      @Option 2070 = "save changes to @BootDrive:\\autoexec.new"
+      @Option 2090 = "make no changes, continue"
+    @EndOption
+  @EndIf
+@EndIf
+
+@SetAutoexec
+ @If(1011 [= @Option)
+   @Overwrite
+   @Path = "@OutDrive:@Subdir"
+   @If (1001 [= @Option)
+    @Verbatim "@OutDrive:@Subdir\\MDmgr.exe"
+    @Verbatim "@OutDrive:@Subdir\\MDfsex.exe"
+   @EndIf 
+@ElseIf(2060 [= @Option)
+   @Overwrite
+   @Path = "@OutDrive:@Subdir"
+   @If (1001 [= @Option)
+    @Verbatim "@OutDrive:@Subdir\\MDmgr.exe"
+    @Verbatim "@OutDrive:@Subdir\\MDfsex.exe"
+   @EndIf 
+  @ElseIf(2070 [= @Option)
+   @DiskProto
+   @Path = "@OutDrive:@Subdir"
+   @If (1001 [= @Option)
+    @Verbatim "@OutDrive:@Subdir\\MDmgr.exe"
+    @Verbatim "@OutDrive:@Subdir\\MDfsex.exe"
+   @EndIf 
+ @ElseIf(2080 [= @Option)
+   @ScreenProto
+   @Path = "@OutDrive:@Subdir"
+   @If (1001 [= @Option)
+    @Verbatim "@OutDrive:@Subdir\\MDmgr.exe"
+    @Verbatim "@OutDrive:@Subdir\\MDfsex.exe"
+   @EndIf 
+ @EndIf
+@EndAutoexec
+/*
+** LOG
+*/
+@If (@Platform == 3) /* Windows */
+ @If((1011 [= @Option) || (2060 [= @Option))
+   @WRITE("@OutDrive:\\@Subdir\\INSTALL.LOG", "at", "modify: @BootDrive:\\autoexec.bat\n")
+ @ElseIf(2070 [= @Option)
+   @WRITE("@OutDrive:\\@Subdir\\INSTALL.LOG", "at", "modify: @BootDrive:\\autoexec.new\n")
+ @Else
+   @WRITE("@OutDrive:\\@Subdir\\INSTALL.LOG", "at", "modify: no-autoexec\n")
+ @EndIf
+ @WRITE("@OutDrive:\\@Subdir\\INSTALL.LOG", "at", "\n")
+
+@Else /* Not Windows */
+ @If((1011 [= @Option) || (2060 [= @Option))
+   @WRITE("@OutDrive:\\@Subdir\\DINSTALL.LOG", "at", "modify: @BootDrive:\\autoexec.bat\n")
+ @ElseIf(2070 [= @Option)
+   @WRITE("@OutDrive:\\@Subdir\\DINSTALL.LOG", "at", "modify: @BootDrive:\\autoexec.new\n")
+ @Else
+   @WRITE("@OutDrive:\\@Subdir\\DINSTALL.LOG", "at", "modify: no-autoexec\n")
+ @EndIf
+ @WRITE("@OutDrive:\\@Subdir\\DINSTALL.LOG", "at", "\n")
+@EndIf
+/*
+** Multi-configuration Warning
+*/
+@If (1012 [= @Option)
+@Display
+ If you start Windows from  your autoexec.bat, you must move
+ MDmgr.exe and MDfsex.exe before Win.com for MD DATA to be available
+ within Windows.
+
+ If you are using a multi-configuration option, you will have to move
+ MDmgr.exe and MDfsex.exe to the appropriate section of your autoexec.bat.
+ The same applies to the device drivers in config.sys if you used the
+ DOCK 1 installation procedure.
+
+				    @pause
+@EndDisplay
+@EndIf
+ 
+@If(!@dock1)
+ @If(@BackgroundMode(3,@Green,@Black))@EndIf
+ @If(!@ShowAspi)
+    @Display
+    @cls
+	An ASPI device driver is NOT installed!!!
+		      
+	       You MUST install ASPI 
+
+	Before MD Data will operate correctly!
+		 @Pause
+
+    @Enddisplay
+ @Endif
+@EndIf
+
+@If(@Platform == 3)  /* Windows */
+  @SetINI("AddOns", "MDtool", "C:\\@subdir\\MDtool.dll", "winfile.ini")        
+@EndIf
+/*
+** FINISH
+*/
+@Finish
+
+ @Cls
+
+ @Name has installed successfully.
+ View @Outdrive:@Subdir\install.log for installation log.
+ View @Outdrive:@Subdir\read.me for the most recent documentation.
+
+ You must reboot you computer for changes to take effect.
+ @Pause
+ @If(@BackgroundMode(3,@Blue,@Black))@EndIf
+ @If ((@Platform == 3) && (1006 [= @Option)) /* Windows */
+  @ProgramManager("[CreateGroup(@Item1)][AddItem(@Outdrive:\\@Subdir\\wMDplay.exe,@Tile1)][AddItem(@OutDrive:\\@SubDir\\wMDfmt.exe, @Tile2)][ShowGroup(@Item1, 1)]")
+ @EndIf
+@EndFinish
+
+/*
+SOURCE CONTROL:
+  $Revision$
+  $Header$
+  $Log$
+
+Copyright (c) 1994-95, Sony Corporation
+All rights reserved.
+*/
+
+

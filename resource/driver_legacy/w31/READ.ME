@@ -1,0 +1,427 @@
+/*
+ Copyright (c) 1994-95, Sony Corporation
+   All rights reserved.
+
+  MD DATA for DOS/WINDOWS(TM)
+  $Revision: 1.81 $
+*/
+
+The documentation in this file has precedence over printed material. It
+contains the latest information about MD DATA for DOS.
+
+
+SYSTEM SOFTWARE:
+---------------
+MDMGR is now in the form of a Terminate and Stay Resident program.
+The MD DATA system software is installed by including the following
+lines in autoexec.bat:
+
+    c:\mddata\mdmgr.exe
+    c:\mddata\mdfsex.exe
+
+The SETUP utility includes these lines automatically unless instructed
+otherwise. 
+
+NOTE: this installation may not match printed instructions.
+
+
+REINSTALLATION:
+--------------
+When reinstalling MD DATA software, use the existing MD DATA directory
+as the target directory and overwrite the existing files. Failure to
+use the existing directory will result in multiple copies of
+MDmgr.exe and MDfsex.exe in the autoexec.bat. There will also be
+two paths to MD DATA software with the earliest installation having
+precedence.
+
+If MD DATA is reinstalled to a separate directory, the autoexec.bat
+must be edited manually.
+
+
+WINDOWS INSTALLATION:
+--------------------
+If Windows is started from the autoexec.bat, MDmgr.exe and MDfsex.exe must
+be moved above WIN.com or MD DATA will not be available for Windows. The
+lines must be moved manually.
+
+
+EXCUSE LIST:
+-----------
+This release includes the following caveats:
+
+  - does not support hybrid MD DATA discs
+  - does not support multiple character sets
+  - does not support booting
+  - MDfsck is not supported under Microsoft Windows
+  - When starting up the computer, the MD DATA file system with default
+    settings occuipes part of the conventional memory.  Therefore, there
+    will be less free conventional memory left that may cause inabilty to
+    run other applications.  To avoid this situation, omit unneccesary
+    device drivers or use UMB to gain free conventional memory.  (Adjust
+    the set up according to memory related instructions of DOS/WINDOWS
+    manuals.)  Even there is still a lot of memory or system resources
+    left when running mdformat on Windows, the error message "\unable to
+    access mdctl" may come up, and this can be caused by the same reason 
+    (not enough free conventional memory) as above.
+  - The number of directories allowed on MD DATA is regulated depending on
+    file access speed.  Total number of directorys which can be created on
+    an MD DATA is approximately 500.  If "Unable to create directory" for
+    DOS or "-Create Diractry- Make sure the disk is not full or 
+    write-protected" for Windows message appears while the data is being
+    copied to MD DATA, please select "OK".  In such case, please use
+    commercilly available file compression tools to decrese the number of
+    directorys and files before saving data on MDDATA.
+
+File List:
+---------
+aspi2cam.sys  - translates ASPI commands to CAM commands
+bwcc.dll      - Borland International controls for Microsoft Windows
+dcam950.exe   - Future Domain CAM device driver
+disk.id       - identifies MD DATA installation disk
+install.dat   - script to install MD DATA software
+install.log   - installation history, used by technical support
+MDcache.exe   - check and change state of MD DATA device write cache
+MDformat.exe  - format MD DATA disc
+MDfsck.exe    - check conformance of MD DATA file system
+MDfsex.exe    - installable file system, MDFS
+MDmgr.exe     - MD DATA device manager
+MDplay.exe    - play MiniDisc audio
+MDtool.dll    - Microsoft Windows file manager add-on
+read.me       - this file, late documentation
+setup.exe     - install MD DATA Software
+wMDfmt.exe    - format MD DATA disc for Microsoft Windows
+WMDplay.exe   - play MiniDisc audio for Microsoft Windows
+File List END
+-------------
+
+-----------------------------------------------------------------------------
+Specifications follow. The information contained in this file supersedes
+any printed documentation you received with your MD DATA package. The
+syntax conventions are:
+
+ command  parameter [parm2] -s /t [-u] a|b -c|d drive:path
+
+   command    name of command
+   parameter  required parameter
+   [parm2]    optional parameter
+   -s         character(s) to the next blank are part of a required switch
+   /t         character(s) to the next blank are part of a required switch
+   [-u]       optional switch
+   |          separates mutually exclusive items, use either a or b, -c or -d
+   drive:     DOS drive letter and colon
+   path       DOS path to a parent directory, e.g, \mddata
+   -?         provides HELP for command
+   /?         provides HELP for command
+-----------------------------------------------------------------------------
+
+aspi2cam.sys
+------------
+  ASPI to CAM translator, a DOS device driver. Required for DOCK 1 
+  installations.
+SYNTAX:
+  device=[path\]aspi2cam.sys
+PARAMETERS:
+  none
+SWITCHES:
+  none
+VERSION:
+  2.02a
+aspi2cam.sys END
+----------------
+
+dcam950.exe
+-----------
+  CAM interface for TMC-950 SCSI part, a DOS device driver. Required
+  for Dock 1.
+SYNTAX:
+  device=[path\]dcam950.exe /MEM IRQ [/MEM IRQ [/MEM IRQ]]
+PARAMETERS:
+  IRQ  interrupt where IRQ = 3|4|5|10|11|12|14|15
+SWITCHES:
+  /MEM  memory location of TMC-950 where MEM = CA00|C800|CE00|DE00
+DEFAULT:
+  device= \mddata\dcam950.exe /CA00 /11
+EXAMPLES:
+  device= \mddata\dcam950.exe /CA00 /5
+VERSION:
+  1.02
+CREDITS:
+  Software provided under license from Future Domain Corporation.
+dcam950.exe END
+---------------
+
+MDcache
+-------
+  Enable/Disable/Flush write cache of MD DATA device.
+SYNTAX:
+  mdcache [-?] [drive:] ON | OFF | IS | FLUSH
+PARAMETERS:
+  drive:
+    specifies MD DATA device
+  ON
+    enables write cache
+  OFF
+    disables write cache
+  IS
+    reports current state of write cache
+  FLUSH
+    writes cache to MD DATA disc
+SWITCHES:
+  -?  this message
+EXAMPLES:
+  mdcache d: is
+  mdcache d: on
+  mdcache d: off
+CAVEATS:
+VERSION:
+  1.0
+MDcache END
+-----------
+
+MDformat
+--------
+  Format an MD DATA disc
+SYNTAX:
+  mdformat drive: [-q|s] [-v:label -o -?]
+PARAMETERS:
+  drive:  specifies drive containing the disc that you wish to format
+SWITCHES:
+  -q  installs file system, does not certify the media, 1 minute, default
+  -s  certifies the media and installs file system, 35 minutes
+  -o  obedient, asks no questions
+  -v:label  installs volume label after format, 31 characters
+  -?  help
+EXAMPLES:
+  mdformat d: -q
+  mdformat d: -s
+  mdformat d: -qo
+  mdformat d: -qv:YourLabel
+CAVEATS:
+VERSION:
+  1.95
+MDformat END
+------------
+
+MDfsck
+------
+  MD DATA file system check
+SYNTAX:
+  mdfsck drive: [-?]
+PARAMETERS:
+  drive:  specifies drive containing the disc that you wish to check
+SWITCHES:
+  -v  verbose
+  -?  help
+RESULTS:
+  OK, file system is in conformance
+  ERROR: total errors
+EXAMPLES:
+  mdfsck
+  mdfsck d:
+CAVEATS:
+VERSION:
+  1.4
+MDfsck END
+----------
+
+MDfsex
+------
+  MD DATA installable file system
+SYNTAX:
+  mdfsex [/L:drive][/?]
+SWITCHES:
+  /L:[drive]  specify first drive letter to install MDFS
+  /?  help
+EXAMPLES:
+  mdfsex
+  mdfsex /L:d
+VERSION:
+  1.11
+MDFSEX END
+----------
+
+MDmgr.exe
+---------
+  MD DATA device manager
+SYNTAX:
+  mdmgr
+PARAMETERS:
+  none
+SWITCHES:
+  none
+CAVEATS:
+VERSION:
+  1.2
+mdmgr.exe END
+-------------
+
+MDplay
+------
+  Play MiniDisc audio
+SYNTAX:
+  mdplay [-?] [drive:] play[song-number]|pause|stop
+PARAMETERS:
+  drive:
+    specifies drive containing the MiniDisc
+  play [song-number]
+    if song-number is provided, then play begins at that song
+    if song-number is not provided,
+      and if play has been paused, then play is resumed
+      and if play has not been paused, then play begins at song 1
+  pause
+    pauses audio play, (may be resumed with play)
+  stop
+    stops audio play (may not be resumed)
+SWITCHES:
+  -?  help
+EXAMPLES:
+  mdplay d: play
+  mdplay d: play 3
+  mdplay d: pause
+  mdplay d: stop
+VERSION:
+  1.1
+MDplay END
+----------
+
+SETUP
+-----
+  Install MD DATA software
+SYNTAX:
+  setup [-BW80|-MONO -L]
+PARAMETERS:
+  none
+SWITCHES:
+  -BW80  disable colors
+  -MONO  for monochrome monitor
+  -L     reduce memory requirements of setup
+EXAMPLES:
+  setup
+CAVEATS:
+VERSION:
+  1.8
+CREDITS:
+  The installation program used to install MD DATA for DOS,
+  INSTALL, is licensed software provided by Knowledge Dynamics Corp,
+  PO Box 780068, San Antonio, TX 78278 USA. INSTALL is Copyright (c)
+  1987-1993 by Knowlege Dynamics Corp which reserves all copyright
+  protection worldwide. INSTALL is provided to you for the exclusive
+  purpose of installing MD DATA for DOS. Sony Corporation is exclusively
+  responsible for the support of MD DATA for DOS, including support
+  during the installation phase. In no event will Knowledge Dynamics
+  Corp provide any technical support for MD DATA for DOS.
+SETUP END
+---------
+
+wMDplay
+------
+  Microsoft Windows Play MiniDisc audio
+PARAMETERS:
+  none
+SWITCHES:
+  none
+VERSION:
+  1.6
+CAVEATS:
+  supports only the first MD DATA drive in the system.
+CREDITS:
+wMDplay END
+----------
+
+wMDfmt
+------
+  Microsoft Windows format MD DATA disc
+PARAMETERS:
+  none
+SWITCHES:
+  none
+VERSION:
+  1.7
+wMDfmt END
+----------
+
+
+About files to be copied upon installation
+------------------------------------------
+Running the setup.exe program will copy the following files to the 
+directory upon installation.  (O: will be copied    X: won`t be copied)
+-----------------------------------------------------------------------
+                  Standard PC          Dock 1              Dock 2
+-----------------------------------------------------------------------
+aspi2cam.sys	      X                  O                   X
+bwcc.dll              O                  O                   O
+dcam950.exe           X                  O                   X
+disk.id               O                  O                   O
+
+install.dat           X                  X                   X
+install.log           O                  O                   O
+MDcache.exe           O                  O                   O
+MDformat.exe          O                  O                   O
+
+MDplay.exe            O                  O                   O
+MDfsck.exe            O                  O                   O
+MDfsex.exe            O                  O                   O
+MDmgr.exe             O                  O                   O
+
+mdtool.dll            O                  O                   O
+read.me               O                  O                   O
+read_j.me             X                  X                   X
+setup.exe             X                  X                   X
+
+wMDfmt.exe            O                  O                   O
+wMDplay.exe           O                  O                   O
+-----------------------------------------------------------------------
+
+
+Portable MD DATA drive (MDH-10) Manual Correction
+-------------------------------------------------
+There are corrections to be made on the page of "Troubleshooting".  
+On the page of "Message while installing the software for DOS" (page 42), 
+
+for Message: NO MD DATA devices foundthere is Solution: Install the SCSI!
+software correctly. There are several causes and solutions to this message, 
+so please erase the above solution and add the following to the manual.  
+
+  Cause 1    : The power/mode switch is set to [Audio] mode and the
+               host computer cannot recognize the MD DATA drive.  
+  Solution 1 : Select [DATA] mode on the power/mode switch and restart
+               the system.
+
+  Cause 2    : The SCSI cable is not connected properly and
+               the host computer cannot communicate with the MD DATA drive.
+  Solution 2 : Connect the SCSI cable correctly.
+
+  Cause 3    : SCSI ID conflict.
+  Solution 3 : Set different SCSI ID numbers for each peripheral device.
+
+  Cause 4    : The ASPI manager does not support the SCSI host adapter or
+               the SCSI card. 
+  Solution 4 : Install a correct ASPI manager for the supported SCSI
+               host adapter / SCSI card.
+
+Portable MD DATA drive (MDH-10) Manual Correction END
+-----------------------------------------------------
+
+Version nuber of "Installation Software" floppy disc is independent of 
+most of the utility software`s version number, but it is the same with 
+the following software`s.  
+	read.me, read_j.me
+	disk.id
+	install.dat(setup)
+
+CREDITS:
+-------
+  Windows is a trademark of Microsoft Corporation.
+  BWCC.DLL is provided under license from Borland International.
+
+/*
+SOURCE CONTROL:
+  $Revision$
+  $Header$
+  $Log$
+
+Copyright (c) 1994-95, Sony Corporation
+  All rights reserved.
+*/
+
+

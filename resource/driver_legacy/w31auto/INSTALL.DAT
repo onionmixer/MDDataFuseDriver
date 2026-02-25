@@ -1,0 +1,39 @@
+@DefineProject
+ @Name = "MD DATA for DOS"
+ @Version = "1.81"
+ @Subdir = "MD31OUT"
+ @OutDrive = @StartUpDrive
+@EndProject
+
+@MkDir("@OutDrive:\\@Subdir")
+
+@DefineDisk
+@Label = "DISK 1/1"
+
+@File read.me
+
+@BeginLib mdsys.red
+ @FILE mdfsex.exe
+ @FILE mdmgr.exe
+@EndLib
+
+@BeginLib dmdutil.red
+ @FILE MDformat.exe
+ @FILE MDfsck.exe
+ @FILE MDcache.exe
+ @FILE MDplay.exe
+@EndLib
+
+@BeginLib wmdutil.red
+ @FILE wMDplay.exe
+ @FILE wMdfmt.exe
+ @FILE mDtool.dll
+ @FILE BWCC.dll
+@EndLib
+
+@BeginLib dock1.red
+ @FILE dcam950.exe
+ @FILE aspi2cam.sys
+@EndLib
+
+@EndDisk

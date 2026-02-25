@@ -1,0 +1,13 @@
+file,target,kind,offset_hex
+w31/extract/mdfsex.exe,0x0202,push imm16,0x0440c
+w31/extract/mdfsex.exe,0x0202,push imm16,0x08297
+w31/extract/mdfsex.exe,0x0202,push imm16,0x08e15
+w31/extract/mdfsex.exe,0x0202,push imm16,0x097a4
+w31/extract/mdfsex.exe,0x0202,push imm16,0x097ac
+w31/extract/mdfsex.exe,0x0202,push imm16,0x097c1
+w31/extract/mdfsex.exe,0x0202,push imm16,0x09ba6
+w31/extract/mdfsex.exe,0x0202,push imm16,0x09bd6
+w31/extract/mdfsex.exe,0x0202,push imm16,0x09c26
+w31/extract/mdfsex.exe,0x0202,push imm16,0x09c79
+w31/extract/mdfsex.exe,0x0202,push imm16,0x09c84
+w31/extract/mdfsex.exe,0x0202,push imm16,0x09c9d

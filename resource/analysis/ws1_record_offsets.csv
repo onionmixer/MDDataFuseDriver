@@ -1,0 +1,55 @@
+category,artifact,object_name,offset_type,offset_hex,offset_dec,status,notes
+red_archive,DMDUTIL.RED,MDFORMAT.EXE,record_start,0x00000000,0,confirmed,RED record header signature RR
+red_archive,DMDUTIL.RED,MDFORMAT.EXE,compressed_payload_start,0x00000027,39,confirmed,Header size 39 bytes
+red_archive,DMDUTIL.RED,MDFORMAT.EXE,compressed_payload_end,0x0000C949,51529,confirmed,Computed from comp_size
+red_archive,DMDUTIL.RED,MDFSCK.EXE,record_start,0x0000C94C,51532,confirmed,RED record header signature RR
+red_archive,DMDUTIL.RED,MDFSCK.EXE,compressed_payload_start,0x0000C973,51571,confirmed,Header size 39 bytes
+red_archive,DMDUTIL.RED,MDFSCK.EXE,compressed_payload_end,0x00011010,69648,confirmed,Computed from comp_size
+red_archive,DMDUTIL.RED,MDPLAY.EXE,record_start,0x00011013,69651,confirmed,RED record header signature RR
+red_archive,DMDUTIL.RED,MDPLAY.EXE,compressed_payload_start,0x0001103A,69690,confirmed,Header size 39 bytes
+red_archive,DMDUTIL.RED,MDPLAY.EXE,compressed_payload_end,0x00017A9E,96926,confirmed,Computed from comp_size
+red_archive,DMDUTIL.RED,MDCACHE.EXE,record_start,0x00017AA1,96929,confirmed,RED record header signature RR
+red_archive,DMDUTIL.RED,MDCACHE.EXE,compressed_payload_start,0x00017AC8,96968,confirmed,Header size 39 bytes
+red_archive,DMDUTIL.RED,MDCACHE.EXE,compressed_payload_end,0x0001DC96,121990,confirmed,Computed from comp_size
+red_archive,DOCK1.RED,DCAM950.EXE,record_start,0x00000000,0,confirmed,RED record header signature RR
+red_archive,DOCK1.RED,DCAM950.EXE,compressed_payload_start,0x00000027,39,confirmed,Header size 39 bytes
+red_archive,DOCK1.RED,DCAM950.EXE,compressed_payload_end,0x00003AC0,15040,confirmed,Computed from comp_size
+red_archive,DOCK1.RED,ASPI2CAM.SYS,record_start,0x00003AC3,15043,confirmed,RED record header signature RR
+red_archive,DOCK1.RED,ASPI2CAM.SYS,compressed_payload_start,0x00003AEA,15082,confirmed,Header size 39 bytes
+red_archive,DOCK1.RED,ASPI2CAM.SYS,compressed_payload_end,0x000043EF,17391,confirmed,Computed from comp_size
+red_archive,MDSYS.RED,MDMGR.EXE,record_start,0x00000000,0,confirmed,RED record header signature RR
+red_archive,MDSYS.RED,MDMGR.EXE,compressed_payload_start,0x00000027,39,confirmed,Header size 39 bytes
+red_archive,MDSYS.RED,MDMGR.EXE,compressed_payload_end,0x00001504,5380,confirmed,Computed from comp_size
+red_archive,MDSYS.RED,MDFSEX.EXE,record_start,0x00001507,5383,confirmed,RED record header signature RR
+red_archive,MDSYS.RED,MDFSEX.EXE,compressed_payload_start,0x0000152E,5422,confirmed,Header size 39 bytes
+red_archive,MDSYS.RED,MDFSEX.EXE,compressed_payload_end,0x00008087,32903,confirmed,Computed from comp_size
+red_archive,WMDUTIL.RED,WMDFMT.EXE,record_start,0x00000000,0,confirmed,RED record header signature RR
+red_archive,WMDUTIL.RED,WMDFMT.EXE,compressed_payload_start,0x00000027,39,confirmed,Header size 39 bytes
+red_archive,WMDUTIL.RED,WMDFMT.EXE,compressed_payload_end,0x0001BAC3,113347,confirmed,Computed from comp_size
+red_archive,WMDUTIL.RED,WMDPLAY.EXE,record_start,0x0001BAC6,113350,confirmed,RED record header signature RR
+red_archive,WMDUTIL.RED,WMDPLAY.EXE,compressed_payload_start,0x0001BAED,113389,confirmed,Header size 39 bytes
+red_archive,WMDUTIL.RED,WMDPLAY.EXE,compressed_payload_end,0x0003A082,237666,confirmed,Computed from comp_size
+red_archive,WMDUTIL.RED,MDTOOL.DLL,record_start,0x0003A085,237669,confirmed,RED record header signature RR
+red_archive,WMDUTIL.RED,MDTOOL.DLL,compressed_payload_start,0x0003A0AC,237708,confirmed,Header size 39 bytes
+red_archive,WMDUTIL.RED,MDTOOL.DLL,compressed_payload_end,0x0003BA08,244184,confirmed,Computed from comp_size
+red_archive,WMDUTIL.RED,BWCC.DLL,record_start,0x0003BA0B,244187,confirmed,RED record header signature RR
+red_archive,WMDUTIL.RED,BWCC.DLL,compressed_payload_start,0x0003BA32,244226,confirmed,Header size 39 bytes
+red_archive,WMDUTIL.RED,BWCC.DLL,compressed_payload_end,0x00046D83,290147,confirmed,Computed from comp_size
+mdfsck_string,mdfsck.exe,Identifier,binary_string,0x0000E781,59265,confirmed,Label exists in checker output format strings
+mdfsck_string,mdfsck.exe,Version,binary_string,0x0000E793,59283,confirmed,Label exists in checker output format strings
+mdfsck_string,mdfsck.exe,BlockSize,binary_string,0x0000E7A2,59298,confirmed,Label exists in checker output format strings
+mdfsck_string,mdfsck.exe,ClusterSize,binary_string,0x0000E7B9,59321,confirmed,Label exists in checker output format strings
+mdfsck_string,mdfsck.exe,AllocSize,binary_string,0x0000E7D4,59348,confirmed,Label exists in checker output format strings
+mdfsck_string,mdfsck.exe,VSBLoc,binary_string,0x0000E90F,59663,confirmed,Label exists in checker output format strings
+mdfsck_string,mdfsck.exe,VSBNum,binary_string,0x0000E91D,59677,confirmed,Label exists in checker output format strings
+mdfsck_string,mdfsck.exe,MTBLoc,binary_string,0x0000E92B,59691,confirmed,Label exists in checker output format strings
+mdfsck_string,mdfsck.exe,MTBNum,binary_string,0x0000E939,59705,confirmed,Label exists in checker output format strings
+mdfsck_string,mdfsck.exe,ERBLoc,binary_string,0x0000E947,59719,confirmed,Label exists in checker output format strings
+mdfsck_string,mdfsck.exe,ERBNum,binary_string,0x0000E955,59733,confirmed,Label exists in checker output format strings
+mdfsck_string,mdfsck.exe,DRBLoc,binary_string,0x0000E963,59747,confirmed,Label exists in checker output format strings
+mdfsck_string,mdfsck.exe,DRBNum,binary_string,0x0000E971,59761,confirmed,Label exists in checker output format strings
+mdfsck_string,mdfsck.exe,VolumeDescriptorStructOffset,media_record_offset,,unknown,unknown,Not recovered by strings-only analysis; requires disassembly/dynamic trace
+mdfsck_string,mdfsck.exe,VSBStructOffset,media_record_offset,,unknown,unknown,Not recovered by strings-only analysis; requires disassembly/dynamic trace
+mdfsck_string,mdfsck.exe,MTBStructOffset,media_record_offset,,unknown,unknown,Not recovered by strings-only analysis; requires disassembly/dynamic trace
+mdfsck_string,mdfsck.exe,ERBStructOffset,media_record_offset,,unknown,unknown,Not recovered by strings-only analysis; requires disassembly/dynamic trace
+mdfsck_string,mdfsck.exe,DRBStructOffset,media_record_offset,,unknown,unknown,Not recovered by strings-only analysis; requires disassembly/dynamic trace

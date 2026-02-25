@@ -1,0 +1,5 @@
+scenario,route,errno,policy,reason,status
+frame_len < 2,header guard,EIO,fail_closed_eio (forced),frame_too_short_for_req1,implemented
+req1 != 9,unknown-path classifier,EIO or ENOTSUP,configurable (FailClosedEio / FeatureEnotsup),req1_not_in_supported_subset,implemented
+req1 == 9 but frame truncated,case9 parser,EIO,fail_closed_eio (forced),case9_too_short,implemented
+req1 == 9 and parse ok,case9 parser,none,n/a,parsed_case9,implemented

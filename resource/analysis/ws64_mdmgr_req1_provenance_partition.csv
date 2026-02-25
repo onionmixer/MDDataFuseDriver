@@ -1,0 +1,15 @@
+addr,insn,access,zone
+0x05d7,"mov byte ptr es:[bx + 1], 1",write,outside_handler
+0x07af,"cmp byte ptr es:[bx + 1], 1",read,outside_handler
+0x0aef,"mov bl, byte ptr es:[bx + 1]",read,outside_handler
+0x0d67,"cmp byte ptr es:[bx + 1], 8",read,handler_0d31
+0x0d74,"mov al, byte ptr es:[bx + 1]",read,handler_0d31
+0x0e49,"mov al, byte ptr es:[bx + 1]",read,handler_0d31
+0x11fe,"mov byte ptr es:[bx + 1], 0x10",write,outside_handler
+0x161d,"mov byte ptr es:[bx + 1], al",write,outside_handler
+0x1743,"mov byte ptr es:[bx + 1], al",write,outside_handler
+0x184d,"mov byte ptr es:[bx + 1], 1",write,outside_handler
+0x1857,"mov byte ptr es:[bx + 1], 0",write,outside_handler
+0x1b82,"cmp byte ptr es:[bx + 1], 6",read,outside_handler
+0x1b8c,"mov al, byte ptr es:[bx + 1]",read,outside_handler
+0x1c33,"mov al, byte ptr es:[bx + 1]",read,outside_handler

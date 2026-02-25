@@ -1,0 +1,20 @@
+Installer analysis from w31/INSTALL.DAT
+Default target: \MDDATA
+Always: READ.ME
+Optional groups: mdsys.red, dmdutil.red, wmdutil.red, dock1.red
+
+Recovered (decompressed):
+- MDMGR.EXE from MDSYS.RED: 13392 bytes (header unc=13394)
+- MDTOOL.DLL from WMDUTIL.RED: 18953 bytes (header unc=18944)
+
+Not yet recovered:
+- MDFSEX.EXE from MDSYS.RED (expected unc=47518)
+- MDFORMAT.EXE from DMDUTIL.RED (expected unc=109956)
+- MDFSCK.EXE from DMDUTIL.RED (expected unc=65327)
+- MDPLAY.EXE from DMDUTIL.RED (expected unc=62096)
+- MDCACHE.EXE from DMDUTIL.RED (expected unc=55956)
+- WMDFMT.EXE from WMDUTIL.RED (expected unc=310272)
+- WMDPLAY.EXE from WMDUTIL.RED (expected unc=345600)
+- BWCC.DLL from WMDUTIL.RED (expected unc=164928)
+- DCAM950.EXE from DOCK1.RED (expected unc=34625)
+- ASPI2CAM.SYS from DOCK1.RED (expected unc=4112)

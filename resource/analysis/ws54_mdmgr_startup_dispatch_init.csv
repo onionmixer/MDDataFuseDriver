@@ -1,0 +1,11 @@
+addr,insn,kind
+0x2e6d,"mov word ptr [bx + 0xd04], 0",d02_table_write
+0x2e73,"mov word ptr [bx + 0xd02], 0",d02_table_write
+0x2e7f,"mov word ptr [bx + 0xe34], 0",e32_table_write
+0x2e85,"mov word ptr [bx + 0xe32], 0",e32_table_write
+0x2ecc,"mov word ptr [0xd08], 0x11f",d02_table_write
+0x2ed2,"mov word ptr [0xd06], 0x95c",d02_table_write
+0x2ed8,"mov word ptr [0xe34], 0x73",e32_table_write
+0x2ede,"mov word ptr [0xe32], 0x601",e32_table_write
+0x2efa,"mov word ptr [0xe34], 0x73",e32_table_write
+0x2f00,"mov word ptr [0xe32], 0x601",e32_table_write

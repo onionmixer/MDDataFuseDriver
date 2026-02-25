@@ -1,0 +1,4 @@
+file,ordinal_start,ordinal_end,flags,raw_hex,u32_le_b1_4,u32_be_b1_4,u16_le_b1_2,u16_be_b1_2,u16_le_b3_4,u16_be_b3_4
+w95/extract/us/mdmgr.vxd,1,1,1,0100032003,52429568,204803,768,3,800,8195
+w95/extract/us/mdhlp.vxd,1,1,1,010003bc02,45875968,244738,768,3,700,48130
+w95/extract/us/mdfsd.vxd,1,1,1,0100030052,1375732480,196690,768,3,20992,82

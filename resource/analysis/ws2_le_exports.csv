@@ -1,0 +1,7 @@
+file,ordinal,name_sources
+w95/extract/us/mdmgr.vxd,0,"resident:MDMGR, nonresident:VxD MDMGR (VtoolsD)"
+w95/extract/us/mdmgr.vxd,1,nonresident:_The_DDB
+w95/extract/us/mdhlp.vxd,0,"resident:MDHLP, nonresident:DOS386 MDHlp Device  (Version 4.0)"
+w95/extract/us/mdhlp.vxd,1,nonresident:MDHlp_DDB
+w95/extract/us/mdfsd.vxd,0,"resident:MDFSD, nonresident:VxD MDFSD (VtoolsD)"
+w95/extract/us/mdfsd.vxd,1,nonresident:_The_DDB

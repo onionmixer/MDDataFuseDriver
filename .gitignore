@@ -1,0 +1,32 @@
+# C 빌드 산출물
+*.o
+*.a
+mdfs-tools/mdfs-fuse
+mdfs-tools/mdfsformat
+mdfs-tools/test_vd
+mdfs-tools/test_drb
+
+# Rust 빌드
+mdfs-fuse-rs/target/
+
+# 디스크 이미지 및 바이너리 덤프
+*.img
+*.bin
+
+# QEMU 런타임 로그 (수백MB~GB 단위)
+resource/driver_legacy/results/
+
+# macOS 메타데이터
+.DS_Store
+._*
+
+# 에디터 / IDE
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Claude Code
+.claude/
+CLAUDE.md

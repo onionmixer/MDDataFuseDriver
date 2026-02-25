@@ -1,0 +1,7 @@
+file,sha1,size,ordinal,obj,flags_hex,middle16_hex,entry_raw_hex,resident_name,nonresident_name
+w95/extract/jp/mdfsd.vxd,ebd4c5f887f1081461d9720a95afb25074f9fdda,79530,1,1,0x03,0x5200,030052,,_The_DDB
+w95/extract/jp/mdhlp.vxd,5a8e0363c93110c4f9cb0bbb13236d7d243fd24b,11406,1,1,0x03,0x02bc,03bc02,,MDHlp_DDB
+w95/extract/jp/mdmgr.vxd,1ace191b10bb9c6ebed8e048b7e6d7fff5aea00d,21155,1,1,0x03,0x0320,032003,,_The_DDB
+w95/extract/us/mdfsd.vxd,ebd4c5f887f1081461d9720a95afb25074f9fdda,79530,1,1,0x03,0x5200,030052,,_The_DDB
+w95/extract/us/mdhlp.vxd,5a8e0363c93110c4f9cb0bbb13236d7d243fd24b,11406,1,1,0x03,0x02bc,03bc02,,MDHlp_DDB
+w95/extract/us/mdmgr.vxd,1ace191b10bb9c6ebed8e048b7e6d7fff5aea00d,21155,1,1,0x03,0x0320,032003,,_The_DDB

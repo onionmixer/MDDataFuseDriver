@@ -1,0 +1,11 @@
+[package]
+name = "mdfs-layout"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[lib]
+path = "src/lib.rs"
+
+[dependencies]
+mdfs-index = { path = "../mdfs-index" }

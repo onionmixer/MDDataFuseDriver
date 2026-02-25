@@ -1,0 +1,4 @@
+file,entry_off,obj,flags,middle16,data_pages,ddb_off,ddb_00,ddb_04,ddb_08,ddb_name8
+w95/extract/us/mdmgr.vxd,513,1,3,800,4096,4896,0,1024,1,MDMGR   
+w95/extract/us/mdhlp.vxd,437,1,3,700,4096,4796,0,1024,4,MDHlp   
+w95/extract/us/mdfsd.vxd,969,1,3,20992,4096,25088,0,1024,1,MDFSD   

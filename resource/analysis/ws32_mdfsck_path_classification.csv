@@ -1,0 +1,10 @@
+helper_addr,path_class,evidence,confidence,notes
+0x3994,conditional,"WS20 direct-xref intra-cluster only; WS30 no resolved-indirect ingress",low,"runtime trace required"
+0x3a24,conditional,"WS20 caller 0x3975 only",low,"runtime trace required"
+0x3a4c,conditional,"WS20 caller 0x3e42",medium,"inside helper cluster chain"
+0x3adc,conditional,"WS20 caller 0x3e60",medium,"inside helper cluster chain"
+0x3cca,conditional,"WS20 callers 0x3e0d/0x3e2d",medium,"mode-dependent tx/rx helper"
+0x3e32,unreached,"WS20 no direct top-level caller; WS30 no resolved-indirect ingress",low,"runtime trace required"
+0x3e72,unreached,"WS20 no direct top-level caller; WS30 no resolved-indirect ingress",low,"runtime trace required"
+0x3ef0,unreached,"WS20 no direct top-level caller; WS30 no resolved-indirect ingress",low,"runtime trace required"
+0x3f4a,unreached,"WS20 no direct top-level caller; WS30 no resolved-indirect ingress",low,"runtime trace required"

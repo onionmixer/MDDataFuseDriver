@@ -1,0 +1,13 @@
+kind,addr,insn,meaning
+caller,0x0e70,call 0x8f4,call 0x08f4 (only direct caller observed)
+precondition,0x0d3d,"cmp byte ptr es:[bx], 0",req[0] == 0 gate (else early exit)
+precondition,0x0d67,"cmp byte ptr es:[bx + 1], 8",req[1] <= 8 check for first dispatcher path
+precondition,0x0d6c,jbe 0xd71,jbe to first path; fallthrough (>8) enters second path toward 0x0e58
+precondition,0x0e11,"cmp byte ptr es:[bx + 2], 8",req[2] < 8 guard (jb) before second dispatch handlers
+precondition,0x0e16,jb 0xe1b,on req[2] >= 8 -> error path
+precondition,0x0e29,"cmp byte ptr [bx + 0xd2f], 0",table/slot enable byte check at [0x0d2f + 0x14*req2]
+precondition,0x0e2e,je 0xea8,disabled slot -> error path
+precondition,0x0e49,"mov al, byte ptr es:[bx + 1]",load req[1] for second dispatcher
+precondition,0x0e51,"cmp bx, 0xd",req[1] <= 0x0d guard
+precondition,0x0e54,ja 0xe9c,on req[1] > 0x0d -> error path
+precondition,0x0e70,call 0x8f4,call 0x08f4 (only direct caller observed)

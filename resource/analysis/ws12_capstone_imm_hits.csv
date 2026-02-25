@@ -1,0 +1,3 @@
+file,insn_off,mnemonic,op_str,imm16
+w31/extract/mdformat.exe,0x0f202,ljmp,0x20a:0xf526,0x020a
+w31/extract/mdformat.exe,0x11ade,ljmp,0x20a:0xf526,0x020a

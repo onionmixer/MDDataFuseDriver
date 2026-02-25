@@ -1,0 +1,8 @@
+family,site,model,candidate_offsets,can_be_1997,priority,reason
+external_loaded_farptr,lcall [0x0c42] @ 0x0398/0x0501/0x0573/0x0684,"runtime file-read loaded (int21/4402, 4 bytes)",unknown,unknown,high,only unresolved externally supplied far pointer lane
+indexed_dispatch_e32,lcall [bx+0x0e32] / lcall [0x0e32],WS55 runtime timeline entries 0..2,"0x0000,0x0601,0x095c",no,low,runtime entries resolved; 0x1997 absent
+indexed_helper_d02,lcall [bx+0x0d02] @ 0x0ee5,startup-zero(8 entries) + entry1=011f:095c,"0x0000,0x095c",no,low,startup model excludes 0x1997
+stride11_dynamic_lane,lcall [bx+0x0dcf] (bounded path idx<3 observed),raw-image bounded sample (idx=0..2); runtime writes partially known,"0x0876,0xff08,0x0676",unknown,medium,index and table values are runtime-sensitive in other paths
+stride11_dynamic_lane,lcall [bx+0x0dd3] (bounded path idx<3 observed),raw-image bounded sample (idx=0..2); runtime writes partially known,"0x9a06,0xe80e,0xf9c1",unknown,medium,index and table values are runtime-sensitive in other paths
+stride11_dynamic_lane,lcall [bx+0x0dd7] (bounded path idx<3 observed),raw-image bounded sample (idx=0..2); runtime writes partially known,"0x0002,0xc483,0xeb04",unknown,medium,index and table values are runtime-sensitive in other paths
+stride11_dynamic_lane,lcall [bx+0x0ddb] (bounded path idx<3 observed),raw-image bounded sample (idx=0..2); runtime writes partially known,"0xeb0a,0xff1e,0x0876",unknown,medium,index and table values are runtime-sensitive in other paths

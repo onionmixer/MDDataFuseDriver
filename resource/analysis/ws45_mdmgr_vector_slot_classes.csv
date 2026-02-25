@@ -1,0 +1,7 @@
+slot,class,call_count,guard_count,sample_call_site,sample_prelude
+0x0c42,parser_callback,4,0,0x0398,"0x038a:cmp si, 0x3a || 0x038f:mov byte ptr [bp - 0x3e], 0 || 0x0393:push ss || 0x0397:push ax"
+0x0cfa,device_vector,1,1,0x0d55,"0x0d46:mov ax, word ptr [0xcfa] || 0x0d49:or ax, word ptr [0xcfc] || 0x0d4d:je 0xd5c || 0x0d4f:push word ptr [bp + 8] || 0x0d52:push word ptr [bp + 6]"
+0x0cfe,device_vector,1,1,0x0f05,"0x0ef1:mov byte ptr es:[bx + 3], 1 || 0x0ef6:mov ax, word ptr [0xcfe] || 0x0ef9:or ax, word ptr [0xd00] || 0x0efd:je 0xf0c || 0x0eff:push word ptr [bp + 8] || 0x0f02:push word ptr [bp + 6]"
+0x0e2a,device_vector,1,1,0x1b70,"0x1b61:mov ax, word ptr [0xe2a] || 0x1b64:or ax, word ptr [0xe2c] || 0x1b68:je 0x1b77 || 0x1b6a:push word ptr [bp + 8] || 0x1b6d:push word ptr [bp + 6]"
+0x0e2e,device_vector,1,1,0x1d1f,"0x1d0b:mov byte ptr es:[bx + 3], 1 || 0x1d10:mov ax, word ptr [0xe2e] || 0x1d13:or ax, word ptr [0xe30] || 0x1d17:je 0x1d26 || 0x1d19:push word ptr [bp + 8] || 0x1d1c:push word ptr [bp + 6]"
+0x0e32,device_vector,5,0,0x12f1,"0x12e3:mov ax, word ptr [bp + 6] || 0x12e6:mov word ptr [bp - 6], dx || 0x12e9:mov word ptr [bp - 8], ax || 0x12ec:push ss || 0x12f0:push ax"

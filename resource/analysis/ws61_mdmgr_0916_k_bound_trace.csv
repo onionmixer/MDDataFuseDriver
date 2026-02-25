@@ -1,0 +1,19 @@
+kind,addr,insn,note
+direct_caller,0x0e70,call 0x8f4,
+caller_window,0x0e46,"les bx, ptr [bp + 6]",pre-dispatch req[+1] bound
+caller_window,0x0e49,"mov al, byte ptr es:[bx + 1]",pre-dispatch req[+1] bound
+caller_window,0x0e4d,"mov ah, 0",pre-dispatch req[+1] bound
+caller_window,0x0e4f,"mov bx, ax",pre-dispatch req[+1] bound
+caller_window,0x0e51,"cmp bx, 0xd",pre-dispatch req[+1] bound
+caller_window,0x0e54,ja 0xe9c,pre-dispatch req[+1] bound
+caller_window,0x0e56,"add bx, bx",pre-dispatch req[+1] bound
+callee_k_path,0x08fe,"les bx, ptr [bp + 6]",
+callee_k_path,0x0901,"mov al, byte ptr es:[bx + 2]",k source byte req[+2]
+callee_k_path,0x0905,"mov ah, 0",
+callee_k_path,0x0907,"imul ax, ax, 0x14",k * 0x14
+callee_k_path,0x090a,"mov bx, ax",
+callee_k_path,0x090c,"mov al, byte ptr [bx + 0xd30]",remap byte from [0x0d30 + k*0x14]
+callee_k_path,0x0910,cwde ,
+callee_k_path,0x0911,"imul ax, ax, 0x11",remap * 0x11
+callee_k_path,0x0914,"mov bx, ax",
+callee_k_path,0x0916,lcall [bx + 0xddb],lane dispatch

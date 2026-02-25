@@ -1,0 +1,1744 @@
+
+
+===== Page 1 =====
+
+MINIDISC MANUAL
+V3.0E
+
+
+===== Page 2 =====
+
+Table of Contents
+Introduction  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1
+1. The MiniDisc System
+1.1. The Features  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2
+1.2. What it is and How it Works  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3
+1.3. Serial Copy Management System  . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+1.4. Additional Features of the Premastered MD . . . . . . . . . . . . . . . . . . . . . 8
+2. The production process of the premastered MD
+2.1. MD Production  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9
+2.2. MD Components  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10
+3. Input components specification
+3.1. Sound Carrier Specifications  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12
+3.2. Additional TOC Data / Character Information  . . . . . . . . . . . . . . . . . . 17
+3.3. Label-, Artwork- and Print Films  . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19
+3.4. MiniDisc Logo . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23
+4. Sony DADC Austria AG
+4.1. The Company . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 25
+5. Appendix
+Form Sheets
+
+===== Page 3 =====
+
+Introduction
+The quick random access of Compact Disc players has become a necessity for
+music lovers. The high quality of digital sound is now the nor m. The futur e
+of personal audio must meet the above criteria and mor e.
+That’s why Sony has cr eated the MiniDisc, a r evolutionar y evolution in the
+field of digital audio based on an advanced miniatur e optical disc.
+The MD of fers consumers the quick random access, durability and high
+sound quality of optical media, as well as superb compactness, shock-
+resistant por tability and r ecordability. In shor t, the MD for mat has been
+created to meet the needs of personal music enter tainment in the futur e.
+Based on a dazzling ar ray of new technologies, the MiniDisc of fers a new
+lifestyle in personal audio enjoyment.
+
+===== Page 4 =====
+
+The Featur es
+AADD CCDD
+AUSTRIA
+2
+1. The MiniDisc System
+1.1. The Featur es
+With the MiniDisc, Sony has cr eated a r evolutionar y optical disc. It of fers all the featur es
+that music fans have been waiting for .
+Quick Random Access
+The MiniDisc of fers quick random access to the music selection or phrase of your 
+choice; something only a disc is capable of.
+Total Durability
+The MiniDisc can never str etch, br eak or tangle like cassette tapes. Since the fr ee 
+floating optical pick-up never touches the sur face, scratches ar e impossible.
+Superb Compactness
+The MiniDisc itself is only appr oximately 64 mm in diameter , and the car tridge is 
+72 x 68 x 5 mm. And because the MiniDisc is smaller , so is the MiniDisc player .
+Shock-Resistant Por tability
+The MiniDisc is r esistant against shocks and vibrations. New technology , using an 
+advanced semiconductor memor y, provides almost total shock r esistance so ther e 
+is no skipping and jitter even while jogging or driving.
+Easy to Handle
+The disc is pr otected in a car tridge. It is easy to handle and the ideal sound car rier for 
+mobile use.
+Unsurpassed Digital Sound
+The MiniDisc is based on the same noiseless and distor tion-free digital r ecording 
+technology as the compact disc. So whether you ar e recording your own or listening
+to prerecorded music, you have the optimum in audio quality wher ever you go.
+Recordable Disc
+4 Track Recor ding: “A disc which r ecords” is ever y music fan’ s dream come tr ue. 
+The MiniDisc of fers about 74 minutes digital r ecording on one tiny disc.
+
+
+===== Page 5 =====
+
+What it is and How it works
+AADD CCDD
+AUSTRIA 3
++ -
+Cross sectional view
+of recording track
+Laser Laser
+High intensity Low intensity
+0 1
+Recordable disc Premastered disc
+0 1
++ +
+MD
+Objective Lens
+Polarized
+beam splitter
+Photo Detector A
+Photo Detector B
+Laser Beam
+MO signal
+Pit signal
+Recording track
+1.2. What it is and How it W orks
+Two Kinds of MiniDiscs ar e Available:
+Premastered MiniDiscs for 
+Music Softwar e
+Premastered MiniDiscs ar e used most commonly
+for music and ar e sold in r ecord stor es just the
+same as compact cassettes and CDs ar e.
+MiniDiscs, just like CDs, ar e manufactur ed in
+large volumes by high-speed injection molders,
+and the music signals ar e r ecorded during r epli-
+cation in the for m of pits.
+Forget the times when you would wor ry about
+cassette tapes becoming wor n out or wrinkled.
+Moreover, the discs ar e encased in a car tridge, so
+there is no wor ry about  their being scratched.
+The design of the pr emastered MiniDisc car tridges
+Optical Pick-up of MD Player:
+is special. Pr erecorded music packages r equire a
+label, featuring the ar tist’s pictur e or other infor -
+mation – for it is the ar twork that most often
+captures the buyer ’s eye. Ther efore the top face
+of the car tridge is left completely fr ee for the
+label. A window for the laser beam to r ead the
+disc is only necessar y on the bottom face.
+Recordable MiniDiscs
+Magneto-optical (MO) technology for ms the hear t
+of the r ecordable MiniDisc technology . Not only
+are MO discs durable enough to withstand being
+rerecorded about 1 million times, they also have a
+life expectancy appr oaching that of CDs.
+When r ecording the MO discs, a laser beam must
+be focused onto the magnetic layer fr om behind
+while a magnetic field is applied to the fr ont. For
+this r eason, the car tridges for r ecordable MiniDiscs
+have a r ead/write window on both sides.
+The optical pick-up developed for the MD system
+has the r emarkable ability to r ead both r ecorda-
+ble and pr emastered MiniDiscs. For r ecordable
+discs, the pick-up detects the magnetic str ucture
+along the track. For  pr emastered optical discs, it
+detects the geometric str ucture along the track.
+The MD system is based on the design of the
+standard CD pick-up with the addition of a MO
+signal r eadout analyzer and two photodiodes.
+During playback of r ecordable discs a 0.5mW laser
+is focused onto the magnetic layer . The magnetic
+signal on the disc af fects the polarization of the
+reflected beam. The dir ection of polarization is
+converted into light intensity by the MO signal
+readout analyzer . Depending on the dir ection of
+polarization one of the two photodiodes will
+detect mor e light. The electrical signals fr om the
+photodiodes ar e subtracted and depending on
+whether the dif ference is positive or negative, a
+“1” or “0” signal is r ead.
+MiniDisc Pick-up T echnology
+
+===== Page 6 =====
+
+Laser BeamMove direction of Disc
+New Old
+Recording Head
+Head Drive signal
+0
+1
+S SN NSS NN
+Heated area by Laser
+above Curie Point
+(erased magnetic pattern)
+Magnetic field of
+Recording Head
+Cross section of
+MO-Layer with
+magnetic pattern
+Top view
+of one Track
+Frozen magnetic pattern
+after cooling below
+Curie Point
+What it is and How it W orks
+AADD CCDD
+AUSTRIA
+4
+The same 0.5mW laser is used for the playback of
+premastered optical discs. The amount of light
+reflected depends on whether or not a pit exists
+on the sur face of the disc. If ther e is no pit, a
+high pr oportion of the light is r eflected back
+through the beam splitter and analyzer into the
+photodiodes. If a pit does exist, some of the light
+is dif fracted and less light r eaches the photodi -
+odes. The electrical signals fr om the photodiodes
+are added up in this case and depending on the
+sum, a “1” or “0” is r ead.
+Overwrite Technology
+In order to meet the r equirements of a compact,
+lightweight, r ecordable audio system for perso -
+nal use, the MD system employs a newly develo -
+ped Sony magneto-optical (MO) disc that utilizes
+magnetic field modulation with dir ect “over wri-
+te” capability . W ith MO disc technology , the
+recording of data r equires the use of a laser and
+a polarizing magnetic field. When the magnetic
+layer in the disc is heated by the laser to a tem -
+perature above the Curie point (appr oximately
+200° C), it temporarily looses its coer cive for ce.
+As the disc r otates and the ir radiated domain
+returns to nor mal temperatur e, its magnetic ori -
+entation is deter mined by an exter nally applied
+magnetic field. Polarities of “N” and “S” can
+thus be r ecorded, cor responding to digital data
+“1” and “0”.
+Unlike conventional MO r ewrite mechanisms, the
+”Sony MD over write system” positions a magne -
+tic head dir ectly accr oss fr om the laser sour ce on
+the opposite side of the disc. A magnetic field
+corresponding to the input signal is generated
+over the laser spot. The r otation of the disc then
+displaces the ar ea to be r ecorded, allowing the
+temperatur e at the spot to dr op back below the
+Curie point. At that point, the domain takes on
+the polarity of the applied magnetic field r egard-
+less of the polarity that pr eviously existed. 
+Overwrite Mechanism
+
+===== Page 7 =====
+
+What it is and How it W orks
+AADD CCDD
+AUSTRIA 5
+The ease of quick random access was made possi -
+ble by the development of the Compact Disc (CD).
+The CD instantaneously pr ovides random access to
+the beginning of any desir ed music selection. After
+using a CD player , the time to r each the music sel -
+ection of your choice with cassette tape players
+seems extr emely cumbersome.
+The MiniDisc pr ovides the same high-speed random
+access for r ecordable discs as well as for pr emaste-
+red discs. In addition, the r ecordable MiniDisc has a
+circumferential micr ogroove or ”pr e-groove”, which
+is formed when the polycarbonate substrate is injec -
+tion molded. This pr e-groove is the basis for the
+tracking ser vo and spindle ser vo operation during
+recording or playback.
+Address infor mation is r ecorded at inter vals of 13.3
+milliseconds using a technology that places infinite -
+simal zigzags on this pr e-groove. Ther efore, the
+disc has all the addr esses already notched along the
+groove even with no r ecording. The r esult is a 
+stable and quick random access, as well as a variety
+of optional featur es, including pr ogramming of 
+the playback sequence e.g.: r earranging the
+sequence of the titles r ecorded on the MD without
+rerecording of the music infor mation in a matter of
+seconds.
+This is possible because of the “User TOC Ar ea”,
+located around the inner edge of the  micr ogroove,
+which only contains the or der of the music. This
+system is similar to the “dir ectory management
+system” of floppy discs. In other wor ds, star ting
+and ending addr esses for all music tracks r ecorded
+on the disc ar e stor ed in this ar ea, enabling easy
+programming just by r ewriting the addr esses. This
+supports also other featur es: it is possible to erase
+a track out of a sequence and during playback no
+gap in the r emaining music will be hear d. The era -
+sed segment is allocated to the fr ee space – it is
+possible to r ecord a piece of music independent of
+the number of segments used.
+Quick Random Access
+Lead in 1 2 3 4 Lead out
+A B C D E F G HInner Edge Outer Edge
+Disc Signal
+Lead in 1 2 3 Lead out
+A: Before Rearranging
+B: After Rearranging
+Music Data and Order are Recorded Time-Wise
+1. Ordinary Method:
+Rearranged Area
+Lead in UTOC Only Music Data is Recorded Lead out
+1
+ 
+2
+ 
+3
+ 
+4
+UTOC Data TNO START STOP
+A
+ 
+C
+ 
+E
+ 
+G
+B
+ 
+D
+ 
+F
+ 
+H
+ 
+Disc Signal
+2. MiniDisc:
+Music Data and Order are Recorded Area-WiseA: Before Rearranging
+Lead in UTOC Only Music Data is Recorded Lead out
+1
+ 
+2
+ 
+3
+UTOC Data TNO START STOP
+A
+ 
+E
+ 
+G
+D
+ 
+F
+ 
+H
+ 
+Rearranged Area
+Connecting two Tracks:
+B: After Rearranging (No Change of  Music Data)
+Additional Reprogramming the Order:
+1
+ 
+2
+ 
+3
+TNO START STOP
+A
+ 
+G
+ 
+E
+D
+ 
+H
+ 
+F
+Reprogramming the 
+Order of Music
+
+===== Page 8 =====
+
+Threshold of Hearing:
+As sound level diminishes, ther e is a level below
+which the human ear cannot detect. This thr es-
+hold varies with fr equency. The thr eshold of
+audibility is lowest for sounds with a fr equency
+of appr oximately 4kHz; that is, sounds close to
+this fr equency ar e most easily detected by the
+ear. By analyzing the fr equency components of
+an audio signal, it is possible to identify those
+components that lie below the thr eshold of hea -
+ring. Such components can be r emoved fr om
+the original signal without af fecting per ceived
+sound quality .
+Masking Ef fect:
+If two sounds, one loud and the other soft, ar e
+produced simultaneously and they ar e close to
+one another in fr equency, the softer sound be -
+comes dif ficult or even impossible to hear .
+Therefore, when an audio signal has a high level
+component and a low level component at neigh -
+bouring fr equencies, the latter can be r emoved
+without af fecting per ceived sound quality .
+Moreover, with incr easing overall signal amplitu -
+de, it becomes possible to r emove a gr eater num -
+ber of components without audible ef fect.
+What it is and How it W orks
+AADD CCDD
+AUSTRIA
+6
+0.02 msec
+11.6 msec
+Level
+analyze the waveform
+during approx
+11.6 msec into
+frequency components
+Time
+Level
+Frequency F1
+512 Samples
+Level
+Frequency F4
+Level Frequency Fn
+Waveform analysis:
+ATRAC Digital Audio Compression
+Technology
+In or der to pr ovide appr oximately 74 minutes of
+music on the 2.5-inch MiniDisc, a digital audio
+compression technology called “ATRAC” (Adaptive
+Transform Acoustic Coding) has been newly deve -
+loped. This technology compr esses infor mation
+down to approximately one fifth of the amount of
+data usually required. 
+In 16-bit linear encoding, cur rently used in the CD
+and DA T for mats, with a sampling fr equency of 
+44.1 kHz, the analog signal is sampled appr oxim
+ately once ever y 0.02 milliseconds. Each sample is
+quantized at 16-bit r esolution into one of 65536
+possible values. Ther efore, with CD and DA T, when
+the analog signal is conver ted to digital data in r eal
+time, 16 bits of data ar e used ever y 0.02 millise -
+conds, regardless of the amplitude of the signal and
+whether or not a signal is pr esent at all. 
+ATRAC star ts with the same 16-bit digital data but
+analyzes segments of the data for waveform content
+every 11.6 msec. Based on this analysis, A TRAC
+extracts and encodes only those fr equency compo -
+nents that are actually audible to the human ear . 
+This method of encoding is far mor e efficient than
+the linear coding technique used for CD and DA T,
+yet sound quality remains comparable. The following
+underlying psychoacoustic principles ar e used during
+this conversion.
+Psychoacoustic principles:
+Masking Effect
+F6 FnF4F1
+50 400 4k 20k
+Threshold of
+Hearing
+Level
+Sampling Distribution and Acoustic Effect
+Level
+F6 FnF4F1
+50 400 4k 20k
+Freq.  (Hz)
+Sampling from ATRAC and its Level
+
+===== Page 9 =====
+
+Shock-Resistant Memor y
+Conventional optical pick-up systems can easily
+mistrack when subjected to shock or vibration. In
+digital audio CDs, this causes “skipping” or
+muting. Resistance to shock and vibration is a vir -
+tual pr erequisite for tr ue por table personal audio
+applications. In the MD system, Sony has solved
+this pr oblem with a unique shock-r esistant
+memory.
+While the MD pick-up can r ead infor mation of f
+the disc at a rate of 1.4Mbit per second, the
+ATRAC decoder r equires a data rate of only
+0.3Mbit per second for r eal time playback. This
+difference in pr ocessing speed enables the use of
+a readahead buf fer, placed between the pick-up
+and the decoder . If a 4Mbit memor y chip is used
+for the buf fer, it can stor e up to 10 seconds of
+digital infor mation. Should the pick-up be jar red
+out of position, the correct information continues
+to be supplied to the A TRAC decoder fr om the
+buffer memor y. As long as the pick-up r eturns to
+the cor rect position within 10 seconds, the
+listener never experiences mistracking or muting.
+Since signals enter the buf fer memor y faster than
+they leave it, the buf fer will eventually become
+full. At that point, the MD player momentarily
+stops r eading infor mation fr om the disc; it r esu-
+mes reading as soon as ther e is again r oom in the
+memory chip.
+Using a concept called sector r epositioning, the
+MD pick-up has the ability to quickly r esume rea-
+ding from the cor rect point after being displaced.
+When signals ar e recorded on the MiniDisc (either
+recordable MO or pr emastered optical media),
+address infor mation is assigned ever y 13.3 milli -
+seconds. When a pick-up is shifted out of place,
+the MD player quickly r ecognizes the disr uption,
+identifies the wr ong address, and instantly r eturns
+the pick-up to the cor rect position.
+What it is and How it W orks
+AADD CCDD
+AUSTRIA 7
+Decoder
+4 Mbit Memory
+Optical Pick-up
+1.4 Mbit / sec
+0.3 Mbit / sec
+D/A converter Amplifier
+Digital Music Data
+Analog Music Data
+Flow of Music Data
+Shock-Resistant Memor y
+
+===== Page 10 =====
+
+AADD CCDD
+AUSTRIA
+8
+What it is and How it W orks
+1.3. Serial Copy Management
+System (SCMS)
+The MD confor ms to the SCMS convention (see ISO-
+958 + Amendment 84 (C . O.) 126 and 126A). The
+Serial Copy Management System allows to make a
+first digital copy fr om digital sour ces. Fur ther digital
+copies fr om protected sour ces are prevented, copies
+in the analog domain r emain possible.
+1.4. Serial Copy Management
+System (SCMS)
+The pr emastered MD has following additional
+advantages:
+• The data is stor ed in physical pits and is ther efore
+never erased unless it is mechanically destroyed.
+• The label area is larger than the one of the record-
+able MD. The entire area of one side can be used 
+for labeling. The recordable MD has a shutter on 
+both sides and its label is r elatively small.
+• The premastered MD contains valuable character 
+information (e.g. disc & track names) which will 
+not be transferred during copying.
+• The subdata capacity of the pr emastered MD is 
+bigger. So it is possible to r ecord more character 
+informationonto the MD.
+Channels:
+Frequency Response:
+Dynamic Range:
+Wow- and Flutter:
+Sampling Fr equency:
+Coding System:
+Modulation System:
+Error Cor rection System:
+Disc Speed:
+Record/Playback T ime:
+Cartridge Size:
+Disc Diameter:
+2 (Ster eo)
+5 - 20.000 Hz
+105 dB
+Unmeasurable
+44.1 kHz
+ATRAC System
+EFM
+CIRC
+1.2 - 1.4 m/sec (CL V)
+about 74 minutes
+72 x 68 x 5 mm
+64 mm
+Sony MiniDisc System 
+Specifications
+
+===== Page 11 =====
+
+AADD CCDD
+AUSTRIA 9
+MD Production
+2. The pr oduction pr ocess of the pr emastered MD
+2.1. MD Pr oduction
+1. Input Material
+DADC requires following input components from customers:
+• A MD master tape or a sound car rier as for CD production (e.g. PQ-encoded U-Matic 1630).
+• Print films, as well as colour pr oofs, for artwork, label- and cartridge print.
+• Completely filled in form sheets (sample forms 1, 2 & 3 on pages 14, 15 & 18, form sheets in appendix).
+Production can be started as soon as all necessary components have arrived.
+2. Premastering
+At the pr emastering studio the CD-Master tape is conver ted to a MD-Master tape. This means 
+that the audio infor mation is compr essed by a For mat Converter using the A TRAC compression 
+technology. Also the PQ-code is conver ted to MD specific data and optional subdata (POS*, disc 
+name, track name) can be added. All infor mation then is recorded onto a MD Master.
+3. Mastering
+A nickel stamper for MD replication is produced in the same process as for CD. A glass plate is coated
+with a thin layer of photo lacquer . A laser spot r ecords the data fr om the MD Master into the photo 
+lacquer. The nickel negatives which are produced from the developed plate are used to replicate the MD.
+4. Disc Replication
+The r eplication pr ocess of the MD is the same as for CD. After cr eating a disc by using high 
+precision molding technology, the MD is coated with a thin layer of aluminum as r eflective media, 
+and subsequently with pr otective lacquer to pr otect it against damage. Then the coated discs ar e 
+100% quality inspected.
+5. Cartridge Assembly
+As the first step in the finishing process, the cartridge is prepared with a paper label glued onto the 
+front and other infor mation printed in white on the back and spine. After the clamping plate has 
+been mounted onto the MD, the MD is set into the car tridge halves and the cartridge is welded.
+6. Packaging
+Packaging is done ver y similar to CD packaging, with a booklet and a backline car d added to the 
+MD in a special MD jewel case.
+* point of sales data.
+Æ
+1
+Input
+Material
+Æ
+2
+Pre-
+Mastering
+Æ
+3
+Mastering
+Æ
+4
+Disc
+Replication
+Æ
+5
+Cartridge
+Assembly
+Æ
+6
+Packaging
+
+===== Page 12 =====
+
+AADD CCDD
+AUSTRIA
+10
+MD Components
+Upper Cartridge (e.g. Polycarbonate)
+Label (Paper)
+Disc (e.g. Polycarbonate)
+Clamping Plate (e.g. Stainless Steel)
+Shutter Lock (e.g. POM)
+Shutter (e.g. POM)
+Lower Cartridge (e.g. Polycarbonate)
+Assembled MiniDisc
+BACKLINER
+BOOKLET Tray (e.g. Polycarbonate)
+Backline Card (Paper)
+MD Jewel Case (e.g. Polycarbonate)
+MARIAH CAREY  EMOTIONS
+WARNING: All Rights Reserved.
+í
+í
+í
+í
+í
+í
+í
+í
+Upper Cartridge (e.g. Polycarbonate)
+Label (Paper)
+Disc (e.g. Polycarbonate)
+Clamping Plate (e.g. Stainless Steel)
+Shutter Lock (e.g. POM)
+Shutter (e.g. POM)
+Lower Cartridge (e.g. Polycarbonate)
+Assembled MiniDisc
+Tray (e.g. Polycarbonate)
+Backline Card (Paper)
+MD Jewel Case (e.g. Polycarbonate)
+2.2. MD Components
+The MD consists of the following components: 
+
+===== Page 13 =====
+
+Pit
+Protective
+layer
+Reflective
+layer
+Polycarbonate 1.2mm
+MD Components
+AADD CCDD
+AUSTRIA 11
+1. Upper Cartridge
+The upper car tridge is made of gr ey plastics (e.g. polycarbonate). Its purpose is to pr otect the MD
+against mechanical damage or dust. The upper car tridge also for ms the spine on which the disc ID
+information will be printed in white ink.
+2. Label
+The paper label is glued onto the upper car tridge.
+3. Disc
+The disc is manufactur ed in the same way as CDs ar e. It has a polycarbonate layer which contains
+the data. A thin layer of aluminum is used as r eflective media, which is pr otected by a pr otective
+layer against destruction.
+4. Clamping Plate
+The clamping plate is made of magnetic stainless steel. This steel plate allows to stabilize the MD
+from the bottom side with a magnetic chuck. Therefore the MD does not require a hole in the upper
+cartridge and so almost the complete sur face of the upper cartridge can be used for the label.
+5. Shutter Lock:
+It is made of plastics (e.g. POM) and locks the shutter in the close position.
+6. Shutter:
+The shutter is made of plastics (e.g. POM). It closes the opening in the lower cartridge through which
+the data is read and it protects the MD against dust and damage.
+7. Lower Cartridge:
+Also the lower car tridge is made of gr ey plastics (e.g. Polycarbonate). It contains openings for the
+disc-drive and the laser that r eads out the data. On the backside, infor mation like ar tist, titles, 
+playing time, etc. as well as the catalogue number is printed dir ectly on the cartridge in white ink.
+8. MD Jewel Case:
+The MD is packaged in a 3-piece Jewel Case, consisting of clear bottom and lid parts and a grey tray.
+It contains a booklet and a backline card similar as CD package. The MD Jewel case dimensions are
+110 x 91 x 15 mm.
+Disc:
+
+===== Page 14 =====
+
+Input Components Specifications
+AADD CCDD
+AUSTRIA
+12
+3.1. Sound Car rier Specifications
+DADC of fers all necessar y facilities to pr epare
+sound car riers for MD-pr oduction. For exam -
+ple PQ-encoding, digital editing for the 
+common digital tape for mats U-Matic and 
+R-DAT, as well as A/D transfer fr om 1/4” and
+1/2” analog tapes and transfer fr om CD-R
+discs can be done at DADC. However , 
+PQ-encoded U-Matic tapes in the Sony 1630
+format as used for CD-pr oduction is the
+most common for mat. DADC can transfer
+this tape into the MD for mat via the A TRAC
+Format Conver ter.
+The following pages contain impor tant specifi -
+cations as well as necessar y infor mation sheets
+which have to be sent with the tape (Samples on
+pages 14 to 18, blank for msheets in Appendix).
+Please for ward this infor mation to your studio.
+General System Specifications
+• The maximum r ecording time on pr emastered 
+MD is 78 minutes 16 seconds.
+• The maximum track number is 255.
+Digital Tapes
+• Please send a “label copy” with the tape. On
+the label copy the or der and duration of the 
+titles (as it has to be on the MD) should be 
+indicated by the pr oducer.
+• Prepare the "Pr emastering Instr uctions" for m
+(see Appendix, for m 1) which describes the
+music star t times with an accuracy down to
+one frame.
+• Please note all noises (kind of noise and time at
+which it appears) as well as general quality
+notes in the ”Sound & Noise Infor mation”
+sheet (for m 2).
+• Start recording of time code and digital mute at
+least one minute befor e the first track.
+• Stop r ecording of digital mute and time code
+not earlier than two minutes after the last track
+has ended.
+• A pause (digital mute) of at least two seconds
+has to be kept in case you want to change the
+preemphasis status.
+Please note that de-emphasis will be per formed
+during for mat conversion at DADC.
+Additional Specifications for U-Matic T apes
+• Sampling fr equency: 
+44.1kHz
+• Tape for mat: 
+3/4" U-Matic NTSC standar d 
+(Sony PCM 1630/1610)
+• Time code: 
+SMPTE non-dr op-frame; The time code 
+has to be locked to the NTSC video-frames 
+and must be r ecorded continuously and 
+without inter ruption on analog channel 2 
+of the U-Matic tape. It may not go beyond
+23h 59m 59sec 29fr .
+• PQ code:
+The PQ data has to be stor ed on analog 
+channel 1 of the U-Matic tape.
+Track 1 Track 2 Track 3
+Begin Track 1 Begin Track 2
+Offset time
+≥ 5 frames
+Offset time
+≥ 5 frames
+Begin Track 3
+
+===== Page 15 =====
+
+Input Components Specifications
+AADD CCDD
+AUSTRIA 13
+• Tape widths: 1/4", 1/2"
+• Formats: NAB, CCIR, AES
+• Noise r eduction: Dolby A, Dolby SR
+• Reference signals: as standar dized e.g: for
+15ips CCIR tape:
+If it is not possible to send us a tape with these
+test tones, please r ecord the tones you have used
+for machine adjustment at the last sound-check
+of this tape.
+If that is impossible as well, we will adjust to
+standard reference tones.
+•
+Dolby: If you have used Dolby for noise r educ-
+tion, your tape has to contain the appr opriate
+Dolby-test-signal.
+CD-WO (CD-W rite-Once)
+CD-WOs have to be r ecorded without inter ruption
+and in accor dance with the “Red Book”. It must
+be possible to play them on standar d CD-players.
+The CD-WOs must not contain uncor rectable
+errors (C2 er rors). These can be caused e.g. by
+damage of the   CD-WO (scratches, finger prints
+etc.), by defects during r ecording (medium or
+recording device) or by an inter rupted r ecording.
+Disc checker print-outs (e.g. Sony CDA-5000 or
+Audio Development “CD-CA TS”) should be sent
+together with the CD-WO, if available. All data on
+the CD-WO (audio and PQ data, ISRC code, etc.)
+are transfer red 1:1 onto the manufactur ed MDs
+Quality of the Sound Car rier
+During pr eparation of the sound car rier, the audio
+information has to be car efully sound-checked.
+Please note ever y unusual noise (kind of noise and
+time at which it appears) in the ”Sound & Noise
+Information” (for m 2) during this sound-check. 
+By pr oviding this infor mation like shown on the
+sample for m sheets on the following pages a lot of
+unnecessar y  delays in pr oduction can be avoided.
+If a noise which is not mentioned on this infor -
+mation will be found during quality inspection at
+DADC, the pr oduction might be delayed.
+PQ Encoding
+Start r ecording appr ox. 15 sec. after T ime code
+start. Please pay special attention to the of fset-
+time of the begin-points. W e recommend to use
+an of fset-time of at least 5 frames to avoid that
+the music star t is cut of f during playback.
+Definitions
+• “Begin” marks the star t point of a track. It 
+defines the addr ess at which the MD player
+starts to playback a track.
+International Standar d Recording Code
+(ISRC code) and UPC/EAN code (BAR code)
+A disc catalogue number by means of a UPC/EAN
+code and the ISRC numbers as assigned by the
+IFPI can be r ecorded on ever y MD. For this
+UPC/EAN code and the ISRC numbers must be
+included in the original PQ Code as supplied by
+you or it must be specified in the “Pr emastering
+Instructions".
+Additional Specifications for 
+R-DAT Tapes
+• Sampling fr equency: We r ecommend to use a
+sampling fr equency of 44.1 kHz. Never theless,
+it is also possible to transfer fr om tapes with 
+a sampling fr equency of 48 kHz.
+Do not alter the sampling fr equency within one
+tape.
+• Time code: SMPTE non-dr op-frame; T ime code
+has to be locked to the NTSC video-frames and
+must be r ecorded continuously and without
+interruption. It may not go beyond 23h 59m
+59sec 29fr .
+•
+PQ code: The PQ code has to star ted on digital
+channel 1 (left channel of the DA T tape). Star t
+recording appr ox. 15 sec after time code star t.
+Please do not send us your original master tapes.
+Send us continuously r ecorded (no assemble
+edits) sound checked copies.
+Analog Tapes
+Please mind the following specifications:
+• Acceptable tape speeds:
+7.9, 15, 30ips (19, 38, 76cm/s)
+5sec
+5sec
+30sec
+10sec
+10sec
+1kHz
+1kHz
+1kHz
+14kHz
+63Hz
+0dB
+0dB
+0dB
+-10dB
+-10dB
+left channel
+right channel
+both channels
+both channels
+both channels
+
+===== Page 16 =====
+
+Premastering Instr uctions
+AADD CCDD
+AUSTRIA
+14
+Premastering Instr uctions
+SAMPLE
+Catalogue No.:
+Customer:
+Artist:
+Titel: Total Time:
+Total Tracks:
+Studio:
+Source:
+EQ EDITS ISRC-Code
+o  1/4"
+o  1/2"
+o  15 IPS
+o  30 IPS
+EQ:
+o   CCIR
+o   NAB
+o   ........
+NR.:
+o   NO NR.:
+o   DOLBY A
+o   DOLBY SR
+Cal. Tones:
+o   63/100 Hz .......dB
+o   1 kHz        .......dB
+o   14/10 kHz .......dB
+Fs: 
+o   44.1 kHz
+o   44.056 kHz
+o   48 kHz
+o   MASTER
+o   MATERIAL
+o   EMPH ON
+o   PQ encoded
+JOB:
+o   DC Offs. Corr.
+o   EQ
+o   EDIT
+o   A/B EDIT
+o   ......................
+DONE BY:
+DATE:       ....................
+ENG.:        ...................
+TO BE FILLED IN BY DADC-ENGINEER:
+Pause,Tracks,Noises..
+REF. 1K (...... dB)     .....dB PCM
+DIG HR ............dB
+EMPH  o   on  o   off
+=
+V
+REMARKS:
+o   ANALOG o   DAT o   OTHER  ................o   U-MATIC
+LEVEL
+Q dB Hz Q dBHzL R
+FIL.SMPTE
+TC
+hh:mm:ss:ff
+TRK TIME
+Nr.: min:sec
+Type of Recorder:
+UPC/EAN Code :123456789
+Music Company
+Sample Artist
+Sample
+Record Factory
+12
+De Emphasis P.Leitner
+46:44
+-2
+SONY DMR - 4000
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+04:08
+04:30
+05:10
+04:40
+05:50
+04:13
+04:48
+05:36
+04:21
+04:48
+45:34:1850:23:20
+02:00:0006:07:03
+06:08:0211:16:21
+11:18:0715:56:04
+15:58:2321:48:01
+21:48:0126:00:00
+26:01:1730:45:01
+30:49:1236:22:12
+36:25:2440:46:03
+40:46:0745:31:04
+30212
+UST3892
+-2
+44
+800 2 1
+11 03:20
+12 03:45 42:34:1751:23:25
+30:49:1236:22:12
+13. 02. 96
+8 3 1 3 7 4 2 8 7 5 1 2 2
+90912
+UST3892
+88872
+UST3892
+70872
+UST3892
+30212
+UST3892
+98872
+UST3892
+90818
+UST3892
+54411
+UST3892
+60273
+UST3892
+40212
+UST3892
+30321
+UST3892
+80312
+UST3892
+Form 1
+
+===== Page 17 =====
+
+SAMPLE
+EMP
+N
+EMP
+N
+EMP
+N
+EMP
+N
+EMP
+N
+EMP
+N
+EMP
+N
+EMP
+N
+EMP
+N
+EMP
+N
+EMP
+N
+EMP
+N
+EMP
+N
+0 ____________ 1 ____________ 2 ____________ 3 ____________ 4 ____________ 5 ____________
+0 ____________ 1 ____________ 2 ____________ 3 ____________ 4 ____________ 5 ____________
+0 ____________ 1 ____________ 2 ____________ 3 ____________ 4 ____________ 5 ____________
+0 ____________ 1 ____________ 2 ____________ 3 ____________ 4 ____________ 5 ____________
+0 ____________ 1 ____________ 2 ____________ 3 ____________ 4 ____________ 5 ____________
+0 ____________ 1 ____________ 2 ____________ 3 ____________ 4 ____________ 5 ____________
+0 ____________ 1 ____________ 2 ____________ 3 ____________ 4 ____________ 5 ____________
+0 ____________ 1 ____________ 2 ____________ 3 ____________ 4 ____________ 5 ____________
+0 ____________ 1 ____________ 2 ____________ 3 ____________ 4 ____________ 5 ____________
+0 ____________ 1 ____________ 2 ____________ 3 ____________ 4 ____________ 5 ____________
+0 ____________ 1 ____________ 2 ____________ 3 ____________ 4 ____________ 5 ____________
+0 ____________ 1 ____________ 2 ____________ 3 ____________ 4 ____________ 5 ____________
+0 ____________ 1 ____________ 2 ____________ 3 ____________ 4 ____________ 5 ____________
+T
+R
+#
+Title: Artist: Catalogue No.:
+REMARKS:
+Orig. MT: ANA / DIG. / MIXED
+HISS, HUM, FLUTTER:
+ROOM N., PLAY N., VOCAL N.:
+DATE / ENG. SIGN
+P. Leitner
+Sample Sample Artist 123456789
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+V
+25
+N
+10
+V
+50V
+50
+T
+05V
+05
+V
+50
+N
+05N
+24
+T
+10
+N
+10
+DO
+19
+T
+47
+V
+01
+V
+14
+V
+12
+13. 02. 96
+11
+12 8
+V
+Sound & Noise Infor mation
+AADD CCDD
+AUSTRIA 15
+Form 2 Sound & Noise Infor mation
+
+===== Page 18 =====
+
+Abbreviations for possible noise
+AD CD
+AUSTRIA
+16
+AE Abrupt End, Sudden End
+BE Bad Edit
+BL Blow Noise, Wind Noise
+CB Cut Begin
+CE Cut End
+CF Cross Fade
+CL Click Noise
+CR Crackle
+DB Double Begin
+DE Double End
+DIS Distortion
+DO Drop Out
+FI Fade In
+FL Flutter
+FO Fade Out
+HFN High Frequency Noice
+HISS e.g. Tape Hiss
+I Instrument Noise
+LCH Left Channel
+LFN Low Frequency Noise
+M Mouth/Lip Noise
+MIC Microphone
+MUS Musician Noise
+N Noise
+OWT On Whole Track
+PN Play Noise
+POP Pop Noise
+PT Print Through
+R Room Noise
+RCH Right Channel
+SB Sudden/Abrupt Begin
+SE Sound Effect
+T Tick Noise
+V Vocal Noise
+Abbreviations for possible noise
+
+===== Page 19 =====
+
+Additional TOC Data/Character Information
+AADD CCDD
+AUSTRIA 17
+1 2
+3
+*P,Q
+UPC / EAN
+ISRC
+**POS
+Disc Name
+Track Name
+Digital Audio
+Data
+ATRAC
+Forming
+CD MASTER TAPE MD MASTER TAPE
+MD/CD Common Data MD Specific Data
+Data to be processed
+V:
+A1:
+A2:
+All MD Data
+Time Code
+V:
+A1:
+A2:
+Digital Audio Data
+*P, Q, **POS, ISRC
+Time Code
+*P, Q (Time Data) will be converted to MD specific Data
+**POS for MD is different from POS for CD
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+A
+B
+C
+D
+E
+F
+0 1 2 3 4 5 6 7 8 9 A B C D E
+p
+q
+r
+s
+t
+u
+v
+w
+x
+y
+z
+F
+`
+a
+b
+c
+d
+e
+f
+g
+h
+i
+j
+k
+l
+m
+n
+o
+P
+Q
+R
+S
+T
+U
+V
+W
+X
+Y
+Z
+@
+A
+B
+C
+D
+E
+F
+G
+H
+I
+J
+K
+L
+M
+N
+O
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+:
+;
+<
+=
+>
+?
+SP
+!
+"
+#
+$
+%
+&
+'
+(
+)
+Q
++
+,
+-
+.
+/
+^
+_
+The symbols of this
+area may not be used
+3.2. Additional TOC Data/
+Character Infor mation
+As one of the new featur es of the MD, character
+information can be displayed during playback.
+This infor mation is included in the TOC (table of
+contents) ar ea of the MD and in subdata ar eas
+(future use) which ar e available in addition to the
+music data.
+This allows to stor e  also data like disc title, track
+name, disc r ecording date and track r ecording
+date in the TOC. For disc title and track names in
+total up to 2048 characters ar e available. This
+text infor mation can be r ecalled during play back
+of the MD and then displayed on the character
+display of the MD player . It is r ecommended to
+use this featur e for UPC/EAN Code, ISRC Code,
+disc- and track names.
+All TOC data has to be supplied together with
+the other pr oduction components.
+The MD specific character infor mation has to be
+filled into the ”Character Infor mation” (for m 3)
+as shown on sample for m next page.
+We strongly r ecommend to fill in this for m sheet
+by typewriter , or to use computer printouts in
+order to avoid misr eadings and ther efore errors in
+the displayed character infor mation.
+Please also mind that the given infor mation has
+to be 100% verified by the customer as all  cha -
+racter infor mation will be stor ed onto the MD as
+indicated in this for m sheet.
+Attached please find the ASCII characters which
+may be used for the character infor mation.
+
+===== Page 20 =====
+
+Character Infor mation
+AADD CCDD
+AUSTRIA
+18
+Form 3
+Remarks: Signature / Date
+Please use # to indicate ”Space characters” in case you want to use more than one ”Space”.
+SAMPLE
+TITLE: ARTIST: CATALOGUE No:
+Disc Information:
+UPC/EAN - code:
+No of tracks (max 255)
+Disc name
+(max. 160 characters)
+Track  No. _____ Information:
+ISRC - code (ISO 3901):
+Track  No. _____ Information:
+ISRC - code (ISO 3901):
+Track  No. _____ Information:
+ISRC - code (ISO 3901):
+Page ....... of ......
+Emotions Mariah Carey 01-468851-50
+1 3
+5099746885187
+10
+Mariah Carey###Emotions
+1
+Emotions
+And You Don't Remember
+2
+Track name
+(max. 160 characters)
+DE S34 92 30212
+DE S34 92 38490
+Track  No. _____ Information:
+ISRC - code (ISO 3901):
+Till The End Of The Time
+9
+DE S34 92 32187
+10
+The Wind
+DE S34 92 84219
+Track name
+(max. 160 characters)
+Track name
+(max. 160 characters)
+Track name
+(max. 160 characters)
+Character Infor mation
+
+===== Page 21 =====
+
+Label Film
+AADD CCDD
+AUSTRIA 19
+3.3. Label-, Artwork- and Print Films
+For unmistakeable reference during produc-
+tion the catalogue number must be indica -
+ted on each film outside of the print area for
+identification.
+I. Label Film
+Usually a graphic or pictur e will be used for the
+front side. For clear identification of the final MD it
+is necessary to include the catalogue number on the
+label. The MD Logo shall not be inser ted, as it al -
+ready appears on the upper cartrigde.
+During preparation of the label films please mind
+the following:
+• Send coated positive of fset films with appr ox. 3
+mm bleed only.The registration and cutting marks
+must be located outside the bleed.
+• The films must not reveal damage of any kind and
+must be packed in such a way so as to pr event
+folding or creasing (roll container or carton).
+• In order to match label and ar twork please en -
+close compulsory proofs regarding colour with all
+films.
+• Please identify each film with colour specifcation.
+Direction of Texture or Paper Grain
+R = max. 0.7 mm for all 4 corners
+63.8
+54.7
+All dimensions in mm with a tolerance of ± 0.2 mm
+In order to ensure optimum reliability under a variety of different operating and storage conditions DADC uses special paper quality .
+Upper Cartridge
+
+===== Page 22 =====
+
+Booklet
+AADD CCDD
+AUSTRIA
+20
+• The catalogue number must appear on the cover
+of the booklet
+• All pages (except cover outside) must contain
+page numbers.
+• Please prepare the film layout in such a way that
+the booklet is closed on the left-hand side.
+• Please enclose compulsor y pr oofs r egarding
+colour with all films.
+• Please identify each film with colour specifcation.
+II. a) Artwork Films (Booklet)
+The booklet contains similar infor mation as CD 
+booklets. Optionally the MiniDisc logo can be 
+inserted. During pr eparation of the print films for
+the booklet please mind the following:
+• Send coated positive of fset films with appr ox.
+3mm bleed only; the r egistration and cutting
+marks must be located outside the bleed.
+• The films must not reveal damage of any kind and
+must be packed in such a way so as to pr event
+folding or creasing (roll container or carton).
+72.7
+104.9
+min 10
+stitching wire or
+non-corrosive staples
+All dimensions in mm with a tolerance of ± 0.2 mm
+DADC will provide artwork in following quality:
+Thickness:
+max. 1.8 mm measured on folding side.
+max. 2.3 mm measured above the stitching wire.
+With 70g/m2 paper quality for inner pages this will allow a max. of 32 pages.
+Coverpages:
+wood-free art paper.
+min. 180g/m2, coated on both sides (for booklet cover and one sheet booklet).
+
+===== Page 23 =====
+
+Backline Car d
+AADD CCDD
+AUSTRIA 21
+II. b) Ar twork Films (Backline Car d)
+The backline car d contains similar infor mation as
+CD backline car ds (eg.: ar tist, disc title, catalogue
+no.). The MiniDisc logo (r ecommended size 7mm)
+has to be inser ted on both spines of the backline
+card, so that it can be easily r ead at top of the
+spine end if the MD is stor ed upright in a rack
+(see drawing below).
+During pr eparation of the print films for the
+backline car d please mind the following:
+• Send coated positive of fset films with appr ox. 
+3 mm bleed only , the r egistration and cutting
+marks must be located outside the bleed.
+• The films must not r eveal damage of any kind
+and must be packed in such a way so as to 
+prevent folding or cr easing (r oll container or
+carton).
+• The catalogue number must appear on the
+backline car d.
+• Please enclose compulsor y pr oofs r egarding
+colour with all films.
+• Please mark each film emulsion side with the
+colour.
+• Spine printing should be upright r eading when
+cover up.
+Direction of Texture or Paper Grain
+ARTIST AND TITLE
+11.211.2 86.4
+103.2
+108.8
+ARTIST AND TITLE
+ARTIST AND TITLE
+1
+2 3
+All dimensions in mm with a tolerance of ± 0.2 mm
+DADC will provide artwork in following quality:
+Wood-free art paper.
+160-180g/m2 = 0,15 - 0,16 mm thick.
+Coated on both sides.
+MD Logo:        ,       ... on this spine you can choose
+                                   between position       or       . 
+                        .......... on the backside placement and
+                                   position of a MD Logo is optional.
+1 2
+1 2
+3
+
+===== Page 24 =====
+
+Cartridge Back-/Spine Print
+AADD CCDD
+AUSTRIA
+22
+III. Print Film 
+(Cartridge Back-/Spine Print)
+It is r ecommended to print in positive type follo -
+wing infor mation with white ink on the car tridge:
+Spine: artist name and disc title.
+Backside: artist name, disc title, catalogue num -
+ber, track titles and durations, etc.
+The MD Logo shall not be inser ted, as it alr eady
+appears on the lower car tridge.
+Print location for the spine is on the car tridge
+edge opposite to the loading end.
+During pr eparation of the print film please mind
+the following:
+• Combine spine- and backside typesetting on one film.
+• Use coated positive scr eenprinting line films
+(min. line width 0.15 mm, high density, emulsion
+side up); positioning marks must be located out -
+side the print ar ea.
+• The films must not r eveal damage of any kind
+and must be packed in such a way so as to pr e-
+vent folding or creasing (roll container or carton).
+• Please don't encir cle the printing ar ea on the
+film.
+MARIAH CAREY    Emotions
+Character size 7pt
+Character size min. 5pt
+min. linewidth 0.15mm
+3 
+59.0
+R 12
+5.5
+14.2
+52.4
+31.7
+WARNING: All Rights Reserved.
+1. EMOTIONS 
+2. AND YOU DON'T REMEMBER
+3. CAN'T LET GO
+4. MAKE IT HAPPEN
+5. IF IT'S OVER
+6. 
+YOU'RE SO COLD
+7. SO BLESSED
+8. 
+TO BE AROUND
+8. YOU
+9. TILL THE END
+9. OF TIME
+10. THE WIND
+MARIAH CAREY  EMOTIONS
+COLUMBIA
+468851 2
+BIEM/STEMRA
+01-468851-50
+LC 0162
+All dimensions in mm
+Print area dimensions:
+Lower Cartridge
+
+===== Page 25 =====
+
+The MiniDisc Logo
+AADD CCDD
+AUSTRIA 23
+16mm
+Logo A1 Logo A2 Logo B
+7mm - 16mm 4mm - 7mm
+3.4. The MiniDisc Logo
+This part of the manual provides the rules for
+use of the trademark logo “MiniDisc” on
+discs which meet the “MD” standard specifi-
+cations.
+Permitted Uses
+The “MiniDisc” logo may be used pursuant to a
+license agreement with Sony Corporation wher ein
+the right for usage is guaranteed. The “MiniDisc”
+logo can only be applied on the pr oducts specified
+in such a license agr eement, in order to show that
+such products meet the “MD” standard specificati-
+ons and are compatible with each other.
+Territory of Usage
+The “MiniDisc” logo may be used worldwide,
+except in countries where the use of the trademark
+“MiniDisc” logo is illegal.
+“MiniDisc” Logo Specification
+If you need camera-r eady artwork for the logo on
+your label films please contact our Customer Service
+Department or download the logo from our website
+”sonydadc.com/downloads/downfra.html“
+For the use on MD label and artwork films there are
+three versions of the logo, as shown below:
+Choose logo A1, A2 or B, depending on the logo
+size. (See table below)
+
+===== Page 26 =====
+
+The MiniDisc Logo
+AADD CCDD
+AUSTRIA
+24
+Printing the “MiniDisc” logo in positive, or in r everse (negative) is permitted.
+Only one color may be used (also in negative
+print, only single colour backgr ounds).
+Never combine the “MiniDisc” logo with other
+characters, figur es or logos. Always display it
+independently .
+Location
+The logo should be displayed at a pr ominent
+place only once. The logo may appear in mor e
+than one place, pr ovided such placement in -
+cludes a pr ominent place.
+Note: with r espect to the logo’ s use on pr e-
+mastered discs, it should be displayed as lar ge as
+possible on the backline car d.
+Type Style
+“MD“ and “MiniDisc” may be used in typed copy
+in printed matter when r eferring to “MiniDisc”
+products. When typed, the letters “M” and “D”
+should be upper case (capitals) and the other let -
+ters in lower case (not capitalized).
+However, for the purpose of pr otection of the
+trademark, “MD” and “MiniDisc” should be
+enclosed within quotation marks or written 
+in bold style in or der to be pr ominent, and a
+footnote should clearly indicate that “MD” and
+“MiniDisc” ar e trademarks of Sony Corporation. 
+
+===== Page 27 =====
+
+Sony DADC Austria
+AADD CCDD
+AUSTRIA 25
+4. Sony DADC – 
+The Company
+Sony DADC Austria AG, is a hundr ed per cent 
+daughter company of the Sony Corporation, was
+founded in 1986 to cater to the requirements of the
+European CD market. Since then, the Compact Disc
+has emer ged as the dominating sound-car rier. In
+1996 mor e than 900 million units wer e sold in
+Europe. The CD has also become the basic techno -
+logy for other optical storage pr oducts like Laser
+Disc, MiniDisc, CD-ROM or Play Station Disc that
+were introduced on the market.
+With a quantity of more than 300 million CDs ship-
+ped annually Sony DADC is one of the leading
+Manufacturers of optical storage media in Eur ope.
+With two plants in Salzburg and the worldwide net-
+work with subsidiaries in Japan, Hongkong,
+Australia, USA, Canada, Mexico and Brazil, we
+guarantee supply to our customers with the highest
+quality and top serviceability.
+A separate development division with world-
+wide networking ensur es the step ahead in
+production technology and is ready to meet specific
+customer r equirements. But above all, her e we
+create the basis for new pr oducts in the futur e so
+that we can ensure that the Sony group will be your
+partner in the future, too.
+Sites: Factory I - Anif/Salzburg
+Factory II - Thalgau/Salzburg
+No. of employees: 1997 approx. 950
+Capacity: 1997 1,2 mio/day
+Production quantity: more than 300 million 
+annually
+Customers: approx. 2500
+(International and European music and film com-
+panies, publishers, multimedia and infor mation
+providers as well as computer and video game
+companies and the majority of softwar e and
+hardware manufacturers)
+ISO 9002: Certification 1995
+Facts and Figures:
+Product Use Size Specification
+Compact Disc Audio 12 cm max. playing time 77min.
+8 cm max. playing time 21min. 50sec.
+Laser Disc Video 30 cm max.playing time 120min.
+(two sides)
+CD-ROM Information pr ocessing/ 12 cm max. 680 MB
+CD-I Multimedia, Interactive 
+Entertainment 8 cm max. 192 MB
+Video CD Video/Film 12 cm depending on combination
+audio/video/data
+MiniDisc Portable Audio 6,4 cm playing time approx. 74 min. 
+PlayStation Interactive 
+Disc Entertainment 12 cm max. 680 MB
+CD EXTRA Multimedia, Audio, 12 cm max. 74 min. 30 sek.
+Video, Data 8 cm max. 655 MB
+MD Data like CD-ROM 6,4 cm max. 140 MB
+Our products:
+
+===== Page 28 =====
+
+This document has been prepared by DADC Austria to provide some 
+basic information on MiniDisc (MD) for its customers.
+Specific focus has been given to details as needed when 
+ordering MD pr oduction at DADC Austria
+AADD CCDD
+AUSTRIA
+Notice:
+
+===== Page 29 =====
+
+All trademarks used in this brochure were used for editing purposes without intending any violation
+of an industrial property right.
+Owned by: Sony DADC Austria AG
+Niederalm 282
+A-5081 Anif
+Printed by: Sony Music Printing, Haarlem, NL
+Published in: Anif, A
+Produced in: Haarlem, NL
+
+===== Page 30 =====
+
+For more information please get in touch with:
+Sony DADC Austria AG
+Customer Service
+Niederalm 282
+A-5081 Anif, Austria
+Tel.: ++43-6246-880-555
+Fax: ++43/6246-880-509
+E-mail: sales@dadc.co.at

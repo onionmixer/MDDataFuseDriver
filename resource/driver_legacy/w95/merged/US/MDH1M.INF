@@ -1,0 +1,50 @@
+; MDH1M.INF
+;
+; Ver 0.07
+; Created 07/07/97  (for OSR2/DOSV)
+
+[Version]
+Signature="$CHICAGO$"
+Class=DiskDrive
+Provider=%Creator%
+
+[ClassInstall]
+Addreg=DiskReg
+
+[DestinationDirs]
+DefaultDestDir=12
+
+[Manufacturer]
+%ManufName%=ManufNameSect
+
+[ManufNameSect]
+%DeviceDsc%=MDFSInstall,SCSI\SONY____MDH-1M__________1
+
+[MDFSInstall]
+CopyFiles=@MDHLP.VXD,@MDMGR.VXD,@MDFSD.VXD
+Addreg=ForceMPCopy
+
+[ForceMPCopy]
+HKR,,NoSetupUI,,1
+
+[DiskReg]
+HKR,,,,%DiskClassName%
+HKR,,EnumPropPages,,"iosclass.dll,EnumPropPages"
+HKR,,SilentInstall,,1
+HKR,,NoInstallClass,,1
+HKR,,Icon,,"3"
+
+[SourceDisksNames]
+1=%DiskDsc%,MDDSETUP,
+
+[SourceDisksFiles]
+MDHLP.VXD=1
+MDMGR.VXD=1
+MDFSD.VXD=1
+
+[Strings]
+Creator="SONY"
+ManufName="SONY"
+DeviceDsc="MD DATA Driver"
+DiskDsc="SONY MD DATA Setup Disk"
+DiskClassName="disk drives"

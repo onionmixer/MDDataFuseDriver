@@ -1,0 +1,4 @@
+file,le_offset_hex,cpu_type,os_type,module_flags_hex,num_pages,eip_object,eip_hex,esp_object,esp_hex,page_size,object_count,object_table_off_hex,entry_table_off_hex,resident_names_off_hex,nonresident_names_off_hex,nonresident_names_len
+w95/extract/us/mdmgr.vxd,0x00000080,2,4,0x00038000,33,0,0x00000000,0,0x00000000,512,2,0x000000C4,0x00000181,0x00000178,0x0000505C,34
+w95/extract/us/mdhlp.vxd,0x00000080,2,4,0x00038000,14,0,0x00000000,0,0x00000000,512,2,0x000000C4,0x00000135,0x0000012C,0x00002A84,50
+w95/extract/us/mdfsd.vxd,0x00000080,2,4,0x00038000,147,0,0x00000000,0,0x00000000,512,2,0x000000C4,0x00000349,0x00000340,0x0001345C,34

@@ -1,0 +1,6 @@
+req1,target_off,in_image,entry_precondition,jump_entry_plausible,head_insns
+9,0x1047,yes,uses_caller_args_bp_frame,yes,"les bx, ptr [bp + 6] | cmp byte ptr es:[bx + 0x17], 0 | jne 0x10a7 | les bx, ptr [bp + 0xa]"
+10,0x00b4,yes,mid_instruction_entry,no,"cld  | mov al, byte ptr es:[bx] | les bx, ptr [0xc34] | mov byte ptr es:[bx], al"
+11,0xc06b,no,offimage,no,
+12,0x8b11,no,offimage,no,
+13,0xffd8,no,offimage,no,

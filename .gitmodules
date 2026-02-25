@@ -1,0 +1,3 @@
+[submodule "resource/linux-minidisc"]
+	path = resource/linux-minidisc
+	url = https://github.com/glaubitz/linux-minidisc

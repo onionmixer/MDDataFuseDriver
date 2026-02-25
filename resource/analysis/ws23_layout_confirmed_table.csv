@@ -1,0 +1,27 @@
+record,field,offset,size,endian,confidence,notes
+VD,Identifier,,var,,inferred,checker-lane  via %s; post-load normalization indicates host little-endian value; source byte order likely big-endian; media offset unknown
+VD,Version,,2,little,inferred,checker-lane  via %d; post-load normalization indicates host little-endian value; source byte order likely big-endian; media offset unknown
+VD,BlockSize,,2,little,inferred,checker-lane 0x5b40 via %d; post-load normalization indicates host little-endian value; source byte order likely big-endian; media offset unknown
+VD,ClusterSize,,2,little,inferred,checker-lane 0x5b42 via %d; post-load normalization indicates host little-endian value; source byte order likely big-endian; media offset unknown
+VD,AllocSize,,2,little,inferred,checker-lane 0x5b44 via %d; post-load normalization indicates host little-endian value; source byte order likely big-endian; media offset unknown
+VD,NumAlloc,,4,little,inferred,"checker-lane 0x5b4a,0x5b48 via %ld; post-load normalization indicates host little-endian value; source byte order likely big-endian; media offset unknown"
+VD,NumRecordable,,4,little,inferred,"checker-lane 0x5b4e,0x5b4c via %ld; post-load normalization indicates host little-endian value; source byte order likely big-endian; media offset unknown"
+VD,NumAvaiable [sic],,4,little,inferred,"checker-lane 0x5b52,0x5b50 via %ld; original binary string has typo 'NumAvaiable' (should be NumAvailable); post-load normalization indicates host little-endian value; source byte order likely big-endian; media offset unknown"
+VD,NumUsed,,4,little,inferred,"checker-lane 0x5b56,0x5b54 via %ld; post-load normalization indicates host little-endian value; source byte order likely big-endian; media offset unknown"
+VD,NumDefective,,2,little,inferred,checker-lane 0x5b58 via %d; post-load normalization indicates host little-endian value; source byte order likely big-endian; media offset unknown
+VD,NumDir,,2,little,inferred,checker-lane 0x5b60 via %d; post-load normalization indicates host little-endian value; source byte order likely big-endian; media offset unknown
+VD,NumFile,,2,little,inferred,checker-lane 0x5b62 via %d; post-load normalization indicates host little-endian value; source byte order likely big-endian; media offset unknown
+VD,MaxIdNum,,2,little,inferred,checker-lane 0x5b64 via %d; post-load normalization indicates host little-endian value; source byte order likely big-endian; media offset unknown
+VD,VolAttr,,2,little,inferred,checker-lane 0x5b68 via %04x; post-load normalization indicates host little-endian value; source byte order likely big-endian; media offset unknown
+VD,VMALen,,4,little,inferred,"checker-lane 0x5b6e,0x5b6c via %ld; post-load normalization indicates host little-endian value; source byte order likely big-endian; media offset unknown"
+VD,VMALoc,,4,little,inferred,"checker-lane 0x5b72,0x5b70 via %ld; post-load normalization indicates host little-endian value; source byte order likely big-endian; media offset unknown"
+VD,VSBLoc,,2,little,inferred,checker-lane 0x5b74 via %d; post-load normalization indicates host little-endian value; source byte order likely big-endian; media offset unknown
+VD,VSBNum,,2,little,inferred,checker-lane 0x5b76 via %d; post-load normalization indicates host little-endian value; source byte order likely big-endian; media offset unknown
+VD,MTBLoc,,2,little,inferred,checker-lane 0x5b78 via %d; post-load normalization indicates host little-endian value; source byte order likely big-endian; media offset unknown
+VD,MTBNum,,2,little,inferred,checker-lane 0x5b7a via %d; post-load normalization indicates host little-endian value; source byte order likely big-endian; media offset unknown
+VD,ERBLoc,,2,little,inferred,checker-lane 0x5b7c via %d; post-load normalization indicates host little-endian value; source byte order likely big-endian; media offset unknown
+VD,ERBNum,,2,little,inferred,checker-lane 0x5b7e via %d; post-load normalization indicates host little-endian value; source byte order likely big-endian; media offset unknown
+VD,DRBLoc,,2,little,inferred,checker-lane 0x5b80 via %d; post-load normalization indicates host little-endian value; source byte order likely big-endian; media offset unknown
+VD,DRBNum,,2,little,inferred,checker-lane 0x5b82 via %d; post-load normalization indicates host little-endian value; source byte order likely big-endian; media offset unknown
+VD,DirLen,,4,little,inferred,"checker-lane 0x5b86,0x5b84 via %ld; post-load normalization indicates host little-endian value; source byte order likely big-endian; media offset unknown"
+VD,NumChild,,2,little,inferred,checker-lane 0x5b88 via %d; post-load normalization indicates host little-endian value; source byte order likely big-endian; media offset unknown

@@ -1,0 +1,7 @@
+dimension,value,confidence,evidence
+dispatch_domain,req[+1] in 9..13 (guarded),high,WS63
+practical_subset,req[+1]=9 (0x1047) only plausible in-image target,high,WS66
+entry_semantics,0x1047 tagged formatter path (0x45/0x48 by req[0x17]),high,WS67
+status_ownership,handler sets req+3 status; 0x1047 does not overwrite status,high,WS68
+input_provenance,req[0x10..0x17] read-mostly pre-assembled contract lanes,medium-high,WS69
+remaining_unknown,exact external producer/semantic names of req fields and subtype label,open,WS64-WS69

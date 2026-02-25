@@ -1,0 +1,4 @@
+file,ordinal_start,ordinal_end,type,obj,raw,flags,offset16,file_off
+w95/extract/us/mdmgr.vxd,1,1,3,1,032003,3,800,4896
+w95/extract/us/mdhlp.vxd,1,1,3,1,03bc02,3,700,4796
+w95/extract/us/mdfsd.vxd,1,1,3,1,030052,3,20992,25088

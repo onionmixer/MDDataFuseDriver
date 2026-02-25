@@ -1,0 +1,34 @@
+kind,site,source,value,can_hit_1997,evidence
+global,-,image_word_scan,0x1997,no,occurrences=0
+site_indexed_other,0x0282: lcall es:[bx + 0x10],base=0x0010,dynamic/indexed,unknown,indexed source not resolved in this pass
+site_far_abs,0x0398: lcall [0xc42],0x0c42/0x0c44,raw_init_far:0x2f87/0xd,unknown,slot is runtime-populated from external read path (WS46)
+site_indexed_other,0x03d0: jmp word ptr cs:[bx + 0xa],base=0x000a,dynamic/indexed,unknown,indexed source not resolved in this pass
+site_far_abs,0x0501: lcall [0xc42],0x0c42/0x0c44,raw_init_far:0x2f87/0xd,unknown,slot is runtime-populated from external read path (WS46)
+site_far_abs,0x0573: lcall [0xc42],0x0c42/0x0c44,raw_init_far:0x2f87/0xd,unknown,slot is runtime-populated from external read path (WS46)
+site_far_abs,0x0684: lcall [0xc42],0x0c42/0x0c44,raw_init_far:0x2f87/0xd,unknown,slot is runtime-populated from external read path (WS46)
+site_indexed_other,0x07fa: lcall [bx + 0xdcf],base=0x0dcf,dynamic/indexed,unknown,indexed source not resolved in this pass
+site_indexed_other,0x0879: lcall [bx + 0xdd7],base=0x0dd7,dynamic/indexed,unknown,indexed source not resolved in this pass
+site_indexed_other,0x08e1: lcall [bx + 0xdd3],base=0x0dd3,dynamic/indexed,unknown,indexed source not resolved in this pass
+site_indexed_other,0x0916: lcall [bx + 0xddb],base=0x0ddb,dynamic/indexed,unknown,indexed source not resolved in this pass
+site_indexed_other,0x0a15: lcall es:[bx + 0x10],base=0x0010,dynamic/indexed,unknown,indexed source not resolved in this pass
+site_indexed_other,0x0a94: lcall es:[bx + 0x10],base=0x0010,dynamic/indexed,unknown,indexed source not resolved in this pass
+site_indexed_other,0x0aba: lcall es:[bx + 0xc],base=0x000c,dynamic/indexed,unknown,indexed source not resolved in this pass
+site_other,0x0b6f: lcall es:[bx],non-absolute/non-bx-indexed,dynamic,unknown,requires deeper dataflow
+site_indexed_other,0x0bb0: lcall es:[bx + 0x10],base=0x0010,dynamic/indexed,unknown,indexed source not resolved in this pass
+site_far_abs,0x0d55: lcall [0xcfa],0x0cfa/0x0cfc,raw_init_far:0x2/0x8342,no,off-word check against known static values
+site_indexed_other,0x0d89: jmp word ptr cs:[bx + 0x7fb],base=0x07fb,dynamic/indexed,unknown,indexed source not resolved in this pass
+site_indexed_other,0x0e58: jmp word ptr cs:[bx + 0x7df],base=0x07df,dynamic/indexed,unknown,indexed source not resolved in this pass
+site_indexed_other,0x0ee5: lcall [bx + 0xd02],base=0x0d02,dynamic/indexed,unknown,indexed source not resolved in this pass
+site_far_abs,0x0f05: lcall [0xcfe],0x0cfe/0x0d00,raw_init_far:0x3fa/0xc07c,no,off-word check against known static values
+site_indexed_other,0x1115: jmp word ptr cs:[bx + 0xa],base=0x000a,dynamic/indexed,unknown,indexed source not resolved in this pass
+site_indexed_other,0x1136: jmp word ptr cs:[bx + 0x2a4],base=0x02a4,dynamic/indexed,unknown,indexed source not resolved in this pass
+site_far_abs,0x12f1: lcall [0xe32],0x0e32/0x0e34,raw_init_far:0x2606/0x478a;startup_model_far:0x601/0x73,no,off-word check against known static values
+site_far_abs,0x1397: lcall [0xe32],0x0e32/0x0e34,raw_init_far:0x2606/0x478a;startup_model_far:0x601/0x73,no,off-word check against known static values
+site_far_abs,0x1abc: lcall [0xe32],0x0e32/0x0e34,raw_init_far:0x2606/0x478a;startup_model_far:0x601/0x73,no,off-word check against known static values
+site_far_abs,0x1add: lcall [0xe32],0x0e32/0x0e34,raw_init_far:0x2606/0x478a;startup_model_far:0x601/0x73,no,off-word check against known static values
+site_far_abs,0x1b39: lcall [0xe32],0x0e32/0x0e34,raw_init_far:0x2606/0x478a;startup_model_far:0x601/0x73,no,off-word check against known static values
+site_far_abs,0x1b70: lcall [0xe2a],0x0e2a/0x0e2c,raw_init_far:0x2fbf/0xd,no,off-word check against known static values
+site_indexed_other,0x1b9e: jmp word ptr cs:[bx + 0xb85],base=0x0b85,dynamic/indexed,unknown,indexed source not resolved in this pass
+site_indexed_other,0x1c42: jmp word ptr cs:[bx + 0xb39],base=0x0b39,dynamic/indexed,unknown,indexed source not resolved in this pass
+site_far_indexed,0x1cff: lcall [bx + 0xe32],base=0x0e32,entry0_startup:0x601/0x73;entry1_observed_rebind:0x95c/0x11f;entry2_startup:0x0/0x0,no,WS55 runtime timeline entries
+site_far_abs,0x1d1f: lcall [0xe2e],0x0e2e/0x0e30,raw_init_far:0x7874/0x5ec4,no,off-word check against known static values

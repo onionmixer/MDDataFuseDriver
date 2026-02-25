@@ -1,0 +1,21 @@
+kind,addr,insn,note
+ref,0x036f,"mov dx, 0xc42",
+consume_lcall,0x0398,lcall [0xc42],
+consume_lcall,0x0501,lcall [0xc42],
+consume_lcall,0x0573,lcall [0xc42],
+consume_lcall,0x0684,lcall [0xc42],
+load_seq,0x035f,"mov ax, 0x3d00",c42-load-window
+load_seq,0x0362,"mov dx, 0x82c",c42-load-window
+load_seq,0x0365,int 0x21,c42-load-window
+load_seq,0x036c,"mov cx, 4",c42-load-window
+load_seq,0x036f,"mov dx, 0xc42",c42-load-window
+load_seq,0x0372,"mov ax, 0x4402",c42-load-window
+load_seq,0x0375,int 0x21,c42-load-window
+load_seq,0x0377,"mov ah, 0x3e",c42-load-window
+load_seq,0x037a,int 0x21,c42-load-window
+post_read_branch_count,0x0375..0x0398,2,branches after read before first lcall
+post_read_cf_check_count,0x0375..0x0398,0,carry/error-like branches after read before first lcall
+consumer,0x0398,lcall [0xc42],uses loaded far pointer
+consumer,0x0501,lcall [0xc42],uses loaded far pointer
+consumer,0x0573,lcall [0xc42],uses loaded far pointer
+consumer,0x0684,lcall [0xc42],uses loaded far pointer

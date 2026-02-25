@@ -1,0 +1,7 @@
+slot_low,slot_high,class,provider,write_count,guard_count,call_count,note
+0x0c42,0x0c44,parser_callback,file_read_int21_4402,0,0,4,"buffer=0x0c42, len=4, at 0x0375"
+0x0cfa,0x0cfc,device_hook_a,zero_init_only,2,1,1,"low/high words explicitly zeroed, no non-zero in-image writes"
+0x0cfe,0x0d00,device_hook_b,zero_init_only,2,1,1,"low/high words explicitly zeroed, no non-zero in-image writes"
+0x0e2a,0x0e2c,device_hook_c,zero_init_only,2,1,1,"low/high words explicitly zeroed, no non-zero in-image writes"
+0x0e2e,0x0e30,device_hook_d,zero_init_only,2,1,1,"low/high words explicitly zeroed, no non-zero in-image writes"
+0x0e32,0x0e34,dispatch_table_base,unknown_runtime,0,0,5,

@@ -1,0 +1,149 @@
+# SCSI_COMMAND.txt — MDH-10 SCSI 명령어 정리
+#
+# 장치: Sony MDH-10 (FW 1.11), PDT=16 (Bridge Controller), SCSI-2
+# 어댑터: Adaptec USBXChange (03f3:2001) via /dev/sg5
+# 미디어: MD DATA 140MB (70,464 sectors × 2,048 bytes)
+#
+# 날짜: 2026-02-25
+
+# =====================================================================
+# 1. 장치 초기화 (Adaptec USBXChange 펌웨어 로드)
+# =====================================================================
+
+# 1-1. 펌웨어 업로드 (최초 1회, 03f3:2000 → 03f3:2001 재열거)
+sudo fxload -t fx -D /dev/bus/usb/BUS/DEV -I adaptec_usbxchange/usbxchange.ihex
+
+# 1-2. usb-storage 드라이버 바인딩
+echo "03f3 2001" | sudo tee /sys/bus/usb/drivers/usb-storage/new_id
+
+# 1-3. 스크립트 일괄 처리 (위 과정 자동화)
+sudo ./adaptec_usbxchange/load_usbxchange.sh
+
+# =====================================================================
+# 2. 장치 확인 및 진단
+# =====================================================================
+
+# 2-1. SCSI 장치 목록 조회
+lsscsi -g
+
+# 2-2. INQUIRY (장치 정보 조회)
+#   → SONY MDH-10 1.11, PDT=16, SCSI-2, RMB=1
+sudo sg_inq /dev/sg5
+
+# 2-3. READ CAPACITY (디스크 용량 조회)
+#   → Last LBA: 70463, Block size: 2048, Total: 144,310,272 bytes
+sudo sg_readcap /dev/sg5
+
+# 2-4. TEST UNIT READY (미디어 삽입 확인 / Unit Attention 클리어)
+#   전원 투입 후 Unit Attention 2회 발생 → 2-3회 반복 필요
+sudo sg_turs /dev/sg5
+sudo sg_turs /dev/sg5
+
+# 2-5. MODE SENSE (디스크 파라미터 조회)
+#   Page 0x01: Error Recovery (AWRE=1, read retry=5, write retry=5)
+#   Page 0x07: Verify (retry=3)
+#   Page 0x08: Caching (IC=1)
+#   Page 0x20: Vendor (20 0e 00 00 00 20 08 00 25 00 00 00 00 00 00 00)
+#   Page 0x21: Vendor (21 0e 04 00 00 00 00 00 01 10 02 10 00 00 00 00)
+#              0x0110=272=NumUsed, 0x0210=528
+sudo sg_modes -6 /dev/sg5
+sudo sg_modes -6 -p 0x20 /dev/sg5
+sudo sg_modes -6 -p 0x21 /dev/sg5
+
+# =====================================================================
+# 3. 디스크 덤프 (읽기)
+# =====================================================================
+
+# 3-1. 전체 관리 영역 + 파일 데이터 덤프 (★ 권장 명령)
+#   LBA 0-3807 = VD + VSB + MTB + DRB + Z920.EXE 데이터
+#   bpt=16: 한 번에 16섹터(32KB) 전송 (MDH-10 안정 동작 확인)
+#   소요시간: ~30초
+sudo sg_dd if=/dev/sg5 \
+  of=/mnt/USERS/onion/DATA_ORIGN/Workspace/MDH10/resource/work_scripts/mddata_mgmt.bin \
+  bs=2048 count=3808 bpt=16
+
+# 3-2. 사용 영역만 덤프 (VMA + 파일 데이터)
+#   AU 0-527 = LBA 0-2111, 모든 USED AU 포함
+sudo sg_dd if=/dev/sg5 of=resource/work_scripts/mddata_used.img bs=2048 count=2200 bpt=16
+
+# 3-3. 전체 디스크 덤프 시도 (미기록 영역 포함)
+#   주의: LBA 3808+ 미기록 영역은 L-EC error → coe=1 필요
+#   bpt=1: 에러 복구 시 1섹터씩 재시도
+#   실측: coe=1이 sg_dd 6.25에서 제대로 동작하지 않을 수 있음
+sudo sg_dd if=/dev/sg5 of=resource/work_scripts/mddata_full_raw.img \
+  bs=2048 count=70464 bpt=1 coe=1
+
+# 3-4. 전체 이미지 생성 (실용적 방법)
+#   관리 영역 덤프 후 전체 크기로 0 패딩
+#   미기록 영역은 원래 데이터 없음 → 0 패딩이 정확한 표현
+cp resource/work_scripts/mddata_mgmt.bin resource/work_scripts/mddata_full.img
+truncate -s $((70464 * 2048)) resource/work_scripts/mddata_full.img
+
+# =====================================================================
+# 4. 개별 섹터 읽기 (sg_raw)
+# =====================================================================
+
+# 4-1. SCSI READ(10) CDB 포맷
+#   CDB: 28 00 [LBA BE32] 00 [count BE16] 00
+#   예: LBA 1056 (0x00000420), 1 섹터 읽기
+sudo sg_raw -r 2048 -b /dev/sg5 \
+  28 00 00 00 04 20 00 00 01 00
+
+# 4-2. VD 섹터 읽기 (LBA 1056)
+sudo sg_raw -r 2048 -o vd_sector.bin /dev/sg5 \
+  28 00 00 00 04 20 00 00 01 00
+
+# 4-3. DRB 섹터 읽기 (LBA 1061)
+sudo sg_raw -r 2048 -o drb_sector.bin /dev/sg5 \
+  28 00 00 00 04 25 00 00 01 00
+
+# 4-4. 타임아웃 지정 (미기록 영역 읽기 시 필수)
+#   -t 3: 3초 타임아웃 (기본 20초 → 미기록 섹터에서 과도한 대기 방지)
+sudo sg_raw -r 2048 -t 3 -b /dev/sg5 \
+  28 00 00 00 0F 00 00 00 01 00
+
+# =====================================================================
+# 5. 섹터 쓰기 (sg_raw) — 주의: 실미디어 변경
+# =====================================================================
+
+# 5-1. SCSI WRITE(10) CDB 포맷
+#   CDB: 2A 00 [LBA BE32] 00 [count BE16] 00
+#   예: LBA 2200에 1 섹터 쓰기 (data.bin = 2048 bytes)
+sudo sg_raw -s 2048 -i data.bin /dev/sg5 \
+  2a 00 00 00 08 98 00 00 01 00
+
+# =====================================================================
+# 6. Python 일괄 덤프 스크립트 (sg_raw 기반, 참고용)
+# =====================================================================
+
+# 주의: sg_dd bpt=16이 훨씬 빠르고 안정적 → §3-1 권장
+# 미기록 영역에서 sg_raw 기본 타임아웃(20초)으로 인해 극도로 느림
+# 사용 시 반드시 -t 옵션으로 타임아웃 단축 필요
+
+# sudo python3 -c "
+# import subprocess, sys
+# with open('mddata_dump.img', 'wb') as f:
+#     for lba in range(3808):
+#         cdb = [0x28, 0, (lba>>24)&0xff, (lba>>16)&0xff,
+#                (lba>>8)&0xff, lba&0xff, 0, 0, 1, 0]
+#         cmd = ['sg_raw', '-r', '2048', '-t', '3', '-b',
+#                '/dev/sg5'] + [f'{b:02x}' for b in cdb]
+#         r = subprocess.run(cmd, capture_output=True)
+#         f.write(r.stdout if r.returncode == 0 else b'\x00' * 2048)
+#         if lba % 500 == 0:
+#             print(f'  LBA {lba}/3808', file=sys.stderr)
+# "
+
+# =====================================================================
+# 7. MDH-10 SCSI 특이사항
+# =====================================================================
+#
+# - PDT=16 (Bridge Controller): /dev/sd* 미생성, /dev/sg*만 접근 가능
+# - MODE SENSE(6)만 지원, MODE SENSE(10) 미지원
+# - VPD / REPORT SUPPORTED OPCODES 미지원
+# - 전원 투입 후 Unit Attention 2회 발생 → sg_turs로 클리어 필요
+# - MO 디스크 미기록 섹터: Medium Error, ASC=0x11 ASCQ=0x05
+#   (L-EC uncorrectable error, FRU=163(0xA3), retry count=5)
+# - sg_dd bpt 권장값: 16 (32KB/전송, MDH-10 안정 동작 확인)
+#   bpt=128(256KB)은 Invalid argument 에러 발생
+# - 섹터 크기: 2048 bytes (CD-ROM과 동일)

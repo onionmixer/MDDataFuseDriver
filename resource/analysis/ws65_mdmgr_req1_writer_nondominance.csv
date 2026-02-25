@@ -1,0 +1,7 @@
+writer_addr,writer_func_start,writer_insn,writer_func_direct_callers,direct_call_or_jmp_to_0d31_exists
+0x05d7,0x051f,"mov byte ptr es:[bx + 1], 1",0x0714,no
+0x11fe,0x10f3,"mov byte ptr es:[bx + 1], 0x10",-,no
+0x161d,0x157c,"mov byte ptr es:[bx + 1], al",0x1c5a,no
+0x1743,0x165e,"mov byte ptr es:[bx + 1], al",0x1c72,no
+0x184d,0x1771,"mov byte ptr es:[bx + 1], 1",0x1c7e,no
+0x1857,0x1771,"mov byte ptr es:[bx + 1], 0",0x1c7e,no

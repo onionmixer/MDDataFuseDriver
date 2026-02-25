@@ -1,0 +1,13 @@
+[package]
+name = "mdfsck-lite"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[[bin]]
+name = "mdfsck-lite"
+path = "src/main.rs"
+
+[dependencies]
+mdfs-layout = { path = "../mdfs-layout" }
+mdfs-fuse = { path = "../mdfs-fuse" }

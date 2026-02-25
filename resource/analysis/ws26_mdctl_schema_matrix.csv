@@ -1,0 +1,30 @@
+opcode,direction,field,offset,size,meaning,confidence,notes
+type2_sub4,req,type,0x00,1,frame type constant 2,inferred,from mdfsck builder 0x3a4c
+type2_sub4,req,subtype,0x01,1,frame subtype 4,inferred,from mdfsck builder 0x3a4c
+type2_sub5,req,type,0x00,1,frame type constant 2,inferred,from mdfsck builder 0x3adc
+type2_sub5,req,subtype,0x01,1,frame subtype 5,inferred,from mdfsck builder 0x3adc
+type2_sub6,req,type,0x00,1,frame type constant 2,inferred,from mdfsck builder 0x3b80
+type2_sub6,req,subtype,0x01,1,frame subtype 6,inferred,from mdfsck builder 0x3b80
+type2_sub8,req,type,0x00,1,frame type constant 2,inferred,from mdfsck helper 0x3e72
+type2_sub8,req,subtype,0x01,1,frame subtype 8,inferred,from mdfsck helper 0x3e72
+type1_sub16or18,req,type,0x00,1,frame type constant 1,inferred,from helper 0x3cca
+type1_sub16or18,req,subtype,0x01,1,mode-derived subtype 0x16/0x18,inferred,from helper 0x3cca
+type1_sub24,req,type,0x00,1,frame type constant 1,inferred,from helper 0x3ef0
+type1_sub24,req,subtype,0x01,1,frame subtype 0x24,inferred,from helper 0x3ef0
+type1_sub07,req,type,0x00,1,frame type constant 1,inferred,from helper 0x3f4a
+type1_sub07,req,subtype,0x01,1,frame subtype 0x07,inferred,from helper 0x3f4a
+helper_3cca,req,start_lsw,0x10,2,start-like field low word,inferred,arg [bp+0x0c] -> header+0x10
+helper_3cca,req,start_msw,0x12,2,start-like field high word,inferred,arg [bp+0x0e] -> header+0x12
+helper_3cca,req,count_or_span,0x14,2,transfer size driver,inferred,arg [bp+0x10] -> header+0x14 (<<11)
+mdcache/mdformat_ioctl,req,al_function,AL,1,DOS IOCTL subfunction,inferred,wrapper sets AH=0x44 and AL from caller
+mdcache/mdformat_ioctl,req,handle,BX,2,device handle,inferred,wrapper loads BX from caller
+mdcache/mdformat_ioctl,req,buffer_ptr,DS:DX,4,buffer pointer,inferred,wrapper loads LDS DX from caller
+mdcache/mdformat_ioctl,req,buffer_len,CX,2,buffer length,inferred,wrapper loads CX from caller
+runtime_ws25_run1,req,ax_44xx_domain,AX,2,observed INT 21h IOCTL function domain 0x44xx,inferred,"QEMU run1; extracted rows in analysis/ws25_capture_short_events.csv"
+runtime_ws25_run1,req,ax_subfunc_observed,AL,1,observed subfunction set {0x00 0x02 0x16 0x18 0x19 0x44},inferred,"single run; not yet promoted to confirmed"
+runtime_ws25_run1,req,buffer_ptr_runtime,DS:DX,4,runtime pointer lane observed alongside AX=44xx calls,inferred,"derived from qemu -d int,cpu snapshots; no MD DATA media attached"
+runtime_ws25_run1,req,buffer_len_runtime,CX,2,runtime length lane observed alongside AX=44xx calls,inferred,"derived from qemu -d int,cpu snapshots; media-specific semantics unresolved"
+runtime_ws25_run1_run2,req,stable_lane_signature,AX/BX/CX/DX/DS:DX,10,20 stable signatures repeated across two runs,inferred,"analysis/ws25_capture_intersection_run1_run2.csv; same scenario family, still non-MD media"
+runtime_ws25_run1_run2,req,stable_ax_subset,AL,1,repeated AL subset includes {0x00 0x02 0x16 0x18 0x19 0x44},inferred,"repeat observed in run1 and run2; promote after contrasting media scenario"
+runtime_ws25_nomedia_matrix,req,scenario_repeatability,AX/BX/CX/DX/DS:DX,10,all 6 scenarios show stable per-scenario intersections (11~14 rows),inferred,"analysis/ws25_nomedia/summary.csv; run count=2 per scenario"
+runtime_ws25_nomedia_matrix,req,global_common_signatures,AX/BX/CX/DX/DS:DX,10,10 signatures common across all no-media scenarios,inferred,"analysis/ws25_nomedia/common_all_scenarios.csv"

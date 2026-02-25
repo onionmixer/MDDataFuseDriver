@@ -1,0 +1,4 @@
+file,ordinal_start,raw_hex,ddb_offset_le_b3_4,candidate_file_offset,name_probe_offset,name_probe_ascii,resident_name0,name_match
+w95/extract/us/mdmgr.vxd,1,0100032003,800,4896,4908,MDMGR   ,MDMGR,1
+w95/extract/us/mdhlp.vxd,1,010003bc02,700,4796,4808,MDHlp   ,MDHLP,1
+w95/extract/us/mdfsd.vxd,1,0100030052,20992,25088,25100,MDFSD   ,MDFSD,1
