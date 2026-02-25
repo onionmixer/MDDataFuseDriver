@@ -1,9 +1,13 @@
-# MDH10 — Sony MD DATA 역공학 워크스페이스 (v1.0)
+# MDH10 — Sony MD DATA Reverse Engineering Workspace (v1.0)
 
 ![Sony MDH-10 + Adaptec USBXChange](resource/MDH_10_adaptec_usbxchange.jpg)
 
 Sony MDH-10 (MD DATA 드라이브) 역공학 프로젝트.
 MDFS 파일시스템을 분석하여 Linux에서 MD DATA 디스크를 읽고 쓸 수 있는 도구를 개발합니다.
+
+실제 MDH-10 장치를 통한 FUSE 마운트, 파일 읽기/쓰기, MDFS 포맷까지 검증 완료된 프로젝트입니다.
+
+**개발/테스트 환경**: Ubuntu 22.04 LTS, Adaptec USBXChange (USB-SCSI 변환 동글)
 
 ## 주요 도구
 
